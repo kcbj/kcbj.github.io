@@ -1,23 +1,124 @@
 ---
-layout: default
+layout: front
 ---
+<section id="welcome" class="fullscreen hero">
+  <div class="video">
+    <video autoplay loop>
+      <source src="/images/video/video-home.webm" type="video/webm" />
+      <source src="/images/video/video-home.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="overlay blue">
+    <div class="wrapper">
+      <h1>Welkom bij korfbal club KCBJ</h1>
+      <h2>KCBJ is een korfbal club uit Betekom met meer dan 150 actieve leden</h2>
+      <div class="buttons">
+        <a class="button more" href="/info">Meer over KCBJ</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="trainingen" class="split container">
+  <div class="background left">
+    <div class="overlay"></div>
+  </div>
+  <div class="right">
+    <div class="wrapped padded">
+      <h2>Mee komen trainen?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl ligula, iaculis id augue vel, egestas convallis sem. Ut tincidunt congue bibendum. Vestibulum ut facilisis dui. Nam tortor magna, tincidunt vitae dignissim eget, feugiat vitae justo.</p>
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+      <a class="button more pull-right">trainings uren</a>
+    </div>
+  </div>
+</section>
+<section id="lidworden" class="split container">
+  <div class="left">
+    <div class="wrapped padded">
+      <h2>Lid worden?</h2>
+      <p>Cras placerat blandit fringilla. Praesent id urna libero. Curabitur euismod est felis. Nam elementum sapien in turpis lacinia blandit. Integer non sem rhoncus, congue est id, interdum sapien. Fusce arcu urna, mollis ut ultrices nec, mollis ut nulla.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="button more">lid worden</a>
+    </div>
+  </div>
+  <div class="right background">
+    <div class="overlay"></div>
+  </div>
+</section>
+<section id="social" class="hero">
+  <div class="container overlay blue">
+    <div class="wrapper">
+        <h1>Volg KCBJ online</h1>
+        <p>We zijn actief op zowel Facebook als Twitter.  De laatste nieuwtjes, de recentste foto's, ze verschijnen daar als eerste.</p>
+        <div class="buttons">
+          <a class="button" href="http://www.twitter.com/kcbj"><i class="fa fa-twitter"></i> KCBJ op Twitter</a>
+          <a class="button" href="http://www.facebook.com/kcbj.korfbal"><i class="fa fa-facebook"></i> KCBJ op Facebook</a>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="location" class="fullscreen">
+  <div class="container">
+    <div class="wrapper">
+      <h1>Locaties</h1>
+      <p class="center">Korfbal wordt zowel binnen als buiten gespeeld.  KCBJ traint en speelt daarom op verschillende locaties.  Dit zijn de belangrijkste.</p>
+      <ol id="location-list">
+        <li style="background-image: url( 'http://a.tiles.mapbox.com/v4/marker/pin-l-1+006699.png?access_token=pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw' )">Kantine KCBJ</li>
+        <li style="background-image: url( 'http://a.tiles.mapbox.com/v4/marker/pin-l-2+006699.png?access_token=pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw' )">Kleedkamers De Tumkens</li>
+        <li style="background-image: url( 'http://a.tiles.mapbox.com/v4/marker/pin-l-3+006699.png?access_token=pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw' )">Sporthal De Tumkens</li>
+      </ol>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
+    var map = L.mapbox.map( 'map', 'mapbox.streets', { 'scrollWheelZoom': false, 'maxZoom': 16 } );
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    var kantine = L.latLng( 50.987692, 4.7809190000000115 );
+    var kleedkamer = L.latLng( 50.988611, 4.784352000000013 );
+    var sporthal = L.latLng( 50.987841, 4.785295999999988 );
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    var locations = [ kantine, kleedkamer, sporthal ];
 
-</div>
+    var bbox = L.latLngBounds( locations );
+
+    L.marker( kantine, {
+      icon: L.mapbox.marker.icon( {
+        'marker-size': 'large',
+        'marker-symbol': '1',
+        'marker-color': '#006699'
+      } ) 
+    } ).addTo( map );
+
+    L.marker( kleedkamer, {
+      icon: L.mapbox.marker.icon( {
+        'marker-size': 'large',
+        'marker-symbol': '2',
+        'marker-color': '#006699'
+      } ) 
+    } ).addTo( map );
+
+    L.marker( sporthal, {
+      icon: L.mapbox.marker.icon( {
+        'marker-size': 'large',
+        'marker-symbol': '3',
+        'marker-color': '#006699'
+      } ) 
+    } ).addTo( map );
+
+    map.fitBounds( bbox );
+  </script>
+</section>
+<section id="sponsors" class="container">
+  <div class="wrapper">
+    <h1 class="title">Sponsors</h1>
+    <ul id="sponsor-list">
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/belfius.png" /></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/bress.png" /></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/debruyn.png" /></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/delhaize.png" /></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/verabo.png" /></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/wit-toreke.png" /></li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,109 @@
+$grid-max-width:                80rem;
+$grid-col-count:                12;
+
+$grid-col-padding:              2rem;
+$grid-vert-padding:             $base-line-height / 2;
+
+$grid-side-margin:              5%;
+$grid-col-width:                100% / $grid-col-count;
+
+@function column-width( $columns ) {
+  // @return $columns * ( $grid-col-width + $grid-col-padding * 2 )
+  @return $columns * $grid-col-width;
+}
+
+@mixin base-flex( $wrap, $justify-content, $align-items, $align-content ) {
+  @include flex-wrap( $wrap );
+  @include justify-content( $justify-content );
+  @include align-items( $align-items );
+  @include align-content( $align-content );
+}
+
+@mixin vertical-flex( $wrap: wrap, $justify-content: center, $align-items: stretch, $align-content: center ) {
+  @include display( flex );
+  @include flex-direction( column );
+  @include base-flex( $wrap, $justify-content, $align-items, $align-content );
+}
+
+@mixin horizontal-flex( $wrap: wrap, $justify-content: space-between, $align-items: stretch, $align-content: center ) {
+  @include display( flex );
+  @include flex-direction( row );
+  @include base-flex( $wrap, $justify-content, $align-items, $align-content );
+}
+
+@mixin container {
+  width:                        100%;
+  padding:                      0;
+  margin:                       0;
+  clear:                        both;
+
+  @include horizontal-flex( wrap, center, stretch, flex-start );
+
+  .wrapper {
+    @include wrapper;
+  }
+
+  &.split {
+    @include split-container;
+  }
+}
+
+@mixin wrapper {
+  @include flex( 0 0 100% - 2 * $grid-side-margin );
+  max-width:                    $grid-max-width;
+
+  @include vertical-flex;
+
+  &.horizontal {
+    @include horizontal-wrapper;
+  }
+}
+
+@mixin horizontal-wrapper {
+  @include horizontal-flex;
+}
+
+@mixin split-container {
+  @include horizontal-flex( wrap, flex-start, stretch, flex-start );
+
+  .left, .right {
+    @include flex( 1 1 $grid-max-width / 2 );
+    min-width:                  $grid-col-count * 6;
+
+    @include horizontal-flex( nowrap, flex-start, stretch, flex-start );
+
+    .wrapped {
+      @include flex( 1 1 100% - 2 * $grid-side-margin );
+      max-width:                   $grid-max-width / 2;
+
+      &.padded {
+        box-sizing: border-box;
+        padding:                    $grid-vert-padding * 4 $grid-col-padding * 4;
+      }
+    }
+  }
+
+  .left {
+    @include justify-content( flex-end );
+  }
+
+  .right .wrapped {
+    margin-right:                $grid-side-margin;
+
+    .padded {
+      // padding-right:              0;
+    }
+  }
+
+  .left .wrapped {
+    margin-left:                 $grid-side-margin;
+
+    .padded {
+      // padding-left:               0;
+    }
+  }
+}
+
+.container {
+  @include container;
+}

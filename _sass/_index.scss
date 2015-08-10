@@ -1,0 +1,109 @@
+#welcome {
+  min-height:                   $base-line-height * 20;
+
+  h1 {
+    font-size:                  $xxxxlarge-font-size;
+    line-height:                $xxxxlarge-line-height;
+  }
+
+  h2 {
+    font-size:                  $xxlarge-font-size;
+    line-height:                $xxlarge-line-height;
+  }
+
+
+  .overlay {
+    @include container;
+  }
+
+  .overlay .wrapper {
+    @include vertical-flex( wrap, center, center, center );
+  }
+}
+
+#social {
+  .overlay .wrapper {
+    padding:                      $grid-vert-padding * 2 0 $grid-vert-padding * 4 0;
+  }
+  background-image: url( '/images/applaus01.jpg' );
+} 
+
+
+@mixin background {
+  min-height:                   50vh;
+  background-size:              cover;
+  background-repeat:            no-repeat;
+  background-position:          center;
+  overflow:                     hidden;
+}
+
+#trainingen .background {
+  @include background;
+  background-image:   url( '/images/jeugd02.jpg' );
+  }
+
+#lidworden .background {
+  @include background;
+  background-image:   url( '/images/supporters04.jpg' );
+}
+
+#sponsor-list {
+  @include horizontal-flex( wrap, center, center, center );
+
+  .sponsor {
+    display:                      inline-block;
+    padding:                      $grid-vert-padding $grid-col-padding;
+  }
+
+  .sponsor img {
+    max-height:                   $base-line-height * 4;
+    @include filter( grayscale( 100% ) brightness( 2 ) );
+
+    &:hover {
+      transition:                 .27s;
+      @include                    filter( unset );
+    }
+  }
+}
+
+#location {
+  @include fullscreen;
+  background-color:               $dark-gray;
+  color:                          #ffffff;
+
+  h1 {
+    color:                        #ffffff;
+  }
+
+  p, h2 {
+    color:                        rgba( 255, 255, 255, .8 );
+  }
+
+  #location-list {
+    @include horizontal-flex( wrap, space-around, center, center );
+    margin:                       $grid-vert-padding * 2 0 0 0;
+    padding:                      0;
+
+    li {
+      @include flex( 0 0 $grid-col-padding * 8 );
+      line-height:                $base-line-height;
+      padding:                    $base-line-height $grid-col-padding $base-line-height $grid-col-padding * 2;
+      height:                     $base-line-height;
+      margin:                     0;
+
+      background-repeat:          no-repeat;
+      background-position:        $grid-col-padding / 2 8px;
+      text-transform:             uppercase;
+      font-weight:                400;
+
+      list-style:                 none;
+      border:                     1px solid rgba( 255, 255, 255, .2 );
+    }
+  }
+
+  #map {
+    height:                       80vh;
+    min-height:                   $base-line-height * 10;
+    width:                        100%;
+  }
+}

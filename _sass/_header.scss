@@ -1,0 +1,68 @@
+$header-vert-padding:           $grid-vert-padding * 2;
+$header-inner-height:           $header-height - 2 * $header-vert-padding;
+
+#header {
+  background-color:             #ffffff;
+  # box-shadow:                   0px 0px 4px rgba( 0, 0, 0, .5 );
+  padding:                      $header-vert-padding 0;
+  height:                       $header-height;
+  box-sizing:                   border-box;
+  position:                     relative;
+  z-index:                      200;
+}
+
+#header #logo-container {
+  @include flex( 1 1 50% );
+  min-width:                    $header-inner-height;
+}
+
+#header #logo {
+  display:                      block;
+  height:                       $header-inner-height;
+  width:                        100%;
+  background-image:             url( '/images/logo.svg' );
+  background-position:          left center;
+  background-repeat:            no-repeat;
+  background-size:              contain;
+}
+  
+
+#header #menu {
+  @include flex( 1 1 50% );
+  min-height:                   40rem;
+}
+
+@mixin menu( $font-color, $hover-font-color, $direction: flex-end ) {
+  margin:                       0;
+  padding:                      0;
+
+  @include horizontal-flex( nowrap, $direction, baseline, center );
+  
+  li {
+    @include flex( 0 0 auto );
+    display:                      block;
+    margin-left:                  2rem;
+
+    &.active a {
+      color:                      $hover-font-color;
+    }
+
+    a {
+      display:                    block;
+      line-height:                $header-inner-height;
+      text-decoration:            none;
+      text-transform:             uppercase;
+      font-weight:                500;
+      color:                      $font-color;
+    }
+
+    a:hover {
+      transition:                 .27s;
+      color:                      $hover-font-color;
+    }
+  }
+}
+
+#header #menu ul {
+  @include menu( $base-font-color, $blue );
+}

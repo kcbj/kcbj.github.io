@@ -1,0 +1,27 @@
+$dark-gray:        #333333;
+$darker-gray:      #191919;
+$blue:             #006699;
+
+$base-font-family: Roboto, Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-line-height: (22px/16px)*1rem;
+$base-font-color:  $dark-gray;
+$base-font-weight: 300;
+
+$title-font-family: $base-font-family;
+
+$large-font-size:   1.25rem;
+$xlarge-font-size:  $large-font-size * 1.25;
+$xxlarge-font-size: $xlarge-font-size * 1.25;
+$xxxlarge-font-size: $xxlarge-font-size * 1.25;
+$xxxxlarge-font-size: $xxxlarge-font-size * 1.25 * 1.25;
+
+$large-line-height: $base-line-height;
+$xlarge-line-height: 2 * $base-line-height;
+$xxlarge-line-height: 2 * $base-line-height;
+$xxxlarge-line-height: 3 * $base-line-height;
+$xxxxlarge-line-height: 3 * $base-line-height;
+
+$small-font-size:   (1rem/1.25);
+
+$header-height:     $base-line-height * 5; 
