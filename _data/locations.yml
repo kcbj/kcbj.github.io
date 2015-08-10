@@ -1,0 +1,30 @@
+kantine:
+  featured: true
+  title: KCBJ Kantine
+  coordinates: [ 50.987692, 4.7809190000000115 ] 
+tumkens:
+  featured: true
+  title: Sporthal De Tumkens
+  address:
+    street_address: Pastoor Pitetlaan 30
+    postal_code: 3130
+    locality: Betekom
+  coordinates: [ 50.987841, 4.785295999999988 ]
+kleedkamers:
+  featured: true
+  title: Kleedkamers Tumkens
+  coordinates: [ 50.988611, 4.784352000000013 ]
+parochiezaal:
+  title: Parochiezaal Begijnendijk
+  address:
+    street_address: Kerkstraat 5
+    postal_code: 3130
+    locality: Begijnendijk
+  coordinates: [ 51.01887584089943, 4.783540070056915 ]
+verhaegen:
+  title: Zaal Verhaegen
+  address: 
+    street_address: Grote Baan 109
+    postal_code: 3130
+    locality: Betekom
+  coordinates: [ 50.996151022043, 4.796130359172821 ]
