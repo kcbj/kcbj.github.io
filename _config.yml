@@ -10,13 +10,11 @@ url: "http://www.kcbj.be" # the base hostname & protocol for your site
 timezone: Europe/Brussels
 
 # Exclude our todo list and instructions
-exclude:
-  - TODO.md
-  - /images/video/instructions.md
+# exclude:
+#  - TODO.md
+#  - /images/video/instructions.md
 
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-sitemap
   - github-pages
-  - bourbon
