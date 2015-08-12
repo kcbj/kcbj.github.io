@@ -1,35 +1,97 @@
-table.full {
-  width:                      100%;
-  margin:                     $base-line-height 0;
-
-  td, th {
-    line-height:              $base-line-height;
-    padding:                  $base-line-height / 2 $grid-hor-padding;
-    text-align:               left;
-
-    &:first-child {
-      padding-left:           0;
+@media screen and (max-width: $grid-min-width) {
+  table.full {
+    
+    thead tr {
+      display:                    none;
     }
 
-    &:last-child {
-      padding-right:          0;
+    tbody {
+      border-top:                 1px solid $gray;
+    }
+
+    tbody tr {
+
+      &:nth-child( odd ) {
+        background-color:         rgba( 0, 0, 0, .025 );
+      }
+
+      @include flex-container( column, nowrap, flex-start, stretch, center );
+      border-bottom:              1px solid $light-gray;
+
+      td {
+        @include flex( 0 0 auto );
+      }
+
+      td[data-title]:before {
+        content:                  attr( data-title );
+        font-weight:              $medium-font-weight;
+        float:                    left;
+        min-width:    30%;
+        margin-right: 1rem;
+        text-align:               left;
+      }
+
+      td {
+        margin-bottom:            $base-line-height / 2;
+        text-align:               left;
+      }
+
+      td[data-title] {
+        text-align:               right;
+      }
+
+      td.key {
+        text-align:   center;
+        width:        100%;
+        font-size:    $large-font-size;
+        line-height:  $large-line-height;
+        font-weight:  $medium-font-weight;
+        padding:      $base-line-height / 2 0;
+      }
     }
   }
+}
 
-  td {
-    border-bottom:            1px solid $light-gray;
+@media screen and (min-width: $grid-min-width) {
+  table.full {
+    width:                      100%;
+    margin:                     $base-line-height 0;
+    display:                    table;
 
-    &.key {
-      color:                  $darker-gray;
-      font-weight:            $medium-font-weight;
+    tr {
+      display:                  table-row;
     }
-  }
 
-  th {
-    border-bottom:            1px solid $dark-gray;
-    text-transform:           uppercase;
-    color:                    $darker-gray;
-    font-weight:              $bold-font-weight;
-    font-size:                $small-font-size;
+    td, th {
+      display:                  table-cell;
+      line-height:              $base-line-height;
+      padding:                  $base-line-height / 2 $grid-hor-padding;
+      text-align:               left;
+
+      &:first-child {
+        padding-left:           0;
+      }
+
+      &:last-child {
+        padding-right:          0;
+      }
+    }
+
+    td {
+      border-bottom:            1px solid $light-gray;
+
+      &.key {
+        color:                  $darker-gray;
+        font-weight:            $medium-font-weight;
+      }
+    }
+
+    th {
+      border-bottom:            1px solid $dark-gray;
+      text-transform:           uppercase;
+      color:                    $darker-gray;
+      font-weight:              $bold-font-weight;
+      font-size:                $small-font-size;
+    }
   }
 }

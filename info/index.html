@@ -20,7 +20,7 @@ layout: default
         <thead>
           <tr>
             <th>Ploeg</th>
-            <th>Leeftijden</th>
+            <th>Leeftijd</th>
             <th>Beschrijving</th>
             <th>Lidgeld {{site.data.membershipfee.season }}</th>
           </tr>
@@ -30,17 +30,16 @@ layout: default
         {% assign team = team_hash[1] %}
           <tr class="team">
             <td class="name key">{{ team.name }}</td>
-            <td class="age">{{ team.ages }}</td>
-            <td class="description">{{ team.description }}</td>
+            <td data-title="Leeftijd" class="age">{{ team.ages }}</td>
+            <td data-title="Beschrijving" class="description">{{ team.description }}</td>
             {% assign memberships = site.data.membershipfee.teams | where: "team", team_hash[0] %}
-            <td class="membership-fee">{{ memberships[0].fee }}</td>
+            <td data-title="Lidgeld {{site.data.membershipfee.season }}" class="membership-fee">{{ memberships[0].fee }}</td>
           </tr>
         {% endfor %}
         </tbody>
       </table>
 
       <p class="todo">Indeling in de ploegen gebeurd op basis van ....</p>
-      <p class="todo">Tabel schaalt niet op mobieltje</p>
     </div>
   </div>
 </div>
