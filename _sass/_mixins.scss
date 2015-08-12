@@ -1,0 +1,90 @@
+@mixin flex-container( $direction, $wrap: wrap, $justify-content: center, $align-items: stretch, $align-content: center ) {
+  @include display( flex );
+  @include flex-direction( $direction );
+  @include flex-wrap( $wrap );
+  @include justify-content( $justify-content );
+  @include align-items( $align-items );
+  @include align-content( $align-content );
+}
+
+@mixin light-on-dark {
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin reset-list {
+  list-style-type:          none;
+
+  li {
+    list-style-type:        none;
+    display:                block;
+  }
+}
+
+@mixin background {
+  background-position:      center;
+  background-size:          cover;
+  background-repeat:        no-repeat;
+}
+
+@mixin link-color( $base, $hover, $active: $hover, $visited: $base ) {
+  color:                $base;
+
+  &:hover {
+    transition:         .27s;
+    color:              $hover;
+  }
+
+  &:active {
+    color:              $active;
+  }
+
+  &:visited {
+    color:              $visited;
+  }
+}
+
+
+@mixin ul-menu( $direction: flex-end ) {
+  margin:               0;
+  padding:              $base-line-height / 2 0;
+  @include flex-container( row, wrap, center, center, center );
+
+  @media screen and (min-width: $grid-min-width) {
+    @include justify-content( $direction );
+  }
+
+  li {
+    @include flex( 0 0 auto );
+    list-style-type:    none;
+    margin:             0;
+    text-align:         center;
+
+    &.home {
+      @include flex( 1 1 100% );
+      @media screen and ( min-width: $grid-min-width ) {
+        @include flex( 0 0 auto );
+      }
+    }
+
+    a {
+      display:          inline-block;
+      text-transform:   uppercase;
+      text-decoration:  none;
+      font-weight:      $bold-font-weight;
+      font-size:        $small-font-size;
+      line-height:      $base-line-height;
+      padding:          $base-line-height / 2 0;
+      margin:           0 $grid-hor-padding / 4;
+
+      @media screen and ( min-width: $grid-min-width ) {
+        margin:         0 $grid-hor-padding / 2;
+      }
+
+      @include link-color( $darker-gray, $blue );
+    }
+
+    &:last-child a {
+      margin-right:     0;
+    }
+  }
+}

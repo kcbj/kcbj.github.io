@@ -1,109 +1,73 @@
-#welcome {
-  min-height:                   $base-line-height * 20;
-
-  h1 {
-    font-size:                  $xxxxlarge-font-size;
-    line-height:                $xxxxlarge-line-height;
-  }
-
-  h2 {
-    font-size:                  $xxlarge-font-size;
-    line-height:                $xxlarge-line-height;
-  }
-
-
-  .overlay {
-    @include container;
-  }
-
-  .overlay .wrapper {
-    @include vertical-flex( wrap, center, center, center );
-  }
-}
-
-#social {
-  .overlay .wrapper {
-    padding:                      $grid-vert-padding * 2 0 $grid-vert-padding * 4 0;
-  }
-  background-image: url( '/images/applaus01.jpg' );
-} 
-
-
-@mixin background {
-  min-height:                   50vh;
-  background-size:              cover;
-  background-repeat:            no-repeat;
-  background-position:          center;
-  overflow:                     hidden;
-}
-
-#trainingen .background {
-  @include background;
-  background-image:   url( '/images/jeugd02.jpg' );
-  }
-
-#lidworden .background {
-  @include background;
-  background-image:   url( '/images/supporters04.jpg' );
-}
-
-#sponsor-list {
-  @include horizontal-flex( wrap, center, center, center );
-
-  .sponsor {
-    display:                      inline-block;
-    padding:                      $grid-vert-padding $grid-col-padding;
-  }
-
-  .sponsor img {
-    max-height:                   $base-line-height * 4;
-    @include filter( grayscale( 100% ) brightness( 2 ) );
-
-    &:hover {
-      transition:                 .27s;
-      @include                    filter( unset );
-    }
-  }
-}
-
 #location {
-  @include fullscreen;
-  background-color:               $dark-gray;
-  color:                          #ffffff;
+  background-color:                       $dark-gray;
+  @include light-on-dark;
+  color:                                  #ffffff;
 
-  h1 {
-    color:                        #ffffff;
-  }
-
-  p, h2 {
-    color:                        rgba( 255, 255, 255, .8 );
+  .wrapper {
+    @media screen and (min-width: $grid-min-width ) {
+      height:                               30%;
+      min-width:                            100%;
+    }
   }
 
   #location-list {
-    @include horizontal-flex( wrap, space-around, center, center );
-    margin:                       $grid-vert-padding * 2 0 0 0;
-    padding:                      0;
+    display:                              none;
+    margin:                               $base-line-height;
+    @include justify-content( center );
 
-    li {
-      @include flex( 0 0 $grid-col-padding * 8 );
-      line-height:                $base-line-height;
-      padding:                    $base-line-height $grid-col-padding $base-line-height $grid-col-padding * 2;
-      height:                     $base-line-height;
-      margin:                     0;
+    @media screen and (min-width: $grid-min-width ) {
+      display:                            flex;
+    }
+  }
 
-      background-repeat:          no-repeat;
-      background-position:        $grid-col-padding / 2 8px;
-      text-transform:             uppercase;
-      font-weight:                400;
+  .location.button {
+    background-repeat:                    no-repeat;
+    background-position:                  $grid-hor-padding / 2 8px;
+    padding-left:                         $grid-hor-padding * 2;
+    line-height:                          $base-line-height * 3;
+    text-transform:                       uppercase;
+    font-weight:                          400;
 
-      list-style:                 none;
-      border:                     1px solid rgba( 255, 255, 255, .2 );
+    @media screen and (min-width: $grid-min-width ) {
+      @include flex( 0 1 20% );
+      min-width:                            11rem;
+      margin:                               $base-line-height $grid-hor-padding;
     }
   }
 
   #map {
-    height:                       80vh;
-    min-height:                   $base-line-height * 10;
-    width:                        100%;
+    height:                               70%;
+    min-height:                           $hero-height;
+  }
+}
+
+#sponsor-list {
+  @include reset-list;
+  @include flex-container( column, no-wrap, flex-start, stretch, center );
+
+  .sponsor {
+    @include flex( 1 1 auto );
+    text-align:             center;
+
+    a {
+      margin-top:           $base-line-height / 2;
+      padding:              $base-line-height / 4 $grid-hor-padding;
+      display:              block;
+
+      img {
+        height:             $base-line-height * 4;
+        max-width:          100%;
+        @include filter( grayscale( 100% ) brightness( 1 ) );
+
+        &:hover {
+          transition:                 .27s;
+          @include                    filter( unset );
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $grid-min-width) {
+    @include flex-container( row, wrap, space-around, stretch, center );
   }
 }

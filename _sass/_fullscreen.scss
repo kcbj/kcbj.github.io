@@ -1,9 +1,0 @@
-@mixin fullscreen( $align: space-between ) {
-  height:             100vh;
-
-  @include vertical-flex( nowrap, $align, stretch, center )
-}
-
-.fullscreen {
-  @include fullscreen;
-}

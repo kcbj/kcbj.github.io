@@ -1,0 +1,14 @@
+- name: Raad van Bestuur	
+  description: De raad van bestuur staat in voor de dagelijkse werking van de club.
+- name: Feestcomité
+  description: Het feestcomité staat in voor de organisatie van allerlei activiteiten.
+- name: Sportcomité
+  description: Het sportcomité staat in voor het sportief beleid van de club. 
+- name: Jeugdcoördinator
+  description: De jeugdcoördinator zorgt ervoor dat de opleiding, zoals beschreven door het sportcomité, gerealiseerd wordt, en dat de spelers goed opgeleid worden om door te stromen naar de senioren. De jeugdcoördinator biedt waar nodig, ondersteuning en hulp bij trainingen in de vorm van uitleg en tips aan de desbetreffende trainer(s). De jeugdcoördinator observeert trainingen, signaleert problemen en speelt hier direct op in, in een extra trainingssessie of in de bovengenoemde trainingssessies.
+- name: Jongerencomité	
+  description: Het jongerencomité steunt de club door het organiseren van een aantal (jeugd)activiteiten.
+- name: Trainers	
+  description: Elke ploeg wordt sportief begeleid door één of meerdere trainers.
+- name: Begeleiders
+  description: Per ploeg zijn er één of meerdere begeleiders. Dat zijn meestal ouders. Zij staan de trainers bij met praktische zaken.	

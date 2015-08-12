@@ -1,0 +1,97 @@
+@mixin button( $color: $base-font-color, $border: lighten( $color, 60% ),
+$background: transparent, $hcolor: darken( $color, 10% ), $hborder: lighten( $color, 40% ),
+$hbackground: $background ) { 
+  line-height:                $base-line-height * 2;
+  padding:                    0 2rem;
+  border:                     1px solid $border;
+  text-decoration:            none;
+  color:                      $color;
+  background-color:           $background;
+  display:                    inline-block;
+  border-radius:              2px;
+  font-weight:                400;
+  cursor:                     pointer;
+  white-space: nowrap;
+
+  &:hover {
+    transition:               .27s;
+    border-color:             $hborder;
+    background-color:         $hbackground;
+    color:                    $hcolor;
+  }
+
+  .fa {
+    margin-right:              0.5rem;
+  }
+
+  .fa.suffix {
+    margin-left:              0.5rem;
+    margin-right:             0;
+  }
+}
+
+.button {
+  @include button( $base-font-color, $lighter-gray, transparent, $darker-gray,
+  $light-gray, rgba( 0, 0, 0, .025 ) );
+}
+
+.button.white {
+  @include button( #FFFFFF );
+}
+
+.button.more {
+  text-transform:             uppercase;
+  font-size:                  $small-font-size;
+}
+
+.buttons {
+  margin:                     $base-line-height 0;
+
+  @include flex-container( column, no-wrap, flex-start, stretch, center );
+
+  .button {
+    margin-top:              $base-line-height;
+    text-align:              center;
+    @include flex( 0 1 auto );
+
+    &:first-child {
+      margin-top:             0;
+    }
+  }
+
+  @media screen and (min-width: $grid-min-width) {
+
+    @include flex-container( row, wrap, space-around, center, center );
+
+    &.stretch {
+      @include justify-content( space-between );
+    }
+
+    &.right {
+      @include justify-content( flex-end );
+    }
+
+    &.left {
+      @include justify-content( flex-start );
+    }
+
+    .button {
+      margin-top:             0;
+      text-align:             left;
+    }
+  }
+}
+
+.hero .button {
+  @include button( rgba( 255, 255, 255, .8 ), rgba( 255, 255, 255, .8 ),
+  transparent, #ffffff, #ffffff, rgba( 255, 255, 255, .25 ) );
+  font-size:                  $base-font-size;
+}
+
+.hero .buttons {
+  margin:                   $base-line-height 0;
+
+  @media screen and (min-width: $grid-min-width ) {
+    margin:                   $base-line-height * 5 0 $base-line-height * 2 0;
+  }
+}

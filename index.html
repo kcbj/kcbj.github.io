@@ -1,125 +1,145 @@
 ---
 layout: front
 ---
-<section id="welcome" class="fullscreen hero">
+<section id="welcome" class="first fullscreen jumbo hero container nomargin">
   <div class="video">
     <video autoplay loop>
       <source src="/images/video/video-home.webm" type="video/webm" />
       <source src="/images/video/video-home.mp4" type="video/mp4" />
     </video>
   </div>
-  <div class="overlay blue">
-    <div class="wrapper">
-      <h1>Welkom bij korfbal club KCBJ</h1>
-      <h2>KCBJ is een korfbal club uit Betekom met meer dan 150 actieve leden</h2>
-      <div class="buttons">
-        <a class="button more" href="/info">Meer over KCBJ</a>
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+    <h1>Welkom bij korfbal club KCBJ</h1>
+    <h2>KCBJ is een korfbal club uit Betekom met meer dan 150 actieve leden</h2>
+    <div class="buttons">
+      <a class="button more" href="/info">Meer over KCBJ</a>
+    </div>
+  </div>
+</section>
+<section id="trainingen" class="container">
+  <div class="horizontal split left">
+    <div class="background" style="background-image: url(
+    '/images/backgrounds/jeugd02.jpg' );">
+      <div class="overlay"></div>
+    </div>
+    <div class="content">
+      <h2>Mee komen trainen?</h2>
+      <p class="todo">Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Integer nisl ligula, iaculis id augue vel, egestas convallis sem. Ut
+      tincidunt congue bibendum. Vestibulum ut facilisis dui. Nam tortor magna,
+      tincidunt vitae dignissim eget, feugiat vitae justo.</p>
+      <div class="buttons right">
+        <a class="button more">trainings uren</a>
       </div>
     </div>
   </div>
 </section>
-<section id="trainingen" class="split container">
-  <div class="background left">
-    <div class="overlay"></div>
-  </div>
-  <div class="right">
-    <div class="wrapped padded">
-      <h2>Mee komen trainen?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl ligula, iaculis id augue vel, egestas convallis sem. Ut tincidunt congue bibendum. Vestibulum ut facilisis dui. Nam tortor magna, tincidunt vitae dignissim eget, feugiat vitae justo.</p>
-
-
-      <a class="button more pull-right">trainings uren</a>
+<section id="lidworden" class="container">
+  <div class="horizontal split right">
+    <div class="background" style="background-image: url(
+    '/images/backgrounds/supporters05.jpg' );">
+      <div class="overlay"></div>
     </div>
-  </div>
-</section>
-<section id="lidworden" class="split container">
-  <div class="left">
-    <div class="wrapped padded">
+    <div class="content">
       <h2>Lid worden?</h2>
-      <p>Cras placerat blandit fringilla. Praesent id urna libero. Curabitur euismod est felis. Nam elementum sapien in turpis lacinia blandit. Integer non sem rhoncus, congue est id, interdum sapien. Fusce arcu urna, mollis ut ultrices nec, mollis ut nulla.</p>
-
-      <a class="button more">lid worden</a>
-    </div>
-  </div>
-  <div class="right background">
-    <div class="overlay"></div>
-  </div>
-</section>
-<section id="social" class="hero">
-  <div class="container overlay blue">
-    <div class="wrapper">
-        <h1>Volg KCBJ online</h1>
-        <p>We zijn actief op zowel Facebook als Twitter.  De laatste nieuwtjes, de recentste foto's, ze verschijnen daar als eerste.</p>
-        <div class="buttons">
-          <a class="button" href="http://www.twitter.com/kcbj"><i class="fa fa-twitter"></i> KCBJ op Twitter</a>
-          <a class="button" href="http://www.facebook.com/kcbj.korfbal"><i class="fa fa-facebook"></i> KCBJ op Facebook</a>
-        </div>
+      <p class="todo">Cras placerat blandit fringilla. Praesent id urna
+      libero. Curabitur euismod est felis. Nam elementum sapien in turpis
+      lacinia blandit. Integer non sem rhoncus, congue est id, interdum sapien.
+      Fusce arcu urna, mollis ut ultrices nec, mollis ut nulla.</p>
+      <div class="buttons left">
+        <a class="button more">lid worden</a>
+      </div>
     </div>
   </div>
 </section>
-<section id="location" class="fullscreen">
-  <div class="container">
-    <div class="wrapper">
-      <h1>Locaties</h1>
-      <p class="center">Korfbal wordt zowel binnen als buiten gespeeld.  KCBJ traint en speelt daarom op verschillende locaties.  Dit zijn de belangrijkste.</p>
-      <ol id="location-list">
-        <!-- {% increment location_count %} -->
-        {% for location_hash in site.data.locations %}
-          {% assign location = location_hash[1] %}
-          {% if location.featured == true %}
-            {% capture location_count %}{% increment location_count %}{% endcapture %}
-            <li data-location-id="{{ location_count }}" 
-                data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
-                data-location-name="{{ location.title }}"
-            >{{ location.title }}</li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-    </div>
+<section id="social" class="hero container nomargin" style="background-image: url(
+'/images/backgrounds/applaus01.jpg' );">
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+      <h1>Volg KCBJ online</h1>
+      <p class="centered">We zijn actief op zowel Facebook als Twitter.  De laatste nieuwtjes, de recentste foto's, ze verschijnen daar als eerste.</p>
+      <div class="buttons">
+        <a class="button" href="http://www.twitter.com/kcbj"><i class="fa fa-twitter"></i> KCBJ op Twitter</a>
+        <a class="button" href="http://www.facebook.com/kcbj.korfbal"><i class="fa fa-facebook"></i> KCBJ op Facebook</a>
+      </div>
   </div>
-  <div id="map"></div>
-  <script>
-    $( document ).ready( function() {
-      L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
-      var map = L.mapbox.map( 'map', 'mapbox.streets', { 'scrollWheelZoom': false, 'maxZoom': 16 } );
-      var locations = [];
+</section>
+<section id="location" class="fullscreen container hero nomargin">
+  <div class="filler">
+    <div class="container">
+      <div class="wrapper">
+        <h1>Locaties</h1>
+        <p class="centered">Korfbal wordt zowel binnen als buiten gespeeld.  KCBJ traint en speelt daarom op verschillende locaties.  Dit zijn de belangrijkste.</p>
+        <ol id="location-list" class="buttons">
+          {% for location_hash in site.data.locations %}
+            {% assign location = location_hash[1] %}
+            {% if location.featured == true %}
+              <li class="button location" 
+                  data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
+                  data-location-name="{{ location.title }}"
+              >{{ location.title }}</li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script>
+      $( document ).ready( function() {
+        L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
+        var map = L.mapbox.map( 'map', 'mapbox.streets', { 'scrollWheelZoom': false, 'maxZoom': 16 } );
+        var locations = [];
 
-      $( '#location-list *[data-location-coordinates]' ).each( function( i ) {
-        var location = L.latLng( $( this ).data( 'location-coordinates' ).split( ',' ) );
-        var marker = L.marker( location, {
-          icon: L.mapbox.marker.icon( {
-            'marker-size': 'large',
-            'marker-symbol': i + 1,
-            'marker-color': '#006699'
-          } )
-        } ).addTo( map );
+        $( '#location-list *[data-location-coordinates]' ).each( function( i ) {
+          var location = L.latLng( $( this ).data( 'location-coordinates' ).split( ',' ) );
+          var marker = L.marker( location, {
+            icon: L.mapbox.marker.icon( {
+              'marker-size': 'large',
+              'marker-symbol': i + 1,
+              'marker-color': '#006699'
+            } )
+          } ).addTo( map );
 
-        $( this ).css( { 'background-image': 'url( "' + marker.options.icon.options.iconUrl + '")', 'cursor': 'pointer' } );
+          $( this ).css( { 'background-image': 'url( "' + marker.options.icon.options.iconUrl + '")', 'cursor': 'pointer' } );
 
-        var popup = L.popup( { 'closeButton': false } ).setLatLng( location ).setContent( $( this ).data( 'location-name' ) );
-        marker.bindPopup( popup );
-        marker.on( 'click', function() { this.openPopup() } );
-        $( this ).click( function() { marker.openPopup() } );
+          var popup = L.popup( { 'closeButton': false } ).setLatLng( location ).setContent( $( this ).data( 'location-name' ) );
+          marker.bindPopup( popup );
+          marker.on( 'click', function() { this.openPopup() } );
+          $( this ).click( function() { marker.openPopup() } );
 
-        console.log( location );
-        locations.push( location );
+          console.log( location );
+          locations.push( location );
+        } );
+
+        var bbox = L.latLngBounds( locations );
+        map.fitBounds( bbox );
       } );
-
-      var bbox = L.latLngBounds( locations );
-      map.fitBounds( bbox );
-    } );
-  </script>
+    </script>
+  </div>
 </section>
 <section id="sponsors" class="container">
   <div class="wrapper">
     <h1 class="title">Sponsors</h1>
-    <ul id="sponsor-list">
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/belfius.png" /></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/bress.png" /></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/debruyn.png" /></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/delhaize.png" /></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/verabo.png" /></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/wit-toreke.png" /></li>
+    <ul class="todo" id="sponsor-list">
+      <li class="sponsor">
+        <a href="#">
+          <img src="/images/sponsors/belfius.png" />
+        </a>
+      </li>
+      <li class="sponsor">
+        <a href="#">
+          <img src="/images/sponsors/bress.png"/>
+        </a>
+      </li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/debruyn.png"
+                                           /></a></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/delhaize.png"
+                                           /></a></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/verabo.png"
+                                           /></a></li>
+      <li class="sponsor"><a href="#"><img src="/images/sponsors/wit-toreke.png"
+                                           /></a></li>
     </ul>
   </div>
 </section>

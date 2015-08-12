@@ -1,68 +1,97 @@
-$header-vert-padding:           $grid-vert-padding * 2;
-$header-inner-height:           $header-height - 2 * $header-vert-padding;
-
 #header {
-  background-color:             #ffffff;
-  # box-shadow:                   0px 0px 4px rgba( 0, 0, 0, .5 );
-  padding:                      $header-vert-padding 0;
-  height:                       $header-height;
-  box-sizing:                   border-box;
-  position:                     relative;
-  z-index:                      200;
+  position:             relative;
+  border-bottom:        1px solid rgba( 255, 255, 255, .2 );
+  z-index:              100;
 }
 
-#header #logo-container {
-  @include flex( 1 1 50% );
-  min-width:                    $header-inner-height;
+#logo-container {
+  margin:               0;
+  padding:              $base-line-height 0 0 0;
+
+  @media screen and (min-width: $grid-min-width ) {
+    padding:              $base-line-height 0;
+  }
 }
 
-#header #logo {
-  display:                      block;
-  height:                       $header-inner-height;
-  width:                        100%;
-  background-image:             url( '/images/logo.svg' );
-  background-position:          left center;
-  background-repeat:            no-repeat;
-  background-size:              contain;
-}
-  
-
-#header #menu {
-  @include flex( 1 1 50% );
-  min-height:                   40rem;
+#logo-container {
+  min-width:            $base-line-height * 3;
 }
 
-@mixin menu( $font-color, $hover-font-color, $direction: flex-end ) {
-  margin:                       0;
-  padding:                      0;
+#logo-container #logo {
+  min-height:           1 * $base-line-height;
+  display:              block;
+  width:                100%;
+  background-size:      contain;
+  background-repeat:    no-repeat;
+  background-position:  left center;
+  text-decoration:      none;
 
-  @include horizontal-flex( nowrap, $direction, baseline, center );
-  
-  li {
-    @include flex( 0 0 auto );
-    display:                      block;
-    margin-left:                  2rem;
+  #logo-text {
+    color:              $darker-gray;
+    font-weight:        $medium-font-weight;
+    font-size:          $large-font-size !important;
+  }
 
-    &.active a {
-      color:                      $hover-font-color;
-    }
+  @media screen and (min-width: $grid-min-width) {
+    min-height:           $base-line-height * 3;
 
-    a {
-      display:                    block;
-      line-height:                $header-inner-height;
-      text-decoration:            none;
-      text-transform:             uppercase;
-      font-weight:                500;
-      color:                      $font-color;
-    }
-
-    a:hover {
-      transition:                 .27s;
-      color:                      $hover-font-color;
+    #logo-text {
+      display:            none;
     }
   }
 }
 
-#header #menu ul {
-  @include menu( $base-font-color, $blue );
+@media screen and (min-width: $grid-min-width) {
+  #logo {
+    background-image:     url( '/images/logo/logo.png' );
+  }
+
+  .svg #logo {
+    background-image:     url( '/images/logo/logo.svg' );
+  }
+
+  .front #logo {
+    background-image:     url( '/images/logo/logo-white.png' );
+  }
+
+  .svg .front #logo {
+    background-image:     url( '/images/logo/logo-white.svg' );
+  }
+
+  .front #menu .menu a {
+    @include link-color( rgba( 255, 255, 255, .8 ), #ffffff );
+    @include light-on-dark;
+  }
+
+  .front .container.fullscreen.first {
+    margin-top:          -5 * $base-line-height;
+  }
+}
+
+#menu {
+  padding:              0;
+  margin:               0;
+
+  @media screen and (min-width: $grid-min-width) {
+    padding:            $base-line-height 0;
+  }
+}
+
+#menu ul {
+  @include ul-menu;
+
+  li.home {
+    position:           absolute;
+    display:            block;
+    right:              $grid-hor-padding / 2;
+    top:                $base-line-height / 2;
+    a { font-size:          $large-font-size; }
+
+    @media screen and (min-width: $grid-min-width) {
+      a { font-size:        $base-font-size; }
+      position:             relative;
+      right:                auto;
+      top:                  auto;
+    }
+  }
 }

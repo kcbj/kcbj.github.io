@@ -3,20 +3,16 @@
 ---
 @charset "utf-8";
 
-// $fa-font-path: '/font';
-// @import 'fontawesome/font-awesome.scss';
-
-
 @import 'normalize';
-@import 'variables';
 
 @import 'bourbon/bourbon';
-
+@import 'variables';
+@import 'mixins';
+@import 'style';
 @import 'grid';
-@import 'base';
-@import 'fullscreen';
-@import 'front';
 @import 'hero';
-@import 'header';
+@import 'buttons';
+@import 'table';
 @import 'footer';
+@import 'header';
 @import 'index';

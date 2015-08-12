@@ -1,27 +1,46 @@
-$dark-gray:        #333333;
-$darker-gray:      #191919;
-$blue:             #006699;
+$gray:                  #666666;
+$dark-gray:             #333333;
+$darker-gray:           #191919;
+$light-gray:            #999999;
+$lighter-gray:          #DCDCDC;
 
-$base-font-family: Roboto, Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-line-height: (22px/16px)*1rem;
-$base-font-color:  $dark-gray;
-$base-font-weight: 300;
+$blue:                  #006699;
 
-$title-font-family: $base-font-family;
+$sans-serif-font-family: Roboto, Helvetica, Arial, sans-serif;
 
-$large-font-size:   1.25rem;
-$xlarge-font-size:  $large-font-size * 1.25;
-$xxlarge-font-size: $xlarge-font-size * 1.25;
-$xxxlarge-font-size: $xxlarge-font-size * 1.25;
-$xxxxlarge-font-size: $xxxlarge-font-size * 1.25 * 1.25;
+$base-font-family:      $sans-serif-font-family; 
+$base-font-size:        16px;
+$base-line-height:      ( 22px / $base-font-size ) * 1rem;
+$base-font-color:       $dark-gray;
+$base-font-weight:      300;
 
-$large-line-height: $base-line-height;
-$xlarge-line-height: 2 * $base-line-height;
-$xxlarge-line-height: 2 * $base-line-height;
-$xxxlarge-line-height: 3 * $base-line-height;
+$medium-font-weight:    400;
+$bold-font-weight:      500;
+$light-font-weight:     100;
+
+$title-font-family:     $base-font-family;
+
+$large-font-size:       1.25rem;
+$xlarge-font-size:      $large-font-size * 1.25;
+$xxlarge-font-size:     $xlarge-font-size * 1.25;
+$xxxlarge-font-size:    $xxlarge-font-size * 1.25;
+$xxxxlarge-font-size:   $xxxlarge-font-size * 1.25 * 1.25;
+
+$large-line-height:     $base-line-height;
+$xlarge-line-height:    $base-line-height * 1.5;
+$xxlarge-line-height:   2 * $base-line-height;
+$xxxlarge-line-height:  2.5 * $base-line-height;
 $xxxxlarge-line-height: 3 * $base-line-height;
 
-$small-font-size:   (1rem/1.25);
+$small-font-size:       (1rem/1.25);
 
-$header-height:     $base-line-height * 5; 
+$header-height:         $base-line-height * 5; 
+
+$grid-hor-padding:      2rem;
+$grid-vert-padding:     $base-line-height;
+
+$grid-min-width:        760px;
+$grid-max-width:        84rem;
+$grid-text-width:       $grid-max-width * .60;
+
+$hero-height:           $base-line-height * 20;

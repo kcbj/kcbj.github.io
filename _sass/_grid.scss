@@ -1,109 +1,145 @@
-$grid-max-width:                80rem;
-$grid-col-count:                12;
-
-$grid-col-padding:              2rem;
-$grid-vert-padding:             $base-line-height / 2;
-
-$grid-side-margin:              5%;
-$grid-col-width:                100% / $grid-col-count;
-
-@function column-width( $columns ) {
-  // @return $columns * ( $grid-col-width + $grid-col-padding * 2 )
-  @return $columns * $grid-col-width;
-}
-
-@mixin base-flex( $wrap, $justify-content, $align-items, $align-content ) {
-  @include flex-wrap( $wrap );
-  @include justify-content( $justify-content );
-  @include align-items( $align-items );
-  @include align-content( $align-content );
-}
-
-@mixin vertical-flex( $wrap: wrap, $justify-content: center, $align-items: stretch, $align-content: center ) {
-  @include display( flex );
-  @include flex-direction( column );
-  @include base-flex( $wrap, $justify-content, $align-items, $align-content );
-}
-
-@mixin horizontal-flex( $wrap: wrap, $justify-content: space-between, $align-items: stretch, $align-content: center ) {
-  @include display( flex );
-  @include flex-direction( row );
-  @include base-flex( $wrap, $justify-content, $align-items, $align-content );
-}
-
-@mixin container {
-  width:                        100%;
-  padding:                      0;
-  margin:                       0;
-  clear:                        both;
-
-  @include horizontal-flex( wrap, center, stretch, flex-start );
-
-  .wrapper {
-    @include wrapper;
-  }
-
-  &.split {
-    @include split-container;
-  }
-}
-
-@mixin wrapper {
-  @include flex( 0 0 100% - 2 * $grid-side-margin );
-  max-width:                    $grid-max-width;
-
-  @include vertical-flex;
-
-  &.horizontal {
-    @include horizontal-wrapper;
-  }
-}
-
-@mixin horizontal-wrapper {
-  @include horizontal-flex;
-}
-
-@mixin split-container {
-  @include horizontal-flex( wrap, flex-start, stretch, flex-start );
-
-  .left, .right {
-    @include flex( 1 1 $grid-max-width / 2 );
-    min-width:                  $grid-col-count * 6;
-
-    @include horizontal-flex( nowrap, flex-start, stretch, flex-start );
-
-    .wrapped {
-      @include flex( 1 1 100% - 2 * $grid-side-margin );
-      max-width:                   $grid-max-width / 2;
-
-      &.padded {
-        box-sizing: border-box;
-        padding:                    $grid-vert-padding * 4 $grid-col-padding * 4;
-      }
-    }
-  }
-
-  .left {
-    @include justify-content( flex-end );
-  }
-
-  .right .wrapped {
-    margin-right:                $grid-side-margin;
-
-    .padded {
-      // padding-right:              0;
-    }
-  }
-
-  .left .wrapped {
-    margin-left:                 $grid-side-margin;
-
-    .padded {
-      // padding-left:               0;
-    }
-  }
-}
-
 .container {
-  @include container;
+  @include flex-container( row, wrap, center, stretch, center );
+  width:                100% !important;
+  margin:               0;
+  position:             relative;
+  z-index:              50;
+}
+
+.container .wrapper {
+  position:             relative;
+  z-index:              100;
+  @include flex( 1 1 auto );
+  @include flex-container( column, wrap, flex-start, stretch, center );
+
+  padding:              0 $grid-hor-padding;
+  max-width:            $grid-max-width;
+  box-sizing:           border-box;
+
+  .text {
+    max-width:          $grid-text-width;
+    width:              100%;
+    margin:             0 auto;
+  }
+}
+
+.container .horizontal {
+  @include flex( 1 1 auto );
+  @include flex-container( column, wrap, flex-start, stretch, center );
+
+  @media screen and ( min-width: $grid-min-width ) {
+    @include flex-container( row, wrap, center, stretch, center );
+
+    &.spread {
+      @include justify-content( space-between );
+    }
+
+    & > * {
+      @include flex( 1 1 auto );
+    }
+  }
+}
+
+.container .horizontal .background {
+  max-width:              none;
+  min-height:             $hero-height;   
+  @include background;
+
+  @media screen and ( min-width: $grid-min-width ) {
+    min-height:             50vh;
+  }
+
+  @include flex( 0 0 50% );
+  overflow-x:             hidden;
+  position:               relative;
+
+  .overlay {
+    max-width:            100%;
+  }
+}
+
+
+.container .horizontal .content {
+  @include order( 0 );
+  max-width:                $grid-max-width / 2;
+  @include flex( 1 1 50% );
+  box-sizing:               border-box;
+}
+
+.container .horizontal .content {
+  padding:                     $base-line-height $grid-hor-padding;
+}
+
+.container .horizontal.left {
+  @include justify-content( flex-start );
+}
+
+.container .horizontal.right {
+  @include justify-content( flex-end );
+}
+
+@media screen and ( min-width: $grid-min-width ) {
+  .container .horizontal.left .content {
+    padding:                  $base-line-height * 3 $grid-hor-padding * 5 $base-line-height $grid-hor-padding * 2;
+  }
+
+  .container .horizontal.left .background {
+    @include order( -1 );
+  }
+
+  .container .horizontal.right .content {
+    padding:                  $base-line-height * 3 $grid-hor-padding * 2 $base-line-height $grid-hor-padding * 5;
+  }
+
+  .container .horizontal.right .background {
+    @include order( 1 );
+  }
+}
+
+// Currently container is flex-direction: row, fullscreen
+// could be made nicer by switching to flex-direction: column
+.container.fullscreen {
+  min-height:             100vh;
+  @include align-content( stretch );
+  margin:                 $base-line-height * 3 0;
+  padding:                0;
+
+  & > * {
+    width:                100%;
+  }
+
+  .filler {
+    @media screen and (min-width: $grid-min-width) {
+      position:             absolute;
+      top:                  0;
+      bottom:               0;
+      left:                 0;
+      right:                0;
+    }
+
+    @include flex-container( column, no-wrap, space-between, stretch, center );
+    // @include display( flex );
+    // @include flex-direction( column );
+    // @include justify-content( space-between );
+    // @include align-items( stretch );
+    // @include align-content( center );
+
+    & > * {
+      width:              100%;
+    }
+  }
+}
+
+.overlay {
+  background-color:       rgba( 0, 0, 0, .6 );
+  position:               absolute;
+  top:                    0;
+  right:                  0;
+  bottom:                 0;
+  left:                   0;
+  z-index:                90;
+
+  &.blue {
+    background-color:     transparentize( $blue, .2 );
+  }
 }

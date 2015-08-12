@@ -1,0 +1,175 @@
+---
+layout: default
+---
+<section class="first container hero background nomargin" style="background-image: url( '/images/backgrounds/supporters01.jpg' );">
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+    <h1>Info over KCBJ</h1>
+      <div class="text">
+    <p class="centered">
+    KCBJ vzw is de officiële naam van de club. Momenteel telt onze club meer dan 150 actieve leden, en dat aantal is in stijgende lijn. Onze club is voor haar financiële middelen volledig afhankelijk van lidgeld, inkomsten uit activiteiten en sponsoring.</p>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div id="ploegen" class="wrapper">
+    <div class="text">
+      <h1>Ploegen</h1>
+      <p class="centered">Onze club telt verschillende ploegen.</p>
+      <table class="full">
+        <thead>
+          <tr>
+            <th>Ploeg</th>
+            <th>Leeftijden</th>
+            <th>Beschrijving</th>
+            <th>Lidgeld {{site.data.membershipfee.season }}</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for team_hash in site.data.teams %}
+        {% assign team = team_hash[1] %}
+          <tr class="team">
+            <td class="name key">{{ team.name }}</td>
+            <td class="age">{{ team.ages }}</td>
+            <td class="description">{{ team.description }}</td>
+            {% assign memberships = site.data.membershipfee.teams | where: "team", team_hash[0] %}
+            <td class="membership-fee">{{ memberships[0].fee }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+      <p class="todo">Indeling in de ploegen gebeurd op basis van ....</p>
+      <p class="todo">Tabel schaalt niet op mobieltje</p>
+    </div>
+  </div>
+</div>
+<div class="hero container" style="background-image: url( '/images/backgrounds/supporters02.jpg' );">
+  <div class="overlay blue"></div>
+</div>
+<div class="container">
+  <div id="lidworden" class="wrapper">
+    <div class="text">
+      <h1>Lid worden</h1>
+
+      <h2>Praktische info</h2>
+
+      <p>Om lid te worden moet je een aansluitingskaart invullen en een pasfoto
+      binnenbrengen. Daarnaast moet je ook een medische getuigschrift laten
+      invullen door je huisdokter. Aansluitingskaart en medisch getuigschrift
+      kan je vragen aan je trainer of begeleider. Als alles is ingevuld kan je
+      het samen terug afgeven aan je trainer of begeleider.</p> <p>Hiermee kan
+      een licentie worden aangevraagd, het opstellen van de licentie duurt
+      ongeveer 3 weken. Deze licentie is verplicht om deel te nemen aan
+      wedstrijden. Vanaf de cadetten (10 jarigen) worden deze licenties door de
+      spelers zelf bijgehouden.</p>
+
+      <p>Leden die lid worden <em>na 1 januari</em> betalen slechts <em>de
+        helft</em> van het lidgeld voor de rest van het seizoen.</p>
+
+      <h3>Rekeningnummer</h3>
+
+      <p>Het rekeningnummer waarop de lidgelden gestort mogen worden is
+      <strong>734-0151874-78</strong>. <em>Vergeet niet de naam van het in
+      te schrijven lid te vermelden bij de overschrijving.</em></p>
+
+      <h3>Mutualiteiten</h3>
+
+      <p>Verschillende mutualiteiten betalen het lidgeld (of een gedeelte
+      ervan) terug. Op onze website vind je voor de grootste mutualiteiten, een
+      gedeeltelijk ingevuld formulier. Je kan ev. ook een formulier vragen aan
+      je mutualiteit. Geef dit, volledig ingevulde, formulier aan je trainer
+      of begeleider. Zij zorgen ervoor dat het ondertekend en afgestempeld
+      wordt en bezorgen het terug. Daarna bezorg je het aan je
+      mutualiteit.</p>
+
+      <p class="todo">Link naar formulieren</p>
+
+        <h2>Eerste training</h2>
+        <p>Je hebt de mogelijkheid om gratis aan 3 trainingen deel te nemen. Tijdens deze trainingen ben je verzekerd door de Koninklijke Belgische Korfbal Bond. Daarna dient het lidgeld betaald te worden.</p>
+        <p>Je hebt niet veel nodig om mee te komen trainen. We verwachten enkel sportieve kledij en veel zin om mee te doen.</p>
+        <p>Als je begint tijdens het zaalseizoen heb je sportschoenen nodig die geen strepen maken op de sportvloer. Je herkent die aan het non-marking-label. De meeste korfballers spelen met hoge sportschoenen, dit om de enkels beter te beschermen.</p>
+        <p>Buiten wordt er gespeeld met voetbalschoenen, de toppen onder aan de schoenen voorkomen dat je uitglijdt als het gras nat is. Vraag gerust aan trainers of begeleiders waar je best op let bij de aankoop van schoenen. De eerste trainingen kan je eventueel ook schoenen lenen. We hebben verschillende maten in de kantine.</p>
+        <p>Tenslotte breng je best een drinkbus mee, want van sporten krijg je dorst!</p>
+
+        <div class="buttons right">
+          <a class="button more" href="/agenda#trainingen">Wanneer trainen we <i
+                            class="fa fa-chevron-right suffix"></i></a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="hero container" style="background-image: url( '/images/backgrounds/supporters05.jpg' );"><div class="overlay blue"></div></div>
+<div class="container">
+  <div class="wrapper">
+    <div class="text">
+      <h1>Structuur van de club</h1>
+
+      <p class="todo">Een club bestaat uit vele onderdelen...</p>
+
+      <table class="full">
+        <thead>
+          <tr>
+            <th>Naam</th>
+            <th>Beschrijving</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for comitee in site.data.structure %}
+          <tr>
+            <td class="key">{{ comitee.name }}</td>
+            <td>{{ comitee.description }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <p class="todo">Ben je geïnteresseerd om zelf de handen uit de mouwen te
+      steken.  Aarzel dan niet om iemand te contacteren.  HOE?</p>
+    </div>
+  </div>
+</div>
+<div class="hero container" style="background-image: url(
+'/images/backgrounds/supporters03.jpg' );"><div class="overlay"></div></div>
+<div class="container">
+  <div class="wrapper">
+    <div class="text">
+      <h1>Sponsors</h1>
+      <p>Beste sponsor,</p>
+
+      <p>Korfbalclub KCBJ leeft en bloeit dankzij een enthousiaste groep jonge
+      mensen. Enthousiast door de sportieve gedrevenheid, de clubwerking, de
+      vriendschap, het gevoel iets te realiseren. Dit enthousiasme kan afstralen
+      op uw firma. U kan uw naam verbinden aan dit enthousiasme.</p>
+
+      <p>Een foto van een sportclub met uw merk/naam op hun shirt geeft altijd
+      een positief imago. Wij zetten ons beste korfbal-beentje voor om een goede
+      ambassadeur te zijn voor U. Alle moderne communicatiemiddelen worden in de
+      strijd geworpen. Shirtreclame, logos op de korf, in de kantine, bij
+      festiviteiten, in ons tijdschrift, op onze website,...</p>
+
+      <p>De impact is zowel lokaal als nationaal. Want de ganse streek rond
+      Betekom en Begijnendijk weet echt wel wat korfbal is. Maar onze ploegen
+      spelen nationaal, met een grote concentratie rond Antwerpen.</p>
+
+      <p>We zouden je graag inwijden in de sfeer van de enige gemengde
+      ploegsport in België. Kom naar een wedstrijd kijken of kijk naar de foto’s
+      en beeldverslagen op onze site www.kcbj.be</p>
+
+      <p>KCBJ is bekend in de korfbalwereld. Ook sportief straalt dit af. Wij
+      spelen onze zaalcompetitie in 2de nationaal. In 2012 organiseerden wij het
+      Euregiotornooi met deelname van Duitse en Nederlandse ploegen. Het
+      volgende tornooi kan uw naam dragen!</p>
+
+      <p>Kies uw sponsoring op maat. Sponsor een ploeg, reclame, een bal, een
+      korf, ... . U zorgt ervoor dat 140 jongeren trots hun sport kunnen
+      beoefenen en tegelijkertijd uw naam bekendheid geven.</p>
+
+      <p class="todo">Deze tekst up to date maken en linken naar sponsor
+      brochure?</p>
+
+      <p style="text-align: right">Hugo Claes<br />Voorzitter KCBJ</p>
+    </div>
+  </div>
+</div>
+

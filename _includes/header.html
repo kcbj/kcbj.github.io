@@ -1,10 +1,14 @@
 <header id="header" class="container" role="banner">
-  <div class="horizontal wrapper">
-    <div id="logo-container">
-      <a href="/" rel="home" id="logo"></a>
+  <div class="wrapper">
+    <div class="spread horizontal">
+      <div id="logo-container">
+        <a href="/" rel="home" id="logo">
+          <div id="logo-text">KCBJ</div>
+        </a>
+      </div>
+      <nav id="menu" role="menu">
+        {% include menu.html %}
+      </nav>
     </div>
-    <nav id="menu" role="menu">
-      {% include menu.html %}
-    </nav>
   </div>
 </header>

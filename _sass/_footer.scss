@@ -1,44 +1,39 @@
 #footer {
-  @include container;
-  background-color:           $dark-gray;
-  color:                      #ffffff;
-
-  .identity {
-    padding:                  $header-vert-padding 0;
-    @include flex( 1 1 25% );
-    text-decoration:          none;
-    font-weight:              400;
-    color:                    rgba( 255, 255, 255, .5 );
-
-    &:hover {
-      color:                  #ffffff;
-    }
-  }
-
-  #footer-menu {
-    @include flex( 1 1 50% );
-    .menu {
-      @include menu( rgba( 255, 255, 255, .5 ), #ffffff, center );
-
-      li a {
-        font-size:            $small-font-size;
-      }
-    }
-  }
-
-  #social-menu {
-    @include flex( 1 1 25% );
-    .menu {
-      @include menu( rgba( 255, 255, 255, .5 ), #ffffff );
-
-      li a {
-        font-size:              $large-font-size;
-      }
-    }
-  }
+  margin-top:           $base-line-height * 3;
+  background-color:     $dark-gray;
+  @include light-on-dark;
 
   a {
-    color:                    #ffffff;
-    text-decoration:          none;
+    text-decoration:    none;
+    @include link-color( rgba( 255, 255, 255, .3 ) !important, #ffffff !important );
+  }
+
+  @media screen and (min-width: $grid-min-width) {
+    padding:              $base-line-height * 1.5 0;
+  }
+}
+
+#footer .identity {
+  padding:              $base-line-height 0;
+  font-weight:          $medium-font-weight;
+  @include link-color( #ffffff !important, #ffffff !important );
+  text-align:           center;
+  display:              none;
+
+  @media screen and (min-width: $grid-min-width) {
+    text-align:         left;
+    display:            block;
+  }
+}
+
+#footer-menu ul {
+  @include ul-menu( center );
+}
+
+#social-menu ul {
+  @include ul-menu;
+
+  a {
+    font-size:          $large-font-size !important;
   }
 }

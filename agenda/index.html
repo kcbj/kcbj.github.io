@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="wrapper">
+    <h1>Agenda</h1>
+    {% for event in site.data.events | sort 'start' %}
+    <div class="event">
+      <h3 class="title">{{ event.title }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+</div>

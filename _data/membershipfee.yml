@@ -1,0 +1,23 @@
+---
+season: 2015 - 2016
+teams:
+  - team: u8
+    fee: €70
+  - team: u10
+    fee: €70
+  - team: u12
+    fee: €90
+  - team: u14
+    fee: €90
+  - team: u16
+    fee: €90
+  - team: u19
+    fee: €90
+  - team: senioren
+    fee: €100
+  - team: gewestelijken
+    fee: €80
+  - team: recreanten
+    fee: €40
+  - team: adherenten
+    fee: €15

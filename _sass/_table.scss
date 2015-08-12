@@ -1,0 +1,35 @@
+table.full {
+  width:                      100%;
+  margin:                     $base-line-height 0;
+
+  td, th {
+    line-height:              $base-line-height;
+    padding:                  $base-line-height / 2 $grid-hor-padding;
+    text-align:               left;
+
+    &:first-child {
+      padding-left:           0;
+    }
+
+    &:last-child {
+      padding-right:          0;
+    }
+  }
+
+  td {
+    border-bottom:            1px solid $light-gray;
+
+    &.key {
+      color:                  $darker-gray;
+      font-weight:            $medium-font-weight;
+    }
+  }
+
+  th {
+    border-bottom:            1px solid $dark-gray;
+    text-transform:           uppercase;
+    color:                    $darker-gray;
+    font-weight:              $bold-font-weight;
+    font-size:                $small-font-size;
+  }
+}
