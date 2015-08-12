@@ -100,6 +100,7 @@
 // could be made nicer by switching to flex-direction: column
 .container.fullscreen {
   min-height:             100vh;
+  box-sizing:             border-box;
   @include align-content( stretch );
   margin:                 $base-line-height * 3 0;
   padding:                0;
@@ -127,6 +128,10 @@
     & > * {
       width:              100%;
     }
+  }
+
+  &.first {
+    padding-top:          5 * $base-line-height;
   }
 }
 
