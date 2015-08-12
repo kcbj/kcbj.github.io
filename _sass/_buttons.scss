@@ -48,12 +48,13 @@ $hbackground: $background ) {
 .buttons {
   margin:                     $base-line-height 0;
 
-  @include flex-container( column, no-wrap, flex-start, stretch, center );
+  @include flex-container( column, no-wrap, flex-start, center, center );
 
   .button {
     margin-top:              $base-line-height;
     text-align:              center;
     @include flex( 0 1 auto );
+    max-width:               12rem;
 
     &:first-child {
       margin-top:             0;
