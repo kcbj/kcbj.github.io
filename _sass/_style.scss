@@ -19,10 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family:          $title-font-family;
   margin:               0;
   padding:              0;
+  text-align:           center;
 }
 
 h1 {
-  text-align:           center;
   font-weight:          $base-font-weight;
   font-size:            $xxlarge-font-size;
   line-height:          $xxlarge-line-height;
@@ -30,12 +30,12 @@ h1 {
 }
 
 h2 {
-  text-align:           left;
   text-transform:       uppercase;
   font-weight:          $medium-font-weight;
   font-size:            $large-font-size;
   line-height:          $large-line-height;
   margin:               $base-line-height * 1.75 0 $base-line-height * .50 0;
+
 }
 
 h3 {
@@ -44,6 +44,12 @@ h3 {
   font-size:            $base-font-size;
   line-height:          $base-line-height;
   margin:               $base-line-height * 1.75 0 $base-line-height * .25 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @media screen and (min-width: $grid-min-width) {
+    text-align:         left;
+  }
 }
 
 
