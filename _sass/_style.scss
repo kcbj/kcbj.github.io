@@ -46,7 +46,7 @@ h3 {
   margin:               $base-line-height * 1.75 0 $base-line-height * .25 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   @media screen and (min-width: $grid-min-width) {
     text-align:         left;
   }
