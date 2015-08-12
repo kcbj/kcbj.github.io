@@ -65,58 +65,54 @@ layout: front
       </div>
   </div>
 </section>
-<section id="location" class="fullscreen container hero nomargin">
-  <div class="filler">
-    <div class="container">
-      <div class="wrapper">
-        <h1>Locaties</h1>
-        <p class="centered">Korfbal wordt zowel binnen als buiten gespeeld.  KCBJ traint en speelt daarom op verschillende locaties.  Dit zijn de belangrijkste.</p>
-        <ol id="location-list" class="buttons">
-          {% for location_hash in site.data.locations %}
-            {% assign location = location_hash[1] %}
-            {% if location.featured == true %}
-              <li class="button location" 
-                  data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
-                  data-location-name="{{ location.title }}"
-              >{{ location.title }}</li>
-            {% endif %}
-          {% endfor %}
-        </ol>
-      </div>
-    </div>
-    <div id="map"></div>
-    <script>
-      $( document ).ready( function() {
-        L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
-        var map = L.mapbox.map( 'map', 'mapbox.streets', { 'scrollWheelZoom': false, 'maxZoom': 16 } );
-        var locations = [];
-
-        $( '#location-list *[data-location-coordinates]' ).each( function( i ) {
-          var location = L.latLng( $( this ).data( 'location-coordinates' ).split( ',' ) );
-          var marker = L.marker( location, {
-            icon: L.mapbox.marker.icon( {
-              'marker-size': 'large',
-              'marker-symbol': i + 1,
-              'marker-color': '#006699'
-            } )
-          } ).addTo( map );
-
-          $( this ).css( { 'background-image': 'url( "' + marker.options.icon.options.iconUrl + '")', 'cursor': 'pointer' } );
-
-          var popup = L.popup( { 'closeButton': false } ).setLatLng( location ).setContent( $( this ).data( 'location-name' ) );
-          marker.bindPopup( popup );
-          marker.on( 'click', function() { this.openPopup() } );
-          $( this ).click( function() { marker.openPopup() } );
-
-          console.log( location );
-          locations.push( location );
-        } );
-
-        var bbox = L.latLngBounds( locations );
-        map.fitBounds( bbox );
-      } );
-    </script>
+<section id="location" class="container hero nomargin">
+  <div class="wrapper">
+    <h1>Locaties</h1>
+    <p class="centered">Korfbal wordt zowel binnen als buiten gespeeld.  KCBJ traint en speelt daarom op verschillende locaties.  Dit zijn de belangrijkste.</p>
+    <ol id="location-list" class="buttons">
+      {% for location_hash in site.data.locations %}
+        {% assign location = location_hash[1] %}
+        {% if location.featured == true %}
+          <li class="button location" 
+              data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
+              data-location-name="{{ location.title }}"
+          >{{ location.title }}</li>
+        {% endif %}
+      {% endfor %}
+    </ol>
   </div>
+  <div id="map"></div>
+  <script>
+    $( document ).ready( function() {
+      L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
+      var map = L.mapbox.map( 'map', 'mapbox.streets', { 'scrollWheelZoom': false, 'maxZoom': 16 } );
+      var locations = [];
+
+      $( '#location-list *[data-location-coordinates]' ).each( function( i ) {
+        var location = L.latLng( $( this ).data( 'location-coordinates' ).split( ',' ) );
+        var marker = L.marker( location, {
+          icon: L.mapbox.marker.icon( {
+            'marker-size': 'large',
+            'marker-symbol': i + 1,
+            'marker-color': '#006699'
+          } )
+        } ).addTo( map );
+
+        $( this ).css( { 'background-image': 'url( "' + marker.options.icon.options.iconUrl + '")', 'cursor': 'pointer' } );
+
+        var popup = L.popup( { 'closeButton': false } ).setLatLng( location ).setContent( $( this ).data( 'location-name' ) );
+        marker.bindPopup( popup );
+        marker.on( 'click', function() { this.openPopup() } );
+        $( this ).click( function() { marker.openPopup() } );
+
+        console.log( location );
+        locations.push( location );
+      } );
+
+      var bbox = L.latLngBounds( locations );
+      map.fitBounds( bbox );
+    } );
+  </script>
 </section>
 <section id="sponsors" class="container">
   <div class="wrapper">

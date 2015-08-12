@@ -2,6 +2,7 @@
   margin-top:           $base-line-height * 3;
   background-color:     $dark-gray;
   @include light-on-dark;
+  font-family:          $sans-serif-font-family;
 
   a {
     text-decoration:    none;
