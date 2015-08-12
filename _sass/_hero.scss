@@ -36,17 +36,24 @@
   }
 
   .video {
-    position:             absolute;
-    top:                  0;
-    left:                 0;
-    right:                0;
-    bottom:               0;
-    z-index:              60;
-    overflow:             hidden;
+    display:              none;
+  }
 
-    video {
-      min-width:            100%;
-      min-height:           100%;
+  @media screen and (min-width: $grid-min-width) {
+    .video {
+      position:             absolute;
+      top:                  0;
+      left:                 0;
+      right:                0;
+      bottom:               0;
+      z-index:              60;
+      overflow:             hidden;
+      display:              block;
+
+      video {
+        min-width:            100%;
+        min-height:           100%;
+      }
     }
   }
 
