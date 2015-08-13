@@ -2,47 +2,48 @@ u8:
   name: U8
   ages: laatste kleuterklas tot en met 2de leerjaar
   list: true
-  description: Lorem ipsum dolor est
+  description: recreatieve ploeg voor de allerkleinsten
 u10:
   name: U10
   ages: 3de en 4de leerjaar
   list: true
-  description: Lorem ipsum dolor est
+  description: recreatieve jeugdploeg
 u12:
   name: U12
   ages: 5de en 6de leerjaar
   list: true
-  description: Lorem ipsum dolor est
+  description: recreatieve/competitieve jeugdploeg
 u14:
   name: U14
   ages: 1ste en 2de middelbaar
   list: true
-  description: Lorem ipsum dolor est
+  description: recreatieve/competitieve jeugdploeg
 u16:
   name: U16
   ages: 3de en 4de middelbaar
   list: true
-  description: Lorem ipsum dolor est
+  description: recreatieve/competitieve jeugdploeg
 u19:
   name: U19
   ages: 5de, 6de middelbaar en 1ste jaar hoger onderwijs
   list: true
-  description: Lorem ipsum dolor est
+  description: recreatieve/competitieve jeugdploeg
 senioren:
   name: Senioren
   ages: vanaf 16 jaar
   list: true
-  description: Lorem ipsum dolor est
+  description: zuiver competititie-gedreven
 gewestelijken:
   name: Gewestelijken
   ages: vanaf 16 jaar
   list: true
-  description: Lorem ipsum dolor est
+  description: sporten in regelmatig competitieverband
 recreanten:
   name: Recreanten
   ages: vanaf 16 jaar
   list: true
-  description: Lorem ipsum dolor est
+  description: occasioneel sporten voor het plezier
 adherenten:
   name: Adherenten
   list: false
+  description: niet sportend lid
