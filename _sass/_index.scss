@@ -1,4 +1,4 @@
-#location {
+body.index #location {
   background-color:                       $dark-gray;
   @include light-on-dark;
   color:                                  #ffffff;
@@ -46,7 +46,7 @@
   }
 }
 
-#sponsor-list {
+body.index #sponsor-list {
   @include reset-list;
   @include flex-container( column, no-wrap, flex-start, stretch, center );
 
