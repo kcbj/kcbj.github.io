@@ -9,10 +9,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kcbj.be" # the base hostname & protocol for your site
 timezone: Europe/Brussels
 
-# Exclude our todo list and instructions
-# exclude:
-#  - TODO.md
-#  - /images/video/instructions.md
+exclude:
+  - TODO.md
+  - /images/video/instructions.md
+  - /images/backgrounds/originals
+  - /images/backgrounds/backgrounds.rb
+  - /Gemfile
+  - /Gemfile.lock
 
 # Build settings
 markdown: kramdown

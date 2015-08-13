@@ -1,0 +1,71 @@
+$background-folder: '/images/backgrounds/';
+
+@function bp( $name, $suffix: "" ) {
+  @return $background-folder + $name + "-" + $suffix + '.jpg';
+}
+
+@mixin background-image( $name ) {
+  background-image:         url( bp( $name, 'mobile' ) );
+
+  @include hidpi( 1.5 ) {
+    background-image:       url( bp( $name, 'mobile@2x' ) );
+  }
+
+  @media screen and (min-width: 760px) {
+    background-image:       url( bp( $name, 'large' ) );
+
+    @include hidpi( 1.5 ) {
+      background-image:     url( bp( $name, 'large@2x' ) );
+    }
+  }
+
+  @media screen and (min-width: 1520px) {
+    background-image:       url( bp( $name, 'orig' ) );
+  }
+}
+
+
+/******************************************************************************
+ INDEX
+******************************************************************************/
+
+body.index {
+  #welcome {
+    @include background-image( 'supporters03' );
+  }
+
+  #trainingen .background {
+    @include background-image( 'jeugd02' );
+  }
+
+  #lidworden .background {
+    @include background-image( 'supporters05' );
+  }
+
+  #social {
+    @include background-image( 'applaus01' );
+  }
+}
+
+/******************************************************************************
+ INFO
+******************************************************************************/
+
+body.info {
+
+  #welcome {
+    @include background-image( 'supporters01' );
+  }
+
+  #first-divider {
+    @include background-image( 'supporters02' );
+  }
+
+  #second-divider {
+    @include background-image( 'supporters05' );
+  }
+
+  #third-divider {
+    @include background-image( 'supporters03' );
+  }
+}

@@ -1,9 +1,8 @@
 ---
-layout: front
+layout: default
+class: front index
 ---
-<section id="welcome" class="first fullscreen jumbo hero container nomargin"
-                      style="background-image: url(
-                      '/images/backgrounds/supporters03.jpg' );">
+<section id="welcome" class="first fullscreen jumbo hero container nomargin">
   <div class="video">
     <video autoplay loop>
       <source src="/images/video/video-home.webm" type="video/webm" />
@@ -21,8 +20,7 @@ layout: front
 </section>
 <section id="trainingen" class="container">
   <div class="horizontal split left">
-    <div class="background" style="background-image: url(
-    '/images/backgrounds/jeugd02.jpg' );">
+    <div class="background">
       <div class="overlay"></div>
     </div>
     <div class="content">
@@ -39,8 +37,7 @@ layout: front
 </section>
 <section id="lidworden" class="container">
   <div class="horizontal split right">
-    <div class="background" style="background-image: url(
-    '/images/backgrounds/supporters05.jpg' );">
+    <div class="background">
       <div class="overlay"></div>
     </div>
     <div class="content">
@@ -55,8 +52,7 @@ layout: front
     </div>
   </div>
 </section>
-<section id="social" class="hero container nomargin" style="background-image: url(
-'/images/backgrounds/applaus01.jpg' );">
+<section id="social" class="hero container nomargin">
   <div class="overlay blue"></div>
   <div class="wrapper">
       <h1>Volg KCBJ online</h1>
@@ -106,8 +102,6 @@ layout: front
         marker.bindPopup( popup );
         marker.on( 'click', function() { this.openPopup() } );
         $( this ).click( function() { marker.openPopup() } );
-
-        console.log( location );
         locations.push( location );
       } );
 
