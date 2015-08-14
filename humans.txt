@@ -1,0 +1,15 @@
+/* TEAM */
+Chef: Rutger Claes
+Contact: webmaster [at] kcbj.be
+Site: www.rutgerclaes.be
+Twitter: @rutgerclaes
+Github: http://github.com/rutgerclaes
+From: Leuven, Belgium
+
+/* SITE */
+Last update: 
+Language: Dutch
+Doctype: HTML5
+Standards: HTML5, CSS3, Microformats
+Components: normalize.css, bourbon, modernizr, Google Fonts, FontAwesome, jQuery, MapBox
+Software: mvim, jekyll, sass, Github Pages

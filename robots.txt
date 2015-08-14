@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /downloads/files
+Disallow: /images/sponsors
+Disallow: /images/backgrounds
+Disallow: /images/video
+Disallow: /images/ploegen
