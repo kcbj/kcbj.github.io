@@ -1,0 +1,76 @@
+---
+layout: default
+class: media
+---
+<div class="container">
+  <div class="wrapper">
+    <h1>Foto's en video's van KCBJ</h1>
+
+    <div class="horizontal" id="external-media">
+      <div class="column" id="flickr">
+        <div class="icon-head">
+          <i class="fa fa-flickr"></i>
+        </div>
+        <h2>Flickr</h2>
+
+        <p>Alle foto's van KCBJ worden verzameld op Flickr.  Daar vind je de
+        laatste foto's, maar ook een hoop foto's uit de oude doos.</p>
+
+        <div class="buttons">
+          <a class="button more" href="http://www.flickr.com/photos/kcbj">
+            KCBJ op Flickr
+          </a>
+        </div>
+      </div>
+      <div class="column" id="vimeo">
+        <div class="icon-head">
+          <i class="fa fa-vimeo"></i>
+        </div>
+        <h2>Vimeo</h2>
+
+        <p>Video's komen op Vimeo.  Je vindt er samenvattingen van wedstrijden,
+        maar ook bijvoorbeeld video's van het jaarfeest.</p>
+
+        <div class="buttons">
+          <a class="button more" href="http://www.flickr.com/photos/kcbj">
+            KCBJ op Vimeo
+          </a>
+        </div>
+      </div>
+      <div class="column" id="facebook">
+        <div class="icon-head">
+          <i class="fa fa-facebook"></i>
+        </div>
+        <h2>Facebook</h2>
+
+        <p>Wanneer we nieuwe video's of foto's toegestuurd krijgen plaatsen we
+        die behalve op Flickr of Vimeo ook soms op Facebook.  Ook daar kan je
+        een hoop foto's en video's van onze club vinden.</p>
+
+        <div class="buttons">
+          <a class="button more" href="http://www.flickr.com/photos/kcbj">
+            KCBJ op Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hero container" id="ploegen">
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+    <h1>Ploeg foto's {{site.data.team_pictures.season}}</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <ul id="ploegen-fotos">
+      {% for team in site.data.team_pictures.teams %}
+      <li class="team">
+        <div class="picture" style="background-image: url( '{{team.picture}}' );"></div>
+        <div class="name">{{team.name}}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

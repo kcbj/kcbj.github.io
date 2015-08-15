@@ -69,3 +69,15 @@ body.info {
     @include background-image( 'supporters03' );
   }
 }
+
+/******************************************************************************
+ MEDIA
+******************************************************************************/
+
+body.media {
+
+  #ploegen {
+    @include background-image( 'supporters04' );
+  }
+
+}

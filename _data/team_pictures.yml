@@ -1,0 +1,26 @@
+season: 2014 - 2015
+teams:
+  - id: u8
+    name: U8
+    picture: /images/ploegen/2014-2015/miniemen.jpg
+  - id: u10
+    name: U10
+    picture: /images/ploegen/2014-2015/pupillen.jpg
+  - id: u12
+    name: U12
+    picture: /images/ploegen/2014-2015/cadetten.jpg
+  - id: u14
+    name: U14
+    picture: /images/ploegen/2014-2015/scholieren.jpg
+  - id: u19
+    name: U19
+    picture: /images/ploegen/2014-2015/junioren.jpg
+  - id: senioren
+    name: Senioren
+    picture: /images/ploegen/2014-2015/senioren.jpg
+  - id: gewestelijken
+    name: C Ploeg
+    picture: /images/ploegen/2014-2015/gewestelijken.jpg
+  - id: gewestelijken
+    name: AAA Gewestelijken
+    picture: /images/ploegen/2014-2015/recreanten.jpg
