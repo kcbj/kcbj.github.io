@@ -64,36 +64,47 @@
     @include reset-list;
 
     @include flex-container( row, wrap, center, stretch, center );
-    margin:                 0 -$grid-hor-padding;
+
+    margin:                   0;
+    padding:                  0 $grid-hor-padding;
+
+    @media screen and (min-width: $grid-min-width) {
+      margin:                 0 ( -1 * $grid-hor-padding );
+      padding:                $base-line-height 0;
+    }
 
     li {
       @include flex( 0 0 22rem );
-      margin:                0 $grid-hor-padding $base-line-height $grid-hor-padding;
+      margin:                $base-line-height / 2 0;
       padding:               $grid-hor-padding / 2;
       box-sizing:            border-box;
       box-shadow:            2px 2px 6px rgba( 0, 0, 0, .2 );
 
-      @include transform( rotate( -2deg ) );
-      @include transition( transform .27s linear );
+      @media screen and (min-width: $grid-min-width ) {
+        margin:                0 $grid-hor-padding $base-line-height $grid-hor-padding;
 
-      &:nth-child( odd ) {
-        @include transform( rotate( 2deg ) );
-      }
-
-      &:nth-child( even ) {
-        @include transform( rotate( -1.5deg ) );
-      }
-
-      &:nth-child( 3n ) {
-        @include transform( rotate( 1deg ) );
-      }
-
-      &:nth-child( 4n ) {
         @include transform( rotate( -2deg ) );
-      }
+        @include transition( transform .27s linear );
 
-      &:hover {
-        @include transform( rotate( 0 ) scale( 1.1 ) );
+        &:nth-child( odd ) {
+          @include transform( rotate( 2deg ) );
+        }
+
+        &:nth-child( even ) {
+          @include transform( rotate( -1.5deg ) );
+        }
+
+        &:nth-child( 3n ) {
+          @include transform( rotate( 1deg ) );
+        }
+
+        &:nth-child( 4n ) {
+          @include transform( rotate( -2deg ) );
+        }
+
+        &:hover {
+          @include transform( rotate( 0 ) scale( 1.1 ) );
+        }
       }
 
       .picture {
