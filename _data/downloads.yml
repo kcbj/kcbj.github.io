@@ -7,6 +7,14 @@
     hsize: 842.95 KiB
     mime: pdf
   path: "/downloads/files/info"
+- title: Documenten voor leden
+  files:
+  - path: "/downloads/files/leden/verzekering.pdf"
+    title: Ongevallenaangifte formulier
+    size: 450166
+    hsize: 439.62 KiB
+    mime: pdf
+  path: "/downloads/files/leden"
 - title: Formulieren tussenkomst lidgeld ziekenfonds
   path: "/downloads/files/ziekenfonds"
   files:

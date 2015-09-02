@@ -2,9 +2,8 @@
 title: Korfbal Club KCBJ
 email: webmaster@kcbj.be
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Webpagina van KCBJ.  Een korfbal club uit Betekom met verschillende jeugd en volwassene ploegen.  KCBJ heeft
+  zowel competitieve als recreatieve korfbal ploegen.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kcbj.be" # the base hostname & protocol for your site
 timezone: Europe/Brussels
@@ -19,6 +18,7 @@ exclude:
   - /images/events/originals
   - /images/events/images.rb
   - /downloads/generate.rb
+  - /_locations/generate.rb
 
 collections:
   locations:
