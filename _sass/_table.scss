@@ -1,6 +1,10 @@
+table.full {
+    width:                      100%;
+}
+
 @media screen and (max-width: $grid-min-width) {
   table.full {
-    
+
     thead tr {
       display:                    none;
     }
@@ -54,7 +58,6 @@
 
 @media screen and (min-width: $grid-min-width) {
   table.full {
-    width:                      100%;
     margin:                     $base-line-height 0;
     display:                    table;
 
@@ -68,11 +71,11 @@
       padding:                  $base-line-height / 2 $grid-hor-padding;
       text-align:               left;
 
-      &:first-child {
+      &:first-child, &.first {
         padding-left:           0;
       }
 
-      &:last-child {
+      &:last-child, &.last {
         padding-right:          0;
       }
     }

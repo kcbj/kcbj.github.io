@@ -85,3 +85,29 @@ ul.clear, ol.clear {
   @include reset-list;
 }
 
+a {
+  text-decoration:      underline;
+  color:                $blue;
+
+  &:hover {
+    color:              lighten( $blue, 10% );
+  }
+
+  &:visited {
+    color:              darken( $blue, 10% );
+  }
+
+  &.plain {
+    color:              $base-font-color;
+    text-decoration:    none;
+
+    &.underlined {
+      text-decoration:  underline;
+    }
+
+    &:hover {
+      color:            $blue;
+      text-decoration:  underline;
+    }
+  }
+}
