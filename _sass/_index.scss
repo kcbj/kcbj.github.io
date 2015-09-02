@@ -72,6 +72,11 @@ body.index #sponsor-list {
       img {
         height:             $base-line-height * 4;
         max-width:          100%;
+
+        @media screen and (min-width: $grid-min-width) {
+          max-width:        $base-line-height * 8;
+        }
+
         @include filter( grayscale( 100% ) brightness( 1 ) );
 
         &:hover {

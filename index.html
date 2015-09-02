@@ -105,25 +105,14 @@ class: front index
 <section id="sponsors" class="container">
   <div class="wrapper">
     <h1 class="title">Sponsors</h1>
-    <ul class="todo" id="sponsor-list">
+    <ul id="sponsor-list">
+      {% for sponsor in site.data.sponsors %}
       <li class="sponsor">
-        <a href="#">
-          <img src="/images/sponsors/belfius.png" />
-        </a>
+          <a href="{{sponsor.website | default: '#' }}" title="{{sponsor.title}}">
+            <img src="/images/sponsors/{{sponsor.logo}}" />
+          </a>
       </li>
-      <li class="sponsor">
-        <a href="#">
-          <img src="/images/sponsors/bress.png"/>
-        </a>
-      </li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/debruyn.png"
-                                           /></a></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/delhaize.png"
-                                           /></a></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/verabo.png"
-                                           /></a></li>
-      <li class="sponsor"><a href="#"><img src="/images/sponsors/wit-toreke.png"
-                                           /></a></li>
+      {% endfor %}
     </ul>
   </div>
 </section>
