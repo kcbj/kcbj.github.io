@@ -1,0 +1,105 @@
+season: 2015 - 2016
+periods:
+  - name: voorronde
+    teams:
+      - name: U8
+        trainings:
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            start: 2015-8-1 18:00:00
+            location: kantine
+      - name: U10
+        trainings:
+          - weekday: woensdag
+            starts_at: "18:00"
+            ends_at: "19:15"
+            start: 2015-8-1 18:00:00
+            location: kantine
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:15"
+            start: 2015-8-1
+            location: kantine
+      - name: U12
+        trainings:
+          - weekday: woensdag
+            starts_at: "18:30"
+            ends_at: "20:00"
+            start: 2015-8-1 18:30
+            location: kleedkamers
+          - weekday: vrijdag
+            starts_at: "18:30"
+            ends_at: "20:00"
+            start: 2015-8-1 18:30
+            location: kleedkamers
+      - name: U14
+        trainings:
+          - weekday: woensdag
+            starts_at: "18:30"
+            ends_at: "20:00"
+            start: 2015-8-1 18:30
+            location: kleedkamers
+          - weekday: vrijdag
+            starts_at: "18:30"
+            ends_at: "20:00"
+            start: 2015-8-1 18:30
+            location: kleedkamers
+      - name: U16
+        trainings:
+          - weekday: maandag
+            starts_at: "19:00"
+            ends_at: "21:00"
+            start: 2015-8-1 19:00
+            location: kleedkamers
+          - weekday: donderdag
+            starts_at: "19:00"
+            ends_at: "21:00"
+            start: 2015-8-1 19:00
+            location: kleedkamers
+      - name: U19
+        trainings:
+          - weekday: maandag
+            starts_at: "19:00"
+            ends_at: "21:00"
+            start: 2015-8-1 19:00
+            location: kleedkamers
+          - weekday: donderdag
+            starts_at: "19:00"
+            ends_at: "21:00"
+            start: 2015-8-1 19:00
+            location: kleedkamers
+      - name: Senioren
+        trainings:
+          - weekday: woensdag
+            starts_at: "20:15"
+            ends_at: "22:15"
+            start: 2015-8-1 20:15
+            location: kleedkamers
+          - weekday: vrijdag
+            starts_at: "20:15"
+            ends_at: "22:15"
+            start: 2015-8-1 20:15
+            location: kleedkamers
+      - name: Gewestelijken
+        trainings:
+          - weekday: woensdag
+            starts_at: "20:00"
+            ends_at: "21:30"
+            start: 2015-8-1 20:00
+            location: kleedkamers
+            note: Om de 2 weken
+          - weekday: vrijdag
+            starts_at: "20:00"
+            ends_at: "21:30"
+            start: 2015-8-1 20:00
+            location: kleedkamers
+            note: Om de 2 weken
+      - name: Recreanten
+        trainings:
+          - weekday: vrijdag
+            starts_at: "19:00"
+            ends_at: "20:30"
+            start: 2015-8-1 20:30
+            location: kleedkamers
+            note: Om de 2 weken

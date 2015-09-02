@@ -1,13 +1,109 @@
 ---
+class: agenda
 layout: default
 ---
 <div class="container">
   <div class="wrapper">
-    <h1>Agenda</h1>
-    {% for event in site.data.events | sort 'start' %}
-    <div class="event">
-      <h3 class="title">{{ event.title }}</h3>
+    <h1 class="larger">Agenda</h1>
+    <p class="centered">Een overzicht van de <a class="plain underline" href="#evenementen">evenementen</a> en <a class="plain underline" href="#trainingen">trainingen</a> die doorgaan bij KCBJ</p>
+  </div>
+</div>
+<div class="hero container" id="first-divider">
+  <div class="overlay">
+  </div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <div class="text" id="evenementen">
+      <h1>Evenementen</h1>
+      <div class="events">
+        {% for event in site.data.events | sort 'start' %}
+          {% assign location = site.locations | where: "id", event.location | first %}
+        <div class="event">
+          {% if event.image %}
+            <div class="image" style="background-image: url( '/images/events/{{event.image}}' );"></div>
+          {% endif %}
+          <div class="content">
+            <div class="top">
+              <h3 class="title">{{ event.title }}</h3>
+              <div class="date">
+                {% if event.start %}
+                  {% assign month = event.start | date: "%B" %}
+                  {% assign lmonth = site.data.months | where: "en", month | first %}
+                  <time datetime="{{ event.start | date_to_xmlschema }}">{{ event.start | date: "%-d" }} {{ lmonth.nl }} {{ event.start | date: "%Y %H:%M" }}</time>
+                  {% if event.end %}
+                  - <time datetime="{{ event.end | date_to_xmlschema }}">{{ event.end | date: "%H:%M" }}</time>
+                  {% endif %}
+                {% else %}
+                  {% assign month = event.date | date: "%B" %}
+                  {% assign lmonth = site.data.months | where: "en", month | first %}
+                  <time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%-d" }} {{ lmonth.nl }} {{ event.date | date: "%Y" }}</time>
+                {% endif %}
+              </div>
+            </div>
+            <div class="bottom">
+              <a class="location plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a>
+              {% if event.facebook %}
+              <ul class="links">
+                <li class="facebook">
+                  <a href="{{event.facebook}}" title="{{event.title}} on Facebook">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+  </div>
+</div>
+<div class="hero container" id="second-divider">
+  <div class="overlay blue">
+  </div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <div id="trainingen" class="text">
+      <h1>Trainingen {{site.data.training.season}}</h1>
+
+      {% for period in site.data.training.periods %}
+      <h2>{{period.name}}</h2>
+
+      <table class="full" id="trainingen-table">
+        <thead>
+          <tr>
+            <th>Ploeg</th>
+            <th>Weekdag</th>
+            <th>Start</th>
+            <th>Einde</th>
+            <th></th>
+            <th>Locatie</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for team in period.teams %}
+          {% assign count = 0 %}
+          <tr>
+            <td class="key" rowspan="{{team.trainings.size}}">{{team.name}}</td>
+          {% for training in team.trainings %}
+            {% if count > 0 %}<tr>{% endif %}
+            {% assign count = count | plus: 1 %}
+            {% assign location = site.locations | where: "id", training.location | first %}
+            <td class="first" data-title="weekdag">{{training.weekday}}</td>
+            <td data-title="start">{{training.starts_at}}</td>
+            <td data-title="einde">{{training.ends_at}}</td>
+            <td>{{training.note}}</td>
+            <td data-title="locatie"><a class="plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a></td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+
+      {% endfor %}
+    </div>
   </div>
 </div>

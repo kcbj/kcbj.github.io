@@ -1,0 +1,112 @@
+body.agenda {
+
+  #evenementen {
+    width:                  100%;
+  }
+
+  .events {
+    width:                  100%;
+  }
+
+  .event {
+    padding:                $grid-vert-padding / 2 0;
+    width:                  100%;
+    @include flex-container( row, wrap, space-between, stretch, center );
+    border-bottom:          1px solid $lighter-gray;
+
+    &:first-child {
+      border-top:           1px solid $lighter-gray;
+    }
+
+    .image, .content {
+      box-sizing:           border-box;
+    }
+
+    .image {
+      @include flex( 1 0 200px );
+      min-height:           $base-line-height * 10;
+
+      background-size:      cover;
+      background-repeat:    no-repeat;
+      background-position:  center;
+
+      @media screen and (min-width: $grid-min-width) {
+        min-height: 0;
+      }
+    }
+
+    .content {
+      @include flex( 1 1 70% );
+      @include flex-container( column, nowrap, flex-start, stretch, center );
+      padding:                $grid-vert-padding 0;
+
+      @media screen and (min-width: $grid-min-width) {
+        padding:              $grid-vert-padding $grid-hor-padding;
+      }
+    }
+
+    .top, .bottom {
+      @include flex-container( row, wrap, space-between, stretch, center );
+    }
+
+    .bottom {
+      padding:              0;
+      @include flex-container( row, nowrap, space-between, stretch, center );
+      
+      .location, .links {
+        display:            block;
+        text-align:         center;
+        @include flex( 1 1 auto );
+      }
+
+      @media screen and (min-width: $grid-min-width) {
+        padding:            $grid-vert-padding / 2 0 0 0;
+
+        .location, .links {
+          @include flex( 0 0 auto );
+        }
+      }
+    }
+
+    .top {
+      padding-bottom:       $grid-vert-padding / 2;
+    }
+
+    .title, .date {
+      width:                100%;
+      @include flex( 1 0 auto );
+      text-align:           center;
+      text-transform:       uppercase;
+      font-family:          $sans-serif-font-family;
+      line-height:          $base-line-height * 1.5;
+      margin:               0;
+      padding:              0;
+
+      @media screen and (min-width: $grid-min-width) {
+        text-align:         left;
+        @include flex( 0 0 auto );
+        line-height:        $base-line-height;
+        width:              auto;
+      }
+    }
+
+    .title {
+      color:                $darker-gray;
+      padding-right:        $grid-hor-padding;
+    }
+
+    .date {
+      color:                $light-gray;
+    }
+
+    .links {
+      @include reset-list;
+
+      a .fa {
+        @include link-color( $light-gray, $dark-gray );
+      }
+    }
+
+  }
+
+}

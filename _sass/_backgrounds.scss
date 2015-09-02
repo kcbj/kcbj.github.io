@@ -81,3 +81,15 @@ body.media {
   }
 
 }
+
+body.agenda {
+
+  #first-divider {
+    @include background-image( 'supporters05' );
+  }
+
+  #second-divider {
+    @include background-image( 'supporters03' );
+  }
+
+}

@@ -1,0 +1,48 @@
+---
+- title: Mosselweekend
+  start: 2015-10-17 17:00:00 +02:00
+  end: 2015-10-17 21:00:00 +02:00
+  location: parochiezaal
+  facebook: https://www.facebook.com/events/523810067783907/
+  image: mosselen.jpg
+- title: Mosselweekend
+  start: 2015-10-18 12:00:00 +02:00
+  end: 2015-10-18 19:00:00 +02:00
+  location: parochiezaal
+  facebook: https://www.facebook.com/events/1645132002391732/
+  image: mosselen.jpg
+- title: KCBJ Kwis
+  start: 2015-11-14 20:00:00 +02:00
+  location: parochiezaal
+  facebook: https://www.facebook.com/events/863468360401215/
+  image: quiz.jpg
+- title: Jaarfeest
+  start: 2016-2-6 18:00:00 +02:00
+  location: parochiezaal
+  image: party.jpg
+- title: Pannenkoekendag
+  start: 2016-3-6 12:00:00 +02:00
+  end: 2016-3-6 19:00:00 +02:00
+  image: pannenkoeken.jpg
+  location: verhaegen
+- title: Paasontbijten
+  date: 2016-3-26 00:00
+  image: ontbijt.jpg
+- title: BBQ
+  start: 2016-5-14 18:00:00 +02:00
+  location: kantine
+  image: bbq.jpg
+- title: Mosselweekend
+  start: 2016-10-15 17:00:00 +02:00
+  end: 2016-10-15 21:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: Mosselweekend
+  start: 2016-10-16 12:00:00 +02:00
+  end: 2016-10-16 19:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: KCBJ Kwis
+  start: 2016-11-19 20:00:00 +02:00
+  location: parochiezaal
+  image: quiz.jpg
