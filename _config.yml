@@ -17,6 +17,18 @@ exclude:
   - /Gemfile
   - /Gemfile.lock
 
+collections:
+  locations:
+    output: true
+    permalink: /info/locaties/:path/
+
+defaults:
+  - 
+    scope: 
+      collection: locations
+    values:
+      layout: location
+
 # Build settings
 markdown: kramdown
 gems:

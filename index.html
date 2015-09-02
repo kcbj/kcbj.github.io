@@ -68,14 +68,12 @@ class: front index
     <h1>Locaties</h1>
     <p class="centered">Korfbal wordt zowel binnen als buiten gespeeld.  KCBJ traint en speelt daarom op verschillende locaties.  Dit zijn de belangrijkste.</p>
     <ol id="location-list" class="buttons">
-      {% for location_hash in site.data.locations %}
-        {% assign location = location_hash[1] %}
-        {% if location.featured == true %}
-          <li class="button location" 
-              data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
-              data-location-name="{{ location.title }}"
-          >{{ location.title }}</li>
-        {% endif %}
+      {% assign locations = site.locations | where: "featured", true | sort: "order" %}
+      {% for location in locations %}
+        <li class="button location" 
+            data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
+            data-location-name="{{ location.name }}"
+        >{{ location.name }}</li>
       {% endfor %}
     </ol>
   </div>
