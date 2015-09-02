@@ -1,0 +1,32 @@
+---
+- title: Informatie over de club
+  files:
+  - path: "/downloads/files/info/infobrochure.pdf"
+    title: KCBJ Infobrochure
+    size: 863181
+    hsize: 842.95 KiB
+    mime: pdf
+  path: "/downloads/files/info"
+- title: Formulieren tussenkomst lidgeld ziekenfonds
+  path: "/downloads/files/ziekenfonds"
+  files:
+  - path: "/downloads/files/ziekenfonds/christelijke-mutualiteit.pdf"
+    size: 2494167
+    title: Christelijke mutualiteit
+    hsize: 2.38 MiB
+    mime: pdf
+  - path: "/downloads/files/ziekenfonds/liberale-mutualiteit.pdf"
+    size: 86388
+    title: Liberale mutualiteit
+    hsize: 84.36 KiB
+    mime: pdf
+  - path: "/downloads/files/ziekenfonds/socialistische-mutualiteit.pdf"
+    size: 116518
+    title: Socialistische mutualiteit
+    hsize: 113.79 KiB
+    mime: pdf
+  - path: "/downloads/files/ziekenfonds/vlaams-neutraal-ziekenfonds.pdf"
+    size: 99461
+    title: Vlaams neutraal ziekenfonds
+    hsize: 97.13 KiB
+    mime: pdf

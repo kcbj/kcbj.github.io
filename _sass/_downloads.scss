@@ -1,0 +1,51 @@
+body.downloads {
+
+
+  ul.downloads {
+    @include reset-list;
+    @include flex-container( row, wrap, flex-start, stretch, center );
+    margin:       $grid-vert-padding -1 * $grid-hor-padding;
+
+    li {
+      $width: $grid-text-width / 2 - $grid-hor-padding;
+      margin:           $grid-vert-padding $grid-hor-padding;
+      @include flex( 0 1 $width );
+      box-sizing:       border-box;
+    }
+
+    li a {
+
+      &:hover {
+        background-color:       rgba( 0, 0, 0, .025 );
+        color:                  $darker-gray;
+        border-color:           $gray;
+        transition:             .27s;
+      }
+
+      text-decoration:          none;
+      color:                    $base-font-color;
+      border-bottom:                   1px solid $lighter-gray;
+
+      padding:                  $grid-vert-padding $grid-hor-padding / 2;
+
+      @include flex-container( row, nowrap, flex-start, stretch, center );
+
+      .file-icon {
+        font-size:                $xxxxlarge-font-size;
+        line-height:              $xxxxlarge-line-height;
+        padding-right:            $grid-hor-padding / 2;
+      }
+
+      .title {
+        font-size:                $large-font-size;
+        line-height:              $large-line-height;
+        margin-bottom:            $base-line-height / 2;
+        font-family:              $sans-serif-font-family;
+      }
+
+      .file-download {
+        float:                    right;
+      }
+    }
+  }
+}

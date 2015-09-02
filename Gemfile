@@ -9,3 +9,6 @@ gem 'github-pages', versions[ 'github-pages' ]
 
 # Bourbon
 gem 'bourbon', '~> 4.2.3'
+
+gem 'filesize'
+gem 'mime-types'

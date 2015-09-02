@@ -27,6 +27,7 @@ GEM
     execjs (2.6.0)
     fast-stemmer (1.0.2)
     ffi (1.9.10)
+    filesize (0.1.0)
     gemoji (2.1.0)
     github-pages (39)
       RedCloth (= 4.2.9)
@@ -100,6 +101,7 @@ GEM
       rb-inotify (>= 0.9)
     maruku (0.7.0)
     mercenary (0.3.5)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.8.0)
     net-dns (0.8.0)
@@ -137,8 +139,10 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon (~> 4.2.3)
+  filesize
   github-pages (= 39)
   json
+  mime-types
 
 BUNDLED WITH
    1.10.6

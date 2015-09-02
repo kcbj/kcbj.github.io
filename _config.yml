@@ -16,6 +16,9 @@ exclude:
   - /images/backgrounds/backgrounds.rb
   - /Gemfile
   - /Gemfile.lock
+  - /images/events/originals
+  - /images/events/images.rb
+  - /downloads/generate.rb
 
 collections:
   locations:

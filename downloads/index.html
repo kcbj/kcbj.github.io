@@ -1,0 +1,35 @@
+---
+layout: default
+class: downloads
+title: Downloads
+---
+<div id="welcome" class="container first hero background nomargin">
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+    <h1>Downloads</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <div class="text">
+      {% for folder in site.data.downloads %}
+      <h2>{{folder.title}}</h2>
+
+      <ul class="downloads">
+        {% for file in folder.files %}
+        {% assign type = site.data.mime-types.types | where: 'type', file.mime | first %}
+        <li> 
+          <a href="{{file.path}}" title="Download {{file.title}}" target="_blank">
+            <i class="file-icon fa fa-{{type.icon}}"></i>
+            <div class="content">
+              <div class="title">{{file.title}}</div>
+              <div class="size">{{file.hsize}}</div>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>
