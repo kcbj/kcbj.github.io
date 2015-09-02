@@ -24,7 +24,7 @@ body.agenda {
 
     .image {
       @include flex( 1 0 200px );
-      min-height:           $base-line-height * 10;
+      min-height:           $base-line-height * 4;
 
       background-size:      cover;
       background-repeat:    no-repeat;
