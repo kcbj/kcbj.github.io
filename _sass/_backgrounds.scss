@@ -58,11 +58,12 @@ body.info {
   }
 
   #first-divider {
-    @include background-image( 'supporters02' );
+    @include background-image( 'trainers01' );
+    background-position:          center top;
   }
 
   #second-divider {
-    @include background-image( 'supporters05' );
+    @include background-image( 'jeugd03' );
   }
 
   #third-divider {
@@ -77,7 +78,7 @@ body.info {
 body.media {
 
   #ploegen {
-    @include background-image( 'supporters04' );
+    @include background-image( 'trainers02' );
   }
 
 }
@@ -85,11 +86,11 @@ body.media {
 body.agenda {
 
   #first-divider {
-    @include background-image( 'supporters05' );
+    @include background-image( 'applaus02' );
   }
 
   #second-divider {
-    @include background-image( 'supporters03' );
+    @include background-image( 'supporters06' );
   }
 
 }
