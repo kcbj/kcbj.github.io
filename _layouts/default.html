@@ -1,7 +1,12 @@
+{% if page.collection %}
+  {% assign vars = layout %}
+{% else %}
+  {% assign vars = page %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="nl">
   {% include head.html %}
-  <body class="{{page.class}}">
+  <body{% if vars.class %} class="{{vars.class}}"{% endif %}>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

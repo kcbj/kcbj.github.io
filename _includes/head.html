@@ -17,6 +17,13 @@
   <meta name="og:site_name" content="KCBJ Online" />
   <meta name="og:locale" content="nl_NL" />
   <meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  {% if page.descritpion %}
+  <meta name="og:description" content="{{ page.description }}" />
+  {% endif %}
+
+  {% for tag in page.tags %}
+  <meta name="og:{{tag.name}}" content="{{ tag.content }}" />
+  {% endfor %}
 
   <meta name="fb:page_id" content="199694587105" />
   <meta name="fb:admins" content="1632090585" />
@@ -46,4 +53,15 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   {{ vars.head }}
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42873608-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>

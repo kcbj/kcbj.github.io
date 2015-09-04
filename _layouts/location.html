@@ -9,10 +9,25 @@ head: |
   <div class="wrapper">
     <div class="text">
       <h1>{{page.name}}</h1>
+
+      {% if page.address %}
+      <address>
+        <span class="street_address">{{page.address.street_address}}</span><br />
+        <span class="postal_code">{{page.address.postal_code}}</span>&nbsp;<span class="locality">{{page.address.locality}}</span>
+      </address>
+      {% endif %}
     </div>
   </div>
 </div>
 <div id="map" style="width: 100%; height: 500px" data-map data-lat="{{page.coordinates[0]}}" data-lng="{{page.coordinates[1]}}" data-title="{{page.name}}"></div>
+
+<meta name="DC.title" content="{{name}}" />
+<meta name="geo.region" content="BE" />
+{% if page.address %}
+<meta name="geo.placename" content="{{page.address.locality}}" />
+{% endif %}
+<meta name="geo.position" content="{{page.coordinates[0]}},{{page.coordinates[1]}}" />
+<meta name="ICBM" content="{{page.coordinates[0]}},{{page.coordinates[1]}}" />
 
 <script type="application/ld+json">
   {
