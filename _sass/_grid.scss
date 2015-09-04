@@ -25,6 +25,7 @@
 }
 
 .container .horizontal {
+  width:                100%;
   @include flex( 1 1 auto );
   @include flex-container( column, wrap, flex-start, stretch, center );
 

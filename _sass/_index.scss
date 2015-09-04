@@ -70,7 +70,7 @@ body.index #sponsor-list {
       display:              block;
 
       img {
-        height:             $base-line-height * 4;
+        max-height:             $base-line-height * 4;
         max-width:          100%;
 
         @media screen and (min-width: $grid-min-width) {
@@ -88,6 +88,6 @@ body.index #sponsor-list {
   }
 
   @media screen and (min-width: $grid-min-width) {
-    @include flex-container( row, wrap, space-around, stretch, center );
+    @include flex-container( row, wrap, space-between, center, center );
   }
 }
