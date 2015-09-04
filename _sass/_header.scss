@@ -81,6 +81,11 @@
 #menu ul {
   @include ul-menu;
 
+  li.active a {
+    color:                    $blue;
+    @include font-smoothing( antialiased );
+  }
+
   li.home {
     position:           absolute;
     display:            block;

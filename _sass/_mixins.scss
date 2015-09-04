@@ -7,8 +7,15 @@
   @include align-content( $align-content );
 }
 
+
+@mixin font-smoothing( $type ) {
+  -webkit-font-smoothing: $type;
+  font-smoothing:         $type;
+  font-smooth:            always;
+}
+
 @mixin light-on-dark {
-  -webkit-font-smoothing: antialiased;
+  @include font-smoothing( antialiased );
 }
 
 @mixin reset-list {
@@ -83,6 +90,10 @@
       }
 
       @include link-color( $darker-gray, $blue );
+    }
+
+    &.active a {
+      font-weight:      900;
     }
 
     &:last-child a {
