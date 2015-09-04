@@ -20,6 +20,9 @@ exclude:
   - /downloads/generate.rb
   - /_locations/generate.rb
 
+sass:
+  style: compressed
+
 collections:
   locations:
     output: true
@@ -36,3 +39,5 @@ defaults:
 markdown: kramdown
 gems:
   - github-pages
+  - jekyll-sitemap
+  - jekyll-feed
