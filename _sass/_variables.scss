@@ -13,11 +13,13 @@ $base-font-family:      $slab-font-family;
 $base-font-size:        16px;
 $base-line-height:      ( 22px / $base-font-size ) * 1rem;
 $base-font-color:       $dark-gray;
+
 $base-font-weight:      300;
 
-$medium-font-weight:    400;
-$bold-font-weight:      500;
-$light-font-weight:     100;
+$medium-font-weight:     400;
+$bold-font-weight:       500;
+$extra-bold-font-weight: 900;
+// $light-font-weight:      100;
 
 $title-font-family:     $sans-serif-font-family;
 
