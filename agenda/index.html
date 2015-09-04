@@ -21,6 +21,26 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
       <div class="events">
         {% for event in site.data.events | sort 'start' %}
           {% assign location = site.locations | where: "id", event.location | first %}
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Event",
+              "name": "{{event.title}}",
+              "location": { "@id": "{{site.url}}{{location.url}}" },
+              {% if event.start %}
+              "startDate": "{{ event.start | date_to_xmlschema }}",
+                {% if event.end %}
+              "endDate": "{{ event.end | date_to_xmlschema }}",
+                {% endif %}
+              {% else %}
+              "startDate": "{{ event.date | date: "%Y-%m-%d" }}",
+              {% endif %}
+              {% if event.facebook %}
+              "sameAs": "{{ event.facebook }}",
+              {% endif %}
+              "organizer": { "@id": "http://www.kcbj.be" }
+            }
+          </script>
         <div class="event">
           {% if event.image %}
             <div class="image" style="background-image: url( '/images/events/{{event.image}}' );"></div>
@@ -87,6 +107,15 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
         </thead>
         <tbody>
           {% for team in period.teams %}
+          <script type="application/ld+json">
+            { 
+              "@context": "http://schema.org",
+              "@type": "SportsTeam",
+              "@id": "kcbj:teams:{{team.name}}",
+              "name": "{{team.name}}",
+              "memberOf": { "@id": "{{site.url}}" }
+            }
+          </script>
           {% assign count = 0 %}
           <tr>
             <td class="key" rowspan="{{team.trainings.size}}">{{team.name}}</td>
@@ -100,6 +129,18 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
             <td>{{training.note}}</td>
             <td data-title="locatie"><a class="plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a></td>
           </tr>
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "SportsEvent",
+              "name": "Training",
+              "attendee": { "@id": "kcbj:teams:{{team.name}}" },
+              "location": { "@id": "{{location.url}}" },
+              "organizer": { "@id": "{{site.url}}" },
+              "typicalAgeRange": "{{team.ages}}",
+              "doorTime": "{{training.starts_at}}"
+            }
+          </script>
           {% endfor %}
           {% endfor %}
         </tbody>

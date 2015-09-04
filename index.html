@@ -1,6 +1,9 @@
 ---
 layout: default
 class: front index
+map: true
+head: |
+  <script src="/js/index.js"></script>
 ---
 <section id="welcome" class="first fullscreen jumbo hero container nomargin">
   <div class="video">
@@ -72,35 +75,6 @@ class: front index
     </ol>
   </div>
   <div id="map"></div>
-  <script>
-    $( document ).ready( function() {
-      L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
-      var map = L.mapbox.map( 'map', 'mapbox.streets', { 'scrollWheelZoom': false, 'maxZoom': 16 } );
-      var locations = [];
-
-      $( '#location-list *[data-location-coordinates]' ).each( function( i ) {
-        var location = L.latLng( $( this ).data( 'location-coordinates' ).split( ',' ) );
-        var marker = L.marker( location, {
-          icon: L.mapbox.marker.icon( {
-            'marker-size': 'large',
-            'marker-symbol': i + 1,
-            'marker-color': '#006699'
-          } )
-        } ).addTo( map );
-
-        $( this ).css( { 'background-image': 'url( "' + marker.options.icon.options.iconUrl + '")', 'cursor': 'pointer' } );
-
-        var popup = L.popup( { 'closeButton': false } ).setLatLng( location ).setContent( $( this ).data( 'location-name' ) );
-        marker.bindPopup( popup );
-        marker.on( 'click', function() { this.openPopup() } );
-        $( this ).click( function() { marker.openPopup() } );
-        locations.push( location );
-      } );
-
-      var bbox = L.latLngBounds( locations );
-      map.fitBounds( bbox );
-    } );
-  </script>
 </section>
 <section id="sponsors" class="container">
   <div class="wrapper">
@@ -116,3 +90,34 @@ class: front index
     </ul>
   </div>
 </section>
+<script type="application/ld+json">
+  {% assign location = site.locations | sort: "order" | first %}
+  {
+    "@context": "http://schema.org",
+    "@type": "SportsClub",
+    "@id": "{{site.url}}",
+    "name": "Korfbal Club KCBJ",
+    {% if location.address %}
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{location.street_address}}",
+      "postalCode": "{{location.postalCode}}",
+      "addressLocality": "{{location.locality}}",
+      "addressCountry": "Belgium"
+    },
+    {% endif %}
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{location.coordinates[0]}},
+      "longitude": {{location.coordinates[1]}}
+    },
+    "events": { "@id": "http://kcbj.be/agenda" },
+    "url": "{{site.url}}",
+    "logo": "{{site.url}}/images/logo/logo.png",
+    "sameAs": [
+      "http://www.facebook.com/kcbj.korfbal",
+      "http://www.twitter.com/kcbj",
+      "https://plus.google.com/u/0/+KcbjBe/"
+    ]
+  }
+</script>

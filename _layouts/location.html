@@ -1,25 +1,37 @@
 ---
 layout: default
 class: location
+map: true
+head: |
+  <script src="/js/location.js"></script>
 ---
 <div class="container">
   <div class="wrapper">
-    <h1>{{page.name}}</h1>
+    <div class="text">
+      <h1>{{page.name}}</h1>
+    </div>
   </div>
 </div>
 <div id="map" style="width: 100%; height: 500px" data-map data-lat="{{page.coordinates[0]}}" data-lng="{{page.coordinates[1]}}" data-title="{{page.name}}"></div>
-<script>
-$( document ).ready( function() {
-  L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBiQoNCKMwWOWkYuw';
-  $( '*[data-map]' ).each( function() {
-    var location = L.latLng( $( this ).data( 'lat' ), $( this ).data( 'lng' ) );
-    var map = L.mapbox.map( 'map', 'mapbox.streets', { 'center': location, 'zoom': 15, 'scrollWheelZoom': false, 'maxZoom': 16 } );
-    var marker = L.marker( location, {
-      icon: L.mapbox.marker.icon( {
-        'marker-size': 'large',
-        'marker-color': '#006699'
-      } )
-    } ).addTo( map );
-  } );
-} );
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@id": "{{site.url}}{{page.url}}",
+    "@type": "Place",
+    "name": "{{name}}",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{page.coordinates[0]}},
+      "longitude": {{page.coordinates[1]}}
+    }{% if page.address %},
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{page.address.street_address}}",
+      "postalCode": "{{page.address.postal_code}}",
+      "addressLocality": "{{page.address.locality}}",
+      "addressCountry": "Belgium"
+    }
+    {% endif %}
+  }
 </script>

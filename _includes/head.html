@@ -1,3 +1,8 @@
+{% if page.collection %}
+  {% assign vars = layout %}
+{% else %}
+  {% assign vars = page %}
+{% endif %}
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -21,18 +26,24 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css' />
   <link 
-    href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Roboto:300,300italic,400,500|Permanent+Marker'
+    href='https://fonts.googleapis.com/css?family=Roboto+Slab:500,400,300|Roboto:300,300italic,400,500|Permanent+Marker'
     rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-  <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="{{ "/js/modernizr.min.js" | prepend: site.baseurl }}"></script>
+
+  {% if vars.map %}
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+    <script src="/js/mapbox.js"></script>
+  {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="{{ "/js/modernizr.min.js" | prepend: site.baseurl }}"></script>
-  <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+  {{ vars.head }}
 </head>
