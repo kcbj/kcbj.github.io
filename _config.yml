@@ -29,11 +29,17 @@ collections:
     permalink: /info/locaties/:path/
 
 defaults:
-  - 
-    scope: 
-      collection: locations
+  - scope:
+      path: ""
+      type: locations
     values:
       layout: location
+  - 
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
 
 # Build settings
 markdown: kramdown

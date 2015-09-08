@@ -1,0 +1,38 @@
+---
+layout: default
+class: article
+---
+
+<div class="nomargin hero container" style="background-image: url( '{{page.image}}' );">
+{% if page.next %}
+<a class="absolute next" rel="next" href="{{page.next.url}}" title="{{page.next.title}}">
+  <i class="fa fa-angle-right"></i> volgende
+</a>
+{% endif %}
+{% if page.previous %}
+<a class="absolute previous" rel="previous" href="{{page.previous.url}}" title="{{page.previous.title}}">
+  vorige <i class="fa fa-angle-left"></i>
+</a>
+{% endif %}
+  <div class="overlay"></div>
+  <div class="wrapper">
+    <div class="text">
+      {% assign category = page.categories | last %}
+      {% assign cat = site.data.categories | where: "id", category | first %}
+      {% assign month = page.date | date: "%B" %}
+      {% assign lmonth = site.data.months | where: "en", month | first %}
+      <div class="post">
+        <span class="category">{{cat.name}}</span>
+        <time>{{page.date | date: "%-d" }} {{lmonth.nl}} {{page.date | date: "%Y"}}</time>
+        <h1 class="title">{{page.title}}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <div class="text content">
+      {{ content }}
+    </div>
+  </div>
+</div>
