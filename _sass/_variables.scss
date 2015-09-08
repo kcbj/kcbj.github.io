@@ -6,7 +6,8 @@ $lighter-gray:          #DCDCDC;
 
 $blue:                  #006699;
 
-$sans-serif-font-family: Roboto, Helvetica, Arial, sans-serif;
+// $sans-serif-font-family: Roboto, Helvetica, Arial, sans-serif;
+$sans-serif-font-family: Lato, Helvetica, Arial, sans-serif;
 $slab-font-family:       'Roboto Slab', serif;
 
 $base-font-family:      $slab-font-family; 
@@ -17,9 +18,8 @@ $base-font-color:       $dark-gray;
 $base-font-weight:      300;
 
 $medium-font-weight:     400;
-$bold-font-weight:       500;
+$bold-font-weight:       700;
 $extra-bold-font-weight: 900;
-// $light-font-weight:      100;
 
 $title-font-family:     $sans-serif-font-family;
 
