@@ -1,0 +1,36 @@
+---
+title: KCBJ nieuws
+class: news
+layout: default
+---
+{% assign post = site.posts | first %}
+<div class="nomargin container hero" style="background-image: url( '{{post.image}}' );">
+  <div class="overlay"></div>
+  <div class="wrapper">
+    {% assign category = post.categories | last %}
+    {% assign cat = site.data.categories | where: "id", category | first %}
+    {% assign month = post.date | date: "%B" %}
+    {% assign lmonth = site.data.months | where: "en", month | first %}
+    <article class="post">
+      <span class="category">{{cat.name}}</span> <time>{{post.date | date: "%-d" }} {{lmonth.nl}} {{post.date | date: "%Y"}}</time>
+      <a href="{{post.url}}" title="{{post.title}}" class="title">{{post.title}}</a>
+    </article>
+  </div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <div class="posts">
+      {% for post in site.posts offset: 1 %}
+      {% assign category = post.categories | last %}
+      {% assign cat = site.data.categories | where: "id", category | first %}
+      {% assign month = post.date | date: "%B" %}
+      {% assign lmonth = site.data.months | where: "en", month | first %}
+      <article class="post">
+        <span class="category">{{cat.name}}</span> <time>{{post.date | date: "%-d" }} {{lmonth.nl}} {{post.date | date: "%Y"}}</time>
+        <a href="{{post.url}}" title="{{post.title}}" class="title">{{post.title}}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+  
