@@ -5,7 +5,6 @@ tags:
   - name: "og:type"
     content: "article"
 ---
-<div class="nomargin hero container" style="background-image: url( '{{page.image}}' );">
 {% if page.next %}
 <a class="absolute next" rel="next" href="{{page.next.url}}" title="{{page.next.title}}">
   <i class="fa fa-angle-right"></i> volgende
@@ -16,6 +15,7 @@ tags:
   vorige <i class="fa fa-angle-left"></i>
 </a>
 {% endif %}
+<div class="nomargin hero container" style="background-image: url( '{{page.image}}' );{%if page.imageposition %} background-position: {{page.imageposition}};{% endif %}">
   <div class="overlay"></div>
   <div class="wrapper">
     <div class="text">
@@ -34,7 +34,20 @@ tags:
 <div class="container">
   <div class="wrapper">
     <div class="text content">
+      {% if page.subtitle %}
+      <h2 class="subtitle">{{page.subtitle}}</h2>
+      {% endif %}
+      {% if page.abstract %}
+      <p class="abstract">{{page.abstract}}</p>
+      {% endif %}
       {{ content }}
+      {% assign summary = page.title | truncate: 100 | url_param_escape %}
+      <div class="share">
+        <span class="label">Deel dit artikel</span>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/intent/tweet?url={{site.url}}{{page.url}}&text={{summary}}" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://plus.google.com/share?url={{site.url}}{{page.url}}" target="_blank"><i class="fa fa-google-plus"></i></a>
+      </div>
     </div>
   </div>
 </div>

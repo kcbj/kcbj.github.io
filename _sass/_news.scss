@@ -7,14 +7,11 @@
     text-decoration:        none;
 
     font-size:              $base-font-size;
-    position:               absolute;
     padding:                $base-line-height / 2 $grid-hor-padding;
     width:                  50%;
-    border-bottom:          1px solid rgba( 255, 255, 255, .2 );
+    border-top:             1px solid $lighter-gray;
 
-    top:                    0;
-    background-color:       rgba( 255, 255, 255, .6 );
-    color:                  rgba( 0, 0, 0, .6 );
+    color:                  $dark-gray;
 
     z-index:                999;
 
@@ -48,6 +45,8 @@
 @media screen and ( min-width: $grid-min-width ) {
   .absolute {
     &.next, &.previous {
+      @include light-on-dark;
+      position:               absolute;
       font-size:              $xxlarge-font-size;
       position:               fixed;
       padding:                $base-line-height 0;
@@ -59,7 +58,7 @@
       background-color:       rgba( 0, 0, 0, .6 );
       transition:             .27s;
 
-      border-bottom:          none;
+      border-top:             none;
 
 
       .fa {
@@ -173,6 +172,57 @@ body.article {
   .content p {
     margin:                  1.2 * $base-line-height 0;
     line-height:             1.2 * $base-line-height;
+  }
+
+  .subtitle {
+    @media screen and (min-width: $grid-min-width) {
+      font-size:              $xxxlarge-font-size;
+      line-height:            $xxxlarge-line-height;
+    }
+  }
+
+  .abstract {
+    font-family:            $sans-serif-font-family;
+    color:                  $darker-gray;
+    font-weight:            $medium-font-weight;
+    font-size:              $large-font-size;
+    line-height:            $large-line-height * 1.2;
+  }
+
+  .share {
+    @include flex-container( row, wrap, center, stretch, stretch );
+    border-top:             1px solid $lighter-gray;
+    padding:                $grid-vert-padding 0;
+    font-size:              $large-font-size;
+    font-family:            $sans-serif-font-family;
+    line-height:            $large-line-height;
+    margin-top:             $grid-vert-padding * 3;
+    font-weight:            $medium-font-weight;
+    text-transform:         uppercase;
+
+    .label {
+      text-align:           center;
+      width:                100%;
+      margin-bottom:        $grid-vert-padding / 2;
+    }
+
+    a {
+      @include link-color( $gray, $darker-gray );
+      text-decoration:      none;
+      margin:               $grid-vert-padding / 2 $grid-hor-padding / 2;
+    }
+
+    @media screen and (min-width: $grid-min-width) {
+      .label {
+        text-align:         right;
+        width:              auto;
+        margin-bottom:      0;
+      }
+
+      a {
+        margin:             0 0 0 $grid-hor-padding;
+      }
+    }
   }
 }
 

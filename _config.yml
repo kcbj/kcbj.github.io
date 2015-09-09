@@ -12,7 +12,7 @@ exclude:
   - TODO.md
   - /images/video/instructions.md
   - /images/backgrounds/originals
-  - /images/backgrounds/backgrounds.rb
+  - /images/backgrounds/optimize.rb
   - /Gemfile
   - /Gemfile.lock
   - /images/events/originals
