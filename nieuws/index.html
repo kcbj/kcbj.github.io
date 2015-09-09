@@ -26,11 +26,23 @@ layout: default
       {% assign month = post.date | date: "%B" %}
       {% assign lmonth = site.data.months | where: "en", month | first %}
       <article class="post">
-        <span class="category">{{cat.name}}</span> <time>{{post.date | date: "%-d" }} {{lmonth.nl}} {{post.date | date: "%Y"}}</time>
+        <span class="category">{{cat.name}}</span> <time datetime="{{post.date | date_to_xmlschema}}">{{post.date | date: "%-d" }} {{lmonth.nl}} {{post.date | date: "%Y"}}</time>
         <a href="{{post.url}}" title="{{post.title}}" class="title">{{post.title}}</a>
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "@id": "{{site.url}}{{post.url}}",
+            "articleSection": "{{cat.name | escape}}",
+            "datePublished": "{{post.date | date_to_xmlschema }}",
+            "image": "{{site.url}}{{post.image}}",
+            "name": "{{post.title | escape}}",
+            "url": "{{site.url}}{{post.url}}",
+            "headline": "{{page.title | escape}}"
+            }
+        </script>
       </article>
       {% endfor %}
     </div>
   </div>
 </div>
-  

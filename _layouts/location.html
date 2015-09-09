@@ -34,7 +34,7 @@ head: |
     "@context": "http://schema.org",
     "@id": "{{site.url}}{{page.url}}",
     "@type": "Place",
-    "name": "{{name}}",
+    "name": "{{name | escape}}",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": {{page.coordinates[0]}},
@@ -42,9 +42,9 @@ head: |
     }{% if page.address %},
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "{{page.address.street_address}}",
-      "postalCode": "{{page.address.postal_code}}",
-      "addressLocality": "{{page.address.locality}}",
+      "streetAddress": "{{page.address.street_address | escape}}",
+      "postalCode": "{{page.address.postal_code | escape}}",
+      "addressLocality": "{{page.address.locality | escape}}",
       "addressCountry": "Belgium"
     }
     {% endif %}

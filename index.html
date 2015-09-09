@@ -112,9 +112,9 @@ tags:
     {% if location.address %}
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "{{location.street_address}}",
-      "postalCode": "{{location.postalCode}}",
-      "addressLocality": "{{location.locality}}",
+      "streetAddress": "{{location.street_address | escape}}",
+      "postalCode": "{{location.postalCode | escape}}",
+      "addressLocality": "{{location.locality | escape}}",
       "addressCountry": "Belgium"
     },
     {% endif %}

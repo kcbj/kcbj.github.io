@@ -25,8 +25,8 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
             {
               "@context": "http://schema.org",
               "@type": "Event",
-              "name": "{{event.title}}",
-              "location": { "@id": "{{site.url}}{{location.url}}" },
+              "name": "{{event.title | escape}}",
+              "location": { "@type": "Location", "@id": "{{site.url}}{{location.url}}" },
               {% if event.start %}
               "startDate": "{{ event.start | date_to_xmlschema }}",
                 {% if event.end %}
@@ -38,7 +38,7 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
               {% if event.facebook %}
               "sameAs": "{{ event.facebook }}",
               {% endif %}
-              "organizer": { "@id": "http://www.kcbj.be" }
+              "organizer": { "@id": "{{site.url}}" }
             }
           </script>
         <div class="event">
@@ -111,8 +111,8 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
             { 
               "@context": "http://schema.org",
               "@type": "SportsTeam",
-              "@id": "kcbj:teams:{{team.name}}",
-              "name": "{{team.name}}",
+              "@id": "kcbj:teams:{{team.name | slugify}}",
+              "name": "{{team.name | escape}}",
               "memberOf": { "@id": "{{site.url}}" }
             }
           </script>
@@ -134,7 +134,7 @@ description: Een overzicht van alle geplande evenementen en een overzicht van de
               "@context": "http://schema.org",
               "@type": "SportsEvent",
               "name": "Training",
-              "attendee": { "@id": "kcbj:teams:{{team.name}}" },
+              "attendee": { "@id": "kcbj:teams:{{team.name | slugify}}" },
               "location": { "@id": "{{location.url}}" },
               "organizer": { "@id": "{{site.url}}" },
               "typicalAgeRange": "{{team.ages}}",

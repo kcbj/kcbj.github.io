@@ -1,8 +1,10 @@
 ---
 layout: default
 class: article
+tags:
+  - name: "og:type"
+    content: "article"
 ---
-
 <div class="nomargin hero container" style="background-image: url( '{{page.image}}' );">
 {% if page.next %}
 <a class="absolute next" rel="next" href="{{page.next.url}}" title="{{page.next.title}}">
@@ -23,7 +25,7 @@ class: article
       {% assign lmonth = site.data.months | where: "en", month | first %}
       <div class="post">
         <span class="category">{{cat.name}}</span>
-        <time>{{page.date | date: "%-d" }} {{lmonth.nl}} {{page.date | date: "%Y"}}</time>
+        <time datetime="{{page.date | date_to_xmlschema}}">{{page.date | date: "%-d" }} {{lmonth.nl}} {{page.date | date: "%Y"}}</time>
         <h1 class="title">{{page.title}}</h1>
       </div>
     </div>
@@ -36,3 +38,16 @@ class: article
     </div>
   </div>
 </div>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "articleSection": "{{cat.name | escape}}",
+    "datePublished": "{{page.date | date_to_xmlschema }}",
+    {% if page.image %} "image": "{{site.url}}{{page.image}}", {% endif %}
+    "name": "{{page.title | escape}}",
+    "url": "{{site.url}}{{page.url}}",
+    "articleBody": "{{content | strip_html | escape}}",
+    "headline": "{{page.title | escape}}"
+    }
+</script>
