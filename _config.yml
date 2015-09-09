@@ -16,7 +16,8 @@ exclude:
   - /Gemfile
   - /Gemfile.lock
   - /images/events/originals
-  - /images/events/images.rb
+  - /images/events/optimize.rb
+  - /images/news/optimize.rb
   - /downloads/generate.rb
   - /_locations/generate.rb
 
