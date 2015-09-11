@@ -30,7 +30,7 @@ redirect_from:
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "{{event.title | escape}}",
-              "location": "{{site.url}}{{location.url}}" },
+              "location": "{{site.url}}{{location.url}}",
               {% if event.start %}
               "startDate": "{{ event.start | date_to_xmlschema }}",
                 {% if event.end %}
