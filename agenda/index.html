@@ -30,7 +30,7 @@ redirect_from:
               "@context": "http://schema.org",
               "@type": "Event",
               "name": "{{event.title | escape}}",
-              "location": { "@type": "Location", "@id": "{{site.url}}{{location.url}}" },
+              "location": "{{site.url}}{{location.url}}" },
               {% if event.start %}
               "startDate": "{{ event.start | date_to_xmlschema }}",
                 {% if event.end %}
@@ -139,8 +139,8 @@ redirect_from:
               "@type": "SportsEvent",
               "name": "Training",
               "attendee": { "@id": "kcbj:teams:{{team.name | slugify}}" },
-              "location": { "@id": "{{location.url}}" },
-              "organizer": { "@id": "{{site.url}}" },
+              "location": "{{location.url}}",
+              "organizer": "{{site.url}}",
               "typicalAgeRange": "{{team.ages}}",
               "doorTime": "{{training.starts_at}}"
             }

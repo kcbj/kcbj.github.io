@@ -3,6 +3,10 @@
   featured: true
   name: KCBJ Kantine
   coordinates: [ 50.987692, 4.7809190000000115 ] 
+  address:
+    street_address: Professor Scharpélaan 16
+    postal_code: 3130
+    locality: Betekom
 - id: tumkens
   featured: true
   name: Sporthal De Tumkens
