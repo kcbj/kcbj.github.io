@@ -1,26 +1,29 @@
-season: 2014 - 2015
+season: 2015 - 2016
 teams:
   - id: u8
     name: U8
-    picture: /images/ploegen/2014-2015/miniemen.jpg
+    picture: /images/ploegen/2015-2016/U8.jpg
   - id: u10
     name: U10
-    picture: /images/ploegen/2014-2015/pupillen.jpg
+    picture: /images/ploegen/2015-2016/U10.jpg
   - id: u12
     name: U12
-    picture: /images/ploegen/2014-2015/cadetten.jpg
+    picture: /images/ploegen/2015-2016/U12.jpg
   - id: u14
     name: U14
-    picture: /images/ploegen/2014-2015/scholieren.jpg
+    picture: /images/ploegen/2015-2016/U14.jpg
   - id: u19
     name: U19
-    picture: /images/ploegen/2014-2015/junioren.jpg
+    picture: /images/ploegen/2015-2016/U19.jpg
   - id: senioren
     name: Senioren
-    picture: /images/ploegen/2014-2015/senioren.jpg
+    picture: /images/ploegen/2015-2016/senioren.jpg
   - id: gewestelijken
     name: C Ploeg
-    picture: /images/ploegen/2014-2015/gewestelijken.jpg
+    picture: /images/ploegen/2015-2016/jong-gewestelijken.jpg
   - id: gewestelijken
     name: AAA Gewestelijken
-    picture: /images/ploegen/2014-2015/recreanten.jpg
+    picture: /images/ploegen/2015-2016/aaa-gewestelijken.jpg
+  - id: recreanten
+    name: Red Dragons
+    picture: /images/ploegen/2015-2016/reddragons.jpg
