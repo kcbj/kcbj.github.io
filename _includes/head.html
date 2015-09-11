@@ -13,7 +13,7 @@
   <meta name="twitter:site" content="@kcbj" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 
-  <meta property="og:url" content="{{ page.url | replace 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:site_name" content="KCBJ Online" />
   <meta property="og:locale" content="nl_NL" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
