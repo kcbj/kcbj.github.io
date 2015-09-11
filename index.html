@@ -114,9 +114,9 @@ redirect_from:
     {% if location.address %}
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "{{location.street_address | escape}}",
-      "postalCode": "{{location.postalCode | escape}}",
-      "addressLocality": "{{location.locality | escape}}",
+      "streetAddress": "{{location.address.street_address | escape}}",
+      "postalCode": "{{location.address.postalCode | escape}}",
+      "addressLocality": "{{location.address.locality | escape}}",
       "addressCountry": "Belgium"
     },
     {% endif %}
