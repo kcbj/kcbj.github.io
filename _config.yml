@@ -18,6 +18,7 @@ exclude:
   - /images/events/originals
   - /images/events/optimize.rb
   - /images/news/optimize.rb
+  - /images/ploegen/optimize.rb
   - /downloads/generate.rb
   - /_locations/generate.rb
 
@@ -48,3 +49,4 @@ gems:
   - github-pages
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
