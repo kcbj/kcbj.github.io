@@ -59,6 +59,7 @@ body.index #location {
 body.index #sponsor-list {
   @include reset-list;
   @include flex-container( column, no-wrap, flex-start, stretch, center );
+  max-width:                              100%;
 
   .sponsor {
     @include flex( 1 1 auto );

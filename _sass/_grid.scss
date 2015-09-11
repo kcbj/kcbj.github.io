@@ -12,6 +12,7 @@
   z-index:              100;
   @include flex( 1 1 auto );
   @include flex-container( column, wrap, flex-start, stretch, center );
+  max-width:            100%; // IE 11 bugfix (https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container)
 
   padding:              0 $grid-hor-padding;
   max-width:            $grid-max-width;
@@ -28,6 +29,7 @@
   width:                100%;
   @include flex( 1 1 auto );
   @include flex-container( column, wrap, flex-start, stretch, center );
+  max-width:            100%;
 
   @media screen and ( min-width: $grid-min-width ) {
     @include flex-container( row, wrap, center, stretch, center );
@@ -121,6 +123,7 @@
     }
 
     @include flex-container( column, no-wrap, space-between, stretch, center );
+    max-width:              100%;
     // @include display( flex );
     // @include flex-direction( column );
     // @include justify-content( space-between );
