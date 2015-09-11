@@ -2,6 +2,10 @@
   background-color:     transparentize( orange, .3 ) !important;
 }
 
+*[data-expire] {
+  display:              none !important;
+}
+
 body {
   font-family:          $base-font-family;
   color:                $base-font-color;

@@ -7,6 +7,7 @@
 <html lang="nl">
   {% include head.html %}
   <body{% if vars.class %} class="{{vars.class}}"{% endif %}>
+    {% include banner.html %}
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

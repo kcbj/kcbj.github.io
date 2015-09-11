@@ -1,0 +1,15 @@
+{% for banner in site.data.banner %}
+<div {% if banner.expire %}data-expire="{{banner.expire | date_to_xmlschema }}" {% endif %}class="banner container banner-{{banner.type}}">
+  <div class="wrapper">
+    <div class="message">
+    {% case banner.type %}
+    {% when "warning" %}
+      <i class="fa fa-exclamation-triangle"></i>
+    {% else %}
+      <i class="fa fa-exclamation-circle"></i>
+    {% endcase %}
+    {{banner.message}}
+    </div>
+  </div>
+</div>
+{% endfor %}

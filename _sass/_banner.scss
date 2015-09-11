@@ -1,0 +1,27 @@
+.container.banner {
+
+  font-family:        $sans-serif-font-family;
+  font-size:          $large-font-size;
+  line-height:        $large-line-height;
+  padding:            $grid-vert-padding 0;
+  font-weight:        $medium-font-weight;
+  @include light-on-dark;
+  text-align:         center;
+
+  .fa {
+    margin-right:     $grid-hor-padding / 2;
+  }
+
+  &.banner-notice {
+    background-color: #FFC107;
+    border-bottom:    #FFA000;
+    color:            #000000;
+  }
+
+  &.banner-warning {
+    background-color: #FF5722;
+    border-bottom:    #E64A19;
+    color:            #000000;
+  }
+
+}

@@ -1,0 +1,4 @@
+---
+#- type: warning
+#  message: Hello World!  This is a notice.
+#  expire: 2015-9-10 10:55:00 +02
