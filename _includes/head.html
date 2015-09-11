@@ -13,22 +13,22 @@
   <meta name="twitter:site" content="@kcbj" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 
-  <meta name="og:url" content="{{ page.url | replace 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta name="og:site_name" content="KCBJ Online" />
-  <meta name="og:locale" content="nl_NL" />
-  <meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:site_name" content="KCBJ Online" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   {% if page.descritpion %}
-  <meta name="og:description" content="{{ page.description | escape}}" />
+  <meta property="og:description" content="{{ page.description | escape}}" />
   <meta name="twitter:description" content="{{ page.description | escape}}" />
   {% endif %}
 
   {% if page.image %}
-  <meta name="og:image" content="{{ site.url }}{{ page.image }}" />
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
   <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
   {% endif %}
 
   {% for tag in page.tags %}
-  <meta name="{{tag.name}}" content="{{ tag.content }}" />
+  <meta {% if tag.name %}name="{{tag.name}}" {% endif %}{% if tag.property %}property="{{tag.property}}" {% endif %}content="{{ tag.content }}" />
   {% endfor %}
 
   <meta name="fb:page_id" content="199694587105" />
