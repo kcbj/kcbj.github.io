@@ -79,6 +79,7 @@ body.media {
 
   #ploegen {
     @include background-image( 'trainers02' );
+    background-position:      center 25%;
   }
 
 }
