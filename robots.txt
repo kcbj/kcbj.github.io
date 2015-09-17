@@ -6,3 +6,4 @@ Disallow: /images/sponsors
 Disallow: /images/backgrounds
 Disallow: /images/video
 Disallow: /images/ploegen
+Disallow: /404.html
