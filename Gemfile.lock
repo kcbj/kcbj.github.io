@@ -146,6 +146,3 @@ DEPENDENCIES
   jekyll-sitemap (= 0.8.1)
   json
   mime-types
-
-BUNDLED WITH
-   1.10.6
