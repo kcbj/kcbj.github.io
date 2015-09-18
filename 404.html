@@ -5,7 +5,7 @@ permalink: 404.html
 ---
 <section id="welcome" class="first fullscreen jumbo hero container nomargin">
   <div class="video">
-    <video autoplay loop poster="/images/video/video-rain.gif">
+    <video id="player" autoplay loop>
       <source src="/images/video/video-rain.webm" type="video/webm" />
       <source src="/images/video/video-rain.mp4" type="video/mp4" />
     </video>
@@ -13,8 +13,48 @@ permalink: 404.html
   <div class="overlay blue"></div>
   <div class="wrapper">
     <h1>Pagina niet gevonden</h1>
+    <a class="plain desktop-only" id="reference" target="_blank" href="http://www.imdb.com/title/tt1000252/">
+      <h2>Must be atmospheric disturbance.  Still, it'll pass.  Everything does.</h2>
+    </a>
     <div class="buttons">
       <a class="button more" href="{{site.url}}"><i class="fa fa-home"></i> Beginpagina</a>
     </div>
   </div>
 </section>
+<script>
+  var videos = [
+    {
+      'byline': "This page has gone all wibbly wobbly",
+      'videos': [ [ "video/webm", '/images/video/video-wibbly-wobbly.webm' ], [ 'video/mp4', '/images/video/video-wibbly-wobbly.mp4' ] ],
+      'link': 'http://www.imdb.com/title/tt1000252/'
+    },
+    {
+      'byline': "Must be atmospheric disturbance.  Still, it'll pass.  Everything does.",
+      'videos': [ [ "video/webm", '/images/video/video-rain.webm' ], [ 'video/mp4', '/images/video/video-rain.mp4' ] ],
+      'link': ''
+    },
+    {
+      'byline': "Goodbye page!  Hello ground!",
+      'videos': [ [ "video/webm", '/images/video/video-whale.webm' ], [ 'video/mp4', '/images/video/video-whale.mp4' ] ],
+      'link': 'http://www.imdb.com/title/tt0371724/'
+    },
+    {
+      'byline': "This isn't the page you're looking for!",
+      'videos': [ [ "video/webm", '/images/video/video-droids.webm' ], [ 'video/mp4', '/images/video/video-droids.mp4' ] ],
+      'link': 'http://www.imdb.com/title/tt0076759/'
+    },
+    {
+      'byline': "This page doesn't exist when it's being observed.  Don't blink!",
+      'videos': [ [ "video/webm", '/images/video/video-blink.webm' ], [ 'video/mp4', '/images/video/video-blink.mp4' ] ],
+      'link': 'http://www.imdb.com/title/tt1000252/'
+    }
+  ];
+
+  $( document ).ready( function() {
+    var choice = videos[ Math.floor( Math.random() * videos.length ) ];
+    var sources = choice.videos.map( function( video ) { return "<source src=\"" + video[1] + "\" type=\"" + video[0] + "\" />" } );
+    $( '#player' ).html( sources.join( "\n" ) ).load();
+    $( '#reference' ).attr( 'href', choice.link );
+    $( '#reference h2' ).text( choice.byline );
+  } );
+</script>

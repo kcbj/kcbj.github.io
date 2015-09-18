@@ -115,3 +115,15 @@ a {
     }
   }
 }
+
+@mixin desktop-only( $display: block ) {
+  display:              none;
+
+  @media screen and (min-width: $grid-min-width) {
+    display:            $display;
+  }
+}
+
+.desktop-only {
+  @include desktop-only;
+}
