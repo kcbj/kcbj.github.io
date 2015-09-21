@@ -2,8 +2,7 @@
 title: Korfbal Club KCBJ
 email: webmaster@kcbj.be
 description: > # this means to ignore newlines until "baseurl:"
-  Webpagina van KCBJ.  Een korfbal club uit Betekom met verschillende jeugd en volwassene ploegen.  KCBJ heeft
-  zowel competitieve als recreatieve korfbal ploegen.
+  KBCJ is een korfbalclub uit Betekom met meer dan 150 actieve leden. Er zijn verschillende jeugd- en volwassenenploegen die spelen in competitieverband of voor de fun.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kcbj.be" # the base hostname & protocol for your site
 timezone: Europe/Brussels
