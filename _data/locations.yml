@@ -35,3 +35,11 @@
     postal_code: 3130
     locality: Betekom
   coordinates: [ 50.996151022043, 4.796130359172821 ]
+- id: kerkplein
+  name: Kerkplein Betekom
+  address: 
+    street_address: Sint-Laurentiusstraat
+    postal_code: 3130
+    locality: Betekom
+  coordinates: [ 50.9848655 , 4.7812281 ]
+
