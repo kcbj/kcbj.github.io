@@ -29,3 +29,22 @@
   start: 2016-11-19 20:00:00 +01:00
   location: parochiezaal
   image: quiz.jpg
+- title: Jaarfeest
+  start: 2017-2-4 18:00:00 +02:00
+  location: parochiezaal
+  image: party.jpg
+- title: Mosselweekend
+  start: 2017-10-21 17:00:00 +02:00
+  end: 2017-10-21 21:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: Mosselweekend
+  start: 2017-10-22 12:00:00 +02:00
+  end: 2017-10-22 19:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: KCBJ Kwis
+  start: 2017-11-18 20:00:00 +01:00
+  location: parochiezaal
+  image: quiz.jpg
+  
