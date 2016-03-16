@@ -107,3 +107,21 @@ body.downloads {
   }
 
 }
+
+/******************************************************************************
+ TRAININGSWEEK
+******************************************************************************/
+
+body.trainingsweek {
+
+  #first-divider {
+    @include background-image( 'jeugd08' );
+    background-position:          center top;
+  }
+
+  #second-divider {
+    @include background-image( 'trainers01' );
+    background-position:          center top;
+  }
+
+}

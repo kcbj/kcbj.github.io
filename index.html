@@ -33,6 +33,9 @@ redirect_from:
     <div class="buttons">
       <a class="button more" href="/info">Meer over KCBJ</a>
     </div>
+    <div class="buttons">
+      <a class="button more" style ="text-align: center" href="/trainingsweek">Korfbalweek<br>Zomer 2016</a>
+    </div>
     <div id="down" class="more">
       <a href="#trainingen"><i class="fa fa-angle-down"></i></a>
     </div>
@@ -84,7 +87,7 @@ redirect_from:
     <ol id="location-list" class="buttons">
       {% assign locations = site.locations | where: "featured", true | sort: "order" %}
       {% for location in locations %}
-        <li class="button location" 
+        <li class="button location"
             data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
             data-location-name="{{ location.name }}"
         >{{ location.name }}</li>

@@ -8,7 +8,7 @@ body.index #down {
   right:                                  0;
   width:                                  auto;
   text-align:                             center;
-  
+
   a {
     @include link-color( rgba( 255, 255, 255, .4 ), rgba( 255, 255, 255, .8 ) );
     text-decoration:                      none;
@@ -73,7 +73,7 @@ body.index #location {
   }
 }
 
-body.index #sponsor-list {
+body #sponsor-list {
   @include reset-list;
   @include flex-container( column, no-wrap, flex-start, stretch, center );
   max-width:                              100%;
