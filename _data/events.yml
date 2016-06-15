@@ -1,8 +1,16 @@
 ---
-- title: BBQ
-  start: 2016-6-4 18:00:00 +02:00
+- title: Korfbalweek
+  start: 2016-8-8 09:00:00 +02:00
+  end: 2016-8-12 16:00:00 +02:00
   location: kantine
-  image: bbq.jpg
+  image: korfbalweek.jpg
+  facebook: https://www.facebook.com/events/582539305244645/
+- title: Mega-korfbal-namiddag
+  start: 2016-9-14 14:00:00 +02:00
+  end: 2016-8-14 16:30:00 +02:00
+  location: kantine
+  image: vriendjesdag.jpg
+  facebook: https://www.facebook.com/events/565599883614745/
 - title: Mosselweekend
   start: 2016-10-15 17:00:00 +02:00
   end: 2016-10-15 21:00:00 +02:00
@@ -35,4 +43,3 @@
   start: 2017-11-18 20:00:00 +01:00
   location: parochiezaal
   image: quiz.jpg
-  
