@@ -112,7 +112,7 @@ redirect_from:
         <tbody>
           {% for team in period.teams %}
           <script type="application/ld+json">
-            { 
+            {
               "@context": "http://schema.org",
               "@type": "SportsTeam",
               "@id": "kcbj:teams:{{team.name | slugify}}",
@@ -126,12 +126,12 @@ redirect_from:
           {% for training in team.trainings %}
             {% if count > 0 %}<tr>{% endif %}
             {% assign count = count | plus: 1 %}
-            {% assign location = site.locations | where: "id", training.location | first %}
+            {% assign location = site.data.locations | where: "id", training.location | first %}
             <td class="first" data-title="weekdag">{{training.weekday}}</td>
             <td data-title="start">{{training.starts_at}}</td>
             <td data-title="einde">{{training.ends_at}}</td>
             <td>{{training.note}}</td>
-            <td data-title="locatie"><a class="plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a></td>
+            <td data-title="locatie"><a class="plain underlined" href="../#location" title="{{location.name}}">{{location.name}}</a></td>
           </tr>
           <script type="application/ld+json">
             {
