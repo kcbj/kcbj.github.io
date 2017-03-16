@@ -1,10 +1,16 @@
 ---
+- logo: automotive.png
+  title: "Groep Automotive"
+  website: http://www.groepautomotive.be
 - logo: bress.png
   title: Belgian Real Estate Services
   website: http://bress.be
 - logo: debruyn.png
   title: De Bruyn N.V.
   website: http://www.debruyn-nv.be
+- logo: kbc.png
+  title: "KBC Betekom-Begijnendijk"
+  website: http://www.kbc.be
 - logo: norio.svg
   title: Norio
   website: http://www.norio.be
