@@ -1,10 +1,11 @@
 ---
-- title: Pannenkoekendag
-  start: 2016-3-12 12:00:00 +01:00
-  end: 2016-3-12 19:00:00 +01:00
-  image: pannenkoeken.jpg
-  location: verhaegen
-  facebook: https://www.facebook.com/events/768137406671425/
+- title: Paasontbijten
+  date: 2017-4-15 00:00 +02:00
+  image: ontbijt.jpg
+- title: BBQ
+  start: 2017-6-3 18:00:00 +02:00
+  location: kantine
+  image: bbq.jpg
 - title: Korfbalweek
   start: 2017-8-14 09:00:00 +02:00
   end: 2016-8-18 16:00:00 +02:00
@@ -21,7 +22,13 @@
   end: 2017-10-22 19:00:00 +02:00
   location: parochiezaal
   image: mosselen.jpg
-- title: KCBJ Kwis
+- title: Quiz
   start: 2017-11-18 20:00:00 +01:00
   location: parochiezaal
   image: quiz.jpg
+- title: Pannenkoekendag
+  start: 2017-3-4 12:00:00 +01:00
+  end: 2017-3-4 19:00:00 +01:00
+  image: pannenkoeken.jpg
+  location: verhaegen
+
