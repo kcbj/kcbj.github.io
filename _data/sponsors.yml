@@ -1,4 +1,7 @@
 ---
+- logo: act-unity.png
+  title: "Act Unity"
+  website: http://www.act-unity.com/
 - logo: automotive.png
   title: "Groep Automotive"
   website: http://www.groepautomotive.be
@@ -13,7 +16,7 @@
   website: http://www.kbc.be
 - logo: norio.svg
   title: Norio
-  website: http://www.norio.be
+  website: https://www.norio.be
 - logo: proxy.png
   title: Proxy Delhaize Betekom
 - logo: verabo.png
