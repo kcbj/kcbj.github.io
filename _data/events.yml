@@ -1,13 +1,4 @@
 ---
-- title: BBQ
-  start: 2017-6-3 18:00:00 +02:00
-  location: kantine
-  image: bbq.jpg
-- title: Weekend (voor leden)
-  start: 2017-8-4 17:00:00 +02:00
-  end: 2016-8-6 17:00:00 +02:00
-  image: weekend.jpg
-  facebook: https://www.facebook.com/events/1882218888701049/
 - title: Korfbalweek
   start: 2017-8-14 09:00:00 +02:00
   end: 2016-8-18 16:00:00 +02:00
