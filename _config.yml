@@ -44,8 +44,9 @@ defaults:
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - github-pages
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-coffeescript

@@ -29,24 +29,3 @@ head: |
 <meta name="geo.position" content="{{page.coordinates[0]}},{{page.coordinates[1]}}" />
 <meta name="ICBM" content="{{page.coordinates[0]}},{{page.coordinates[1]}}" />
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@id": "{{site.url}}{{page.url}}",
-    "@type": "Place",
-    "name": "{{name | escape}}",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": {{page.coordinates[0]}},
-      "longitude": {{page.coordinates[1]}}
-    }{% if page.address %},
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "{{page.address.street_address | escape}}",
-      "postalCode": "{{page.address.postal_code | escape}}",
-      "addressLocality": "{{page.address.locality | escape}}",
-      "addressCountry": "Belgium"
-    }
-    {% endif %}
-  }
-</script>
