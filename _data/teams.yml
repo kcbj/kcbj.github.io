@@ -43,7 +43,7 @@ recreanten:
   ages: vanaf 16 jaar
   list: true
   description: occasioneel sporten voor het plezier
-adherenten:
-  name: Adherenten
+supporters:
+  name: Supporters
   list: false
   description: niet sportend lid
