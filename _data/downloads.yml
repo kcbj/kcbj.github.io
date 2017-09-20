@@ -7,6 +7,25 @@
     hsize: 842.95 KiB
     mime: pdf
   path: "/downloads/files/info"
+- title: Documenten voor nieuwe leden
+  remarks: Gelieve deze ingevulde formulieren terug te bezorgen aan de trainer of begeleider van je ploeg, of digitaal aan secretaris@kcbj.be
+  files:
+  - path: "/downloads/files/nieuwe-leden/aansluiting_nieuwe_leden_1718.pdf"
+    title: Aansluitingsformulier KCBJ
+    size: 116.229
+    hsize: 116.2 KiB
+    mime: pdf
+  - path: "/downloads/files/nieuwe-leden/4317_affiliatieformulier.pdf"
+    title: Affiliatieformulier KBKB (korfbalbond)
+    size: 377.770
+    hsize: 337.8 KiB
+    mime: pdf
+  - path: "/downloads/files/nieuwe-leden/4347_medisch_attest.pdf"
+    title: Medisch attest
+    size: 267.097
+    hsize: 267.1 KiB
+    mime: pdf
+  path: "/downloads/files/nieuwe-leden"
 - title: Documenten voor leden
   files:
   - path: "/downloads/files/leden/verzekering.pdf"
@@ -16,6 +35,7 @@
     mime: pdf
   path: "/downloads/files/leden"
 - title: Formulieren tussenkomst lidgeld ziekenfonds
+  remarks: Je kan ook altijd de website van je ziekenfonds raadplegen voor de laatste verise van deze documenten. 
   path: "/downloads/files/ziekenfonds"
   files:
   - path: "/downloads/files/ziekenfonds/christelijke-mutualiteit.pdf"

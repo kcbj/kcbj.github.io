@@ -15,7 +15,7 @@ description: Verschillende downloads met onder andere informatie over de club.  
     <div class="text">
       {% for folder in site.data.downloads %}
       <h2 id="{{folder.path | slugify }}">{{folder.title}}</h2>
-
+      <div>{{folder.remarks}}</div>
       <ul class="downloads">
         {% for file in folder.files %}
         {% assign type = site.data.mime-types.types | where: 'type', file.mime | first %}
