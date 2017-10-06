@@ -1,8 +1,13 @@
-u8:
-  name: U8
-  ages: laatste kleuterklas tot en met 2de leerjaar
+u6:
+  name: U6
+  ages: kleuters
   list: true
   description: recreatieve ploeg voor de allerkleinsten
+u8:
+  name: U8
+  ages: 1e en 2de leerjaar
+  list: true
+  description: recreatieve jeugdploeg
 u10:
   name: U10
   ages: 3de en 4de leerjaar

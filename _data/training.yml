@@ -2,6 +2,13 @@ season: 2017 - 2018
 periods:
   - name: veld (van begin augustus tot eind oktober, van half maart tot eind mei)
     teams:
+      - name: U6
+        trainings:
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            start: 2017-10-6 18:00:00
+            location: kantine
       - name: U8
         trainings:
           - weekday: vrijdag
@@ -98,6 +105,12 @@ periods:
             note: Om de 2 weken
   - name: zaal (van begin november tot half maart)
     teams:
+      - name: U6
+        trainings:
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            start: 2017-10-6 18:00:00
       - name: U8
         trainings:
           - weekday: vrijdag
