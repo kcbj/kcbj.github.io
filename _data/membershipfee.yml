@@ -1,6 +1,8 @@
 ---
 season: 2017 - 2018
 teams:
+  - team: u6
+    fee: €50
   - team: u8
     fee: €75
   - team: u10
