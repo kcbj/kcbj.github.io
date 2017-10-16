@@ -6,8 +6,6 @@
   description: Het sportcomité staat in voor het sportief beleid van de club. 
 - name: Jeugdcoördinator
   description: De jeugdcoördinator zorgt ervoor dat de opleiding, zoals beschreven door het sportcomité, gerealiseerd wordt, en dat de spelers goed opgeleid worden om door te stromen naar de senioren. De jeugdcoördinator biedt waar nodig, ondersteuning en hulp bij trainingen in de vorm van uitleg en tips aan de desbetreffende trainer(s). De jeugdcoördinator observeert trainingen, signaleert problemen en speelt hier direct op in, in een extra trainingssessie of in de bovengenoemde trainingssessies.
-- name: Jongerencomité	
-  description: Het jongerencomité steunt de club door het organiseren van een aantal (jeugd)activiteiten.
 - name: Trainers	
   description: Elke ploeg wordt sportief begeleid door één of meerdere trainers.
 - name: Begeleiders
