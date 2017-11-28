@@ -1,21 +1,10 @@
 ---
-- title: Mosselweekend
-  start: 2017-10-21 17:00:00 +02:00
-  end: 2017-10-21 21:00:00 +02:00
-  location: parochiezaal
-  image: mosselen.jpg
-  facebook: https://www.facebook.com/events/114781155884493/
-- title: Mosselweekend
-  start: 2017-10-22 12:00:00 +02:00
-  end: 2017-10-22 19:00:00 +02:00
-  location: parochiezaal
-  image: mosselen.jpg
-  facebook: https://www.facebook.com/events/114781155884493/
-- title: Quiz
-  start: 2017-11-18 20:00:00 +01:00
-  location: parochiezaal
-  image: quiz.jpg
-  facebook: https://www.facebook.com/events/2093941767298283/
+- title: Kerstmarkt
+  start: 2017-12-23 16:00:00 +01:00
+  end: 2017-12-23 22:00:00 +01:00
+  location: kantine
+  image: kerstmarkt.jpg
+  facebook: https://www.facebook.com/events/2012706458949373/
 - title: Jaarfeest		
   start: 2018-2-3 17:30:00 +01:00		
   location: parochiezaal		
