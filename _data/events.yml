@@ -1,10 +1,4 @@
 ---
-- title: Kerstmarkt
-  start: 2017-12-23 17:00:00 +01:00
-  end: 2017-12-23 22:00:00 +01:00
-  location: kantine
-  image: kerstmarkt.jpg
-  facebook: https://www.facebook.com/events/2012706458949373/
 - title: Jaarfeest		
   start: 2018-2-3 17:30:00 +01:00		
   location: parochiezaal		
@@ -14,6 +8,10 @@
   end: 2018-3-4 19:00:00 +01:00
   image: pannenkoeken.jpg
   location: verhaegen
+- title: BBQ
+  start: 2018-6-2 18:00:00 +02:00
+  location: kantine
+  image: bbq.jpg
 - title: Mosselweekend
   start: 2018-09-29 17:00:00 +02:00
   end: 2017-09-29 21:00:00 +02:00
@@ -24,3 +22,26 @@
   end: 2017-09-30 19:00:00 +02:00
   location: parochiezaal
   image: mosselen.jpg
+- title: Quiz
+  start: 2018-11-17 20:00:00 +01:00
+  location: parochiezaal
+  image: quiz.jpg
+- title: Jaarfeest		
+  start: 2019-2-2 17:30:00 +01:00		
+  location: parochiezaal		
+  image: party.jpg
+- title: Mosselweekend
+  start: 2018-10-05 17:00:00 +02:00
+  end: 2017-10-05 21:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: Mosselweekend
+  start: 2018-10-06 12:00:00 +02:00
+  end: 2017-10-06 19:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: Quiz
+  start: 2019-11-16 20:00:00 +01:00
+  location: parochiezaal
+  image: quiz.jpg
+
