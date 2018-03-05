@@ -1,10 +1,4 @@
 ---
-- title: Pannenkoekendag
-  start: 2018-3-4 12:00:00 +01:00
-  end: 2018-3-4 19:00:00 +01:00
-  image: pannenkoeken.jpg
-  location: verhaegen
-  facebook: https://www.facebook.com/events/783448971846205/
 - title: BBQ
   start: 2018-6-2 18:00:00 +02:00
   location: kantine
@@ -28,13 +22,13 @@
   location: parochiezaal		
   image: party.jpg
 - title: Mosselweekend
-  start: 2018-10-05 17:00:00 +02:00
-  end: 2017-10-05 21:00:00 +02:00
+  start: 2019-10-05 17:00:00 +02:00
+  end: 2019-10-05 21:00:00 +02:00
   location: parochiezaal
   image: mosselen.jpg
 - title: Mosselweekend
-  start: 2018-10-06 12:00:00 +02:00
-  end: 2017-10-06 19:00:00 +02:00
+  start: 2019-10-06 12:00:00 +02:00
+  end: 2019-10-06 19:00:00 +02:00
   location: parochiezaal
   image: mosselen.jpg
 - title: Quiz
