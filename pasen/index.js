@@ -1,6 +1,6 @@
 var kcbj = {
 	price: 8,
-	distanceLimit: 5000,
+	distanceLimit: 6000,
 	distancePerOrder: 250,
 	errorGeneral: 'Er ging iets fout. Probeer later nog eens.',
 	errorDistance: 'Dit adres ligt te ver voor levering aan huis. Gelieve de paasontbijten zelf te komen afhalen aan de kantine.',
