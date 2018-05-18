@@ -1,25 +1,25 @@
 ---
-season: 2017 - 2018
+season: 2018 - 2019
 teams:
   - team: u6
-    fee: €50
+    fee: €60
   - team: u8
-    fee: €75
+    fee: €90
   - team: u10
-    fee: €75
+    fee: €90
   - team: u12
-    fee: €95
-  - team: u14
-    fee: €95
-  - team: u16
-    fee: €95
-  - team: u19
-    fee: €95
-  - team: senioren
     fee: €110
+  - team: u14
+    fee: €110
+  - team: u16
+    fee: €110
+  - team: u19
+    fee: €110
+  - team: senioren
+    fee: €125
   - team: gewestelijken
-    fee: €85
+    fee: €100
   - team: recreanten
-    fee: €45
+    fee: €50
   - team: supporters
-    fee: €15
+    fee: €20
