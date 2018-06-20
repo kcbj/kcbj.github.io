@@ -43,6 +43,11 @@
     title: Christelijke mutualiteit
     hsize: 2.38 MiB
     mime: pdf
+  - path: "/downloads/files/ziekenfonds/voorzorg.pdf"
+    size: 286848
+    title: De Voorzorg
+    hsize: 286.8 KiB
+    mime: pdf
   - path: "/downloads/files/ziekenfonds/liberale-mutualiteit.pdf"
     size: 86388
     title: Liberale mutualiteit
@@ -58,3 +63,4 @@
     title: Vlaams neutraal ziekenfonds
     hsize: 97.13 KiB
     mime: pdf
+
