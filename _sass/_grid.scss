@@ -50,7 +50,7 @@
   @include background;
 
   @media screen and ( min-width: $grid-min-width ) {
-    min-height:             50vh;
+    min-height:             40vh;
   }
 
   @include flex( 0 0 50% );
@@ -103,7 +103,7 @@
 // Currently container is flex-direction: row, fullscreen
 // could be made nicer by switching to flex-direction: column
 .container.fullscreen {
-  min-height:             100vh;
+  min-height:             80vh;
   box-sizing:             border-box;
   @include align-content( stretch );
   margin:                 $base-line-height * 3 0;
