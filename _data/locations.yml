@@ -1,7 +1,18 @@
 ---
+- id: grotebaan
+  featured: true
+  name: Gemeentelijk Sportpark
+  notes: Wedstrijden en trainingen veld<br>Vanaf 7 sep 2018
+  new: true
+  coordinates: [ 50.997642, 4.796937 ] 
+  address:
+    street_address: Grote Baan 118
+    postal_code: 3130
+    locality: Betekom
 - id: kantine
   featured: true
-  name: KCBJ Kantine
+  name: Oude KCBJ kantine
+  notes: Wedstrijden en trainingen veld<br>Tot en met 6 sep 2018
   coordinates: [ 50.987692, 4.7809190000000115 ] 
   address:
     street_address: Professor Scharpélaan 54
@@ -10,13 +21,14 @@
 - id: tumkens
   featured: true
   name: Sporthal De Tumkens
+  notes: Wedstrijden en trainingen zaal
   address:
     street_address: Pastoor Pitetlaan 30
     postal_code: 3130
     locality: Betekom
   coordinates: [ 50.987841, 4.785295999999988 ]
 - id: kleedkamers
-  featured: true
+  featured: false
   name: Kleedkamers Tumkens
   coordinates: [ 50.988611, 4.784352000000013 ]
 - id: parochiezaal

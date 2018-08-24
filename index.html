@@ -25,7 +25,7 @@ redirect_from:
     <h1>Welkom bij korfbalclub KCBJ</h1>
     <h2>KCBJ is een korfbalclub uit Betekom met meer dan 200 actieve leden</h2>
     <div class="buttons">
-      <a class="button more" href="/info">Meer over KCBJ</a>
+      <a class="button more new" href="#location">Wij verhuizen</a>
     </div>
     <div id="respect" style="position: absolute; right: 0; bottom: 0; padding: 20px">
       <img src="/images/respect-white.png" alt="Respect" style="opacity: 0.5;"/>
@@ -78,9 +78,12 @@ redirect_from:
     <ol id="location-list" class="buttons">
       {% assign locations = site.locations | where: "featured", true | sort: "order" %}
       {% for location in locations %}
-        <li class="button location"
+        <li class="button location {% if location.new %}new{% endif %}"
             data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
             data-location-name="{{ location.name }}"
+            data-location-notes="{{ location.notes }}"
+            data-location-class="{% if location.new %}new{% endif %}"
+            data-location-address="{{ location.address.street_address | append: ', ' | append: location.address.postal_code | append: ' ' | append: location.address.locality}}"
         >{{ location.name }}</li>
       {% endfor %}
     </ol>

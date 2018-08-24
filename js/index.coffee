@@ -5,7 +5,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoicnV0Z2VyY2xhZXMiLCJhIjoiWHB3ZHNKYyJ9.5Scj6OBi
 $( document ).ready ->
   map = L.mapbox.map 'map', 'mapbox.streets', 
     scrollWheelZoom: false
-    maxZoom: 16
+    maxZoom: 15
   locations = []
 
   $( '#location-list *[data-location-coordinates]' ).each (i) ->
@@ -21,7 +21,8 @@ $( document ).ready ->
       'background-image': 'url( "' + marker.options.icon.options.iconUrl + '")'
       'cursor': 'pointer'
 
-    popup = L.popup( { 'closeButton': false } ).setLatLng( location ).setContent( $( this ).data( 'location-name' ) )
+    popup = L.popup( { 'closeButton': false } ).setLatLng( location )
+    .setContent( "<b>" + $( this ).data( 'location-name' ) + "</b><br>"  + $( this ).data( 'location-notes' )  + "<br><br>"  + $( this ).data( 'location-address' ) + "<br><a href='https://www.google.com/maps/dir/?api=1&destination=" + $( this ).data( 'location-coordinates' ) + "' target='_blank'>Route</a>")
     marker.bindPopup( popup )
     marker.on 'click', -> this.openPopup()
     $( this ).click -> marker.openPopup()
