@@ -27,7 +27,6 @@ sass:
 collections:
   locations:
     output: true
-    permalink: /info/locaties/:path/
 
 defaults:
   - scope:

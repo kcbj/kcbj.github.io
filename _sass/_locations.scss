@@ -1,0 +1,14 @@
+body.locations {
+
+  div.divider{
+    background-color: $blue;
+    height: 2px;
+    margin: 3 * $grid-vert-padding 0 2 * $grid-vert-padding 0;
+  }
+
+  .location_photos img {
+    width: 30%;
+    margin-right: 1em;
+  }
+
+}

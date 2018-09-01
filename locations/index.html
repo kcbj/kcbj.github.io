@@ -1,0 +1,43 @@
+---
+layout: default
+class: locations
+title: Locaties
+description: Locates waar KCBJ haar wedstrijden speelt.
+---
+<div class="hero container" id="first-divider">
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+    <h1 class=larger">Locaties van KCBJ</h1>
+    <p class="centered">Locaties waar KCBJ wedstrijden speelt en/of traint</p>
+  </div>
+</div>
+<div class="container">
+    <div class="wrapper" id="locations">
+      {% assign locations = site.locations | where: "games", true | sort: "order" %}
+      {% for location in locations %}
+        {% assign id_parts = location.id | split: '/' %}
+        <div id="{{ id_parts.last }}" class="location text">
+          <h2 class="name {% if location.new %}new{% endif %}">{{location.name}}</h2>
+          {% assign address = location.address.street_address | append: ', ' | append: location.address.postal_code | append: ' ' | append: location.address.locality | escape %}
+          {% assign url_maps = "https://www.google.com/maps/search/?api=1&query=" | append: address %}
+          <p><a href="{{ url_maps }}" target="_blank">{{ address }}</a></p>
+          {% if location.notes %}<p style="color: red;">{{ location.notes }}</p>{% endif %}
+          {% if location.surface %}<p><b>Ondergrond:</b> {{ location.surface }}</p>{% endif %}
+          <div class="buttons left">
+              {% assign url_directions = "https://www.google.com/maps/dir/?api=1&destination=" | append: location.coordinates[0] | append: "," | append: location.coordinates[1] %}
+              <a class="button more" href="{{ url_directions }}" title="Route to {{ address }}" target="_blank">Route</a>
+          </div>
+          {% assign images = location.images %}
+          <div class="location_photos">
+          {% for image in images %}
+            <img src="{{ image.path }}" title="{{ image.label }}"/>
+          {% endfor %}
+        </div>
+        {% if forloop.last == false %}
+            <div class="divider"></div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
