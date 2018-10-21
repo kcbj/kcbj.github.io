@@ -112,15 +112,6 @@ redirect_from:
         </thead>
         <tbody>
           {% for team in period.teams %}
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "SportsTeam",
-              "@id": "kcbj:teams:{{team.name | slugify}}",
-              "name": "{{team.name | escape}}",
-              "memberOf": { "@id": "{{site.url}}" }
-            }
-          </script>
           {% assign count = 0 %}
           <tr>
             <td class="key" rowspan="{{team.trainings.size}}">{{team.name}}</td>
@@ -134,18 +125,6 @@ redirect_from:
             <td>{{training.note}}</td>
             <td data-title="locatie"><a class="plain underlined" href="../#location" title="{{location.name}}">{{location.name}}</a></td>
           </tr>
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "SportsEvent",
-              "name": "Training",
-              "attendee": { "@id": "kcbj:teams:{{team.name | slugify}}" },
-              "location": "{{location.url}}",
-              "organizer": "{{site.url}}",
-              "typicalAgeRange": "{{team.ages}}",
-              "doorTime": "{{training.starts_at}}"
-            }
-          </script>
           {% endfor %}
           {% endfor %}
         </tbody>
