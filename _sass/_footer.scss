@@ -10,7 +10,7 @@
   }
 
   @media screen and (min-width: $grid-min-width) {
-    padding:              $base-line-height * 1.5 0;
+    padding:              0 0 $base-line-height * 1.5 0;
   }
 }
 
@@ -37,4 +37,21 @@
   a {
     font-size:          $large-font-size !important;
   }
+}
+
+#sponsor-footer {
+
+  padding: 1em 2em;
+  margin-bottom: $base-line-height;
+
+  color: white;
+
+  b {
+    text-transform: uppercase;
+  }
+
+  a, a:link, a:visited{
+    color: white !important;
+  }
+
 }

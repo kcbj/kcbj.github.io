@@ -90,20 +90,6 @@ redirect_from:
   </div>
   <div id="map"></div>
 </section>
-<section id="sponsors" class="container">
-  <div class="wrapper">
-    <h1 class="title">Sponsors</h1>
-    <ul id="sponsor-list">
-      {% for sponsor in site.data.sponsors %}
-      <li class="sponsor">
-          <a href="{{sponsor.website | default: '#' }}" title="{{sponsor.title}}">
-            <img src="/images/sponsors/{{sponsor.logo}}" />
-          </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
 <script type="application/ld+json">
   {% assign location = site.locations | sort: "order" | first %}
   {

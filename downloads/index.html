@@ -24,7 +24,7 @@ description: Verschillende downloads met onder andere informatie over de club.  
             <i class="file-icon fa fa-{{type.icon}}"></i>
             <div class="content">
               <div class="title">{{file.title}}</div>
-              <div class="size">{{file.hsize}}</div>
+              <div class="size">{{file.size | divided_by: 1000}}k</div>
             </div>
           </a>
         </li>

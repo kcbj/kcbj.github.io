@@ -1,0 +1,73 @@
+---
+layout: default
+title: Sponsors
+class: sponsors
+---
+<section id="intro" class="first container hero background nomargin">
+  <div class="overlay blue"></div>
+  <div class="wrapper">
+    <h1>Sponsors</h1>
+    <div class="text">
+    <p class="centered">
+        KCBJ dankt onderstaande sponsors
+    </p>
+    </div>
+  </div>
+</section>
+<section id="sponsors" class="container">
+  <div class="wrapper">
+    {% assign levels = "Platinum,Goud,Zilver,Brons,Sympathisant" | split: "," %}
+    {% for level in levels %}
+      {% assign sponsors = site.data.sponsors | where: "level", level | sort:"title" %}
+      {% if sponsors != empty %}
+        <div class="sponsor-level sponsor-{{level | downcase}}" id="{{level | downcase}}">
+          <h1 class="title">{{level}}</h1>
+          <ul id="sponsor-list">
+            {% for sponsor in sponsors %}
+            <li class="sponsor">
+                <a href="{{sponsor.website | default: '#' }}" title="{{sponsor.title}}">
+                  <img src="/images/sponsors/{{sponsor.logo}}" />
+                </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+<div class="hero container" id="first-divider">
+    <div class="overlay"></div>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <div class="text">
+      <h1>Word sponsor!</h1>
+
+      {% assign sponsor_downloads = site.data.downloads | where: "path", "/downloads/files/sponsoring" %}
+
+      <p>Als <b>sponsor van KCBJ</b> bereikt u een <b>gemengd publiek</b> uit de wijde omtrek van Betekom/Begijnendijk. In
+          bijlage vindt u <a href="{{ sponsor_downloads[0].files[0].path }}">een overzicht van het sponsoraanbod van onze club</a>. Er is voor <b>elk budget</b> een interessante
+          manier om jouw bedrijf bekendheid te geven en onze club te steunen.
+      </p>
+      <p>Vooral een reclamedoek langs het kunstgrasterrein van de nieuwe sportinfrastructuur aan de Grote Baan is
+          zeer aan te raden. Op dit terrein trainen en spelen ook de voetbalclubs KAC Betekom en KlimOp
+          Begijnendijk waardoor dit jouw reclame een <b>extra bereik</b> en maximale impact geeft.
+      </p>
+      <p>   
+          Wil jij je bedrijfsnaam verbinden aan onze enthousiaste club? Zo zorg jij er voor dat 200 jongeren trots hun
+          sport kunnen beoefenen en tegelijkertijd jouw naam bekendheid geven. Wij zetten ons beste
+          korfbal-beentje voor om voor jou een goede ambassadeur te zijn!
+      </p>
+
+      <div class="buttons">
+        <a href="{{ sponsor_downloads[0].files[0].path }}" class="more button">
+          <i class="fa fa-file-pdf-o"></i> Sponsoraanbod
+        </a>
+        <a href="mailto:sponsoring&#64;kcbj&#46;be" class="more button">
+            <i class="fa fa-envelope-o"></i> Ik wil sponsoren
+          </a>
+        </div>
+    </div>
+  </div>
+</div>

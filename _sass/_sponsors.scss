@@ -1,0 +1,121 @@
+.sponsors {
+
+  #intro {
+    @include background-image( 'hands' );
+  }
+
+  #first-divider {
+    @include background-image( 'handshake' );
+  }
+
+  .sponsor-level {
+    margin-top: $base-line-height * 2;
+    
+    h1{
+      text-transform: uppercase;
+      padding-top: $base-line-height * 0.5;
+      padding-bottom: $base-line-height * 0.5;
+    }
+  }
+
+  #sponsor-list {
+    @include reset-list;
+    @include flex-container( column, no-wrap, flex-start, stretch, center );
+    max-width:                              100%;
+
+    .sponsor {
+
+      min-height: 150px;
+      vertical-align: middle;
+
+      margin-bottom: $base-line-height * 2;
+
+      @include flex( 1 1 auto );
+      text-align:             center;
+
+      a {
+        margin-top:           $base-line-height / 2;
+        padding:              $base-line-height / 4 $grid-hor-padding;
+        display:              block;
+
+        img {
+          max-height:         $base-line-height * 5;
+          max-width:          300px;
+
+          @media screen and (min-width: $grid-min-width) {
+          //  max-width:        8;
+          }
+
+          @include filter( grayscale( 100% ) brightness( 1 ) );
+
+          &:hover {
+            transition:                 .27s;
+            @include                    filter( unset );
+          }
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $grid-min-width) {
+      @include flex-container( row, wrap, space-between, center, center );
+    }
+  }
+
+  .sponsor-platinum {
+    h1:after {
+      content: ' ★★★★★';
+    }
+
+    h1 {
+      background-color:   $sponsor-platinum-color;
+    }
+
+    #sponsor-list .sponsor a img {
+      max-height:         $sponsor-platinum-height;
+    }
+  }
+
+  .sponsor-goud {
+    h1:after {
+      content: ' ★★★★☆';
+    }
+
+    h1 {
+      background-color:   $sponsor-goud-color;
+    }
+
+    #sponsor-list .sponsor a img {
+      max-height:         $sponsor-goud-height;
+    }
+  }
+
+  .sponsor-zilver {
+    h1:after {
+      content: ' ★★★☆☆';
+    }
+    
+    h1 {
+      background-color:   $sponsor-zilver-color;
+    }
+
+    #sponsor-list .sponsor a img {
+      max-height:         $sponsor-zilver-height;
+    }
+  }
+
+  .sponsor-brons {
+    h1:after {
+      content: ' ★★☆☆☆';
+    }
+
+    h1 {
+      background-color:   $sponsor-brons-color;
+    }
+
+    #sponsor-list .sponsor a img {
+      max-height:         $sponsor-brons-height;
+    }
+  }
+}
+

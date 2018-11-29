@@ -1,6 +1,24 @@
 <footer class="container" id="footer">
-  <div class="wrapper">
-    <div class="horizontal stretch">
+    {% if page.url != "/sponsors/" %}
+      <div class="wrapper overlay blue" id="sponsor-footer">
+        <p id="sponsor-list">
+          <b>Sponsors: </b>
+            {% assign levels = "Platinum,Goud,Zilver,Brons,Sympathisant" | split: "," %}
+            {% for level in levels %}
+              {% assign sponsors = site.data.sponsors | where: "level", level | sort:"title" %}
+              {% for sponsor in sponsors %}
+              <a href="/sponsors/#{{sponsor.level | downcase}}">
+                {{sponsor.title}}
+              </a>
+              • 
+              {% endfor %}
+            {% endfor %}
+            ...
+        </p>
+      </div>
+    {% endif %}
+    <div class="wrapper">
+      <div class="horizontal stretch">
       <a href="/" class="identity">KCBJ vzw</a>
       <nav id="footer-menu">
         {% include menu.html %}

@@ -1,27 +1,45 @@
 ---
 - logo: act-unity.png
-  title: "Act Unity"
+  title: "Act-unity"
   website: http://www.act-unity.com/
+  level: Zilver
 - logo: automotive.png
   title: "Groep Automotive"
   website: http://www.groepautomotive.be
+  level: Zilver
 - logo: bress.png
   title: Belgian Real Estate Services
   website: http://bress.be
+  level: Platinum
 - logo: debruyn.png
   title: De Bruyn N.V.
   website: http://www.debruyn-nv.be
+  level: Goud
 - logo: kbc.png
   title: "KBC Betekom-Begijnendijk"
   website: http://www.kbc.be
-- logo: norio.svg
+  level: Zilver
+- logo: norio.png
   title: Norio
   website: https://www.norio.be
+  level: Zilver
 - logo: proxy.png
   title: Proxy Delhaize Betekom
+  level: Platinum
+  website: https://www.facebook.com/Proxy-Delhaize-Betekom-207192383167872/
 - logo: verabo.png
   title: VE-RA-BO
   website: http://www.verabo.be
+  level: Goud
 - logo: wit-toreke.png
   title: "'t Wit Toreke"
   website: http://twittoreke.be
+  level: Platinum
+- logo: my-team.png
+  title: My-Team Aarschot
+  website: https://www.facebook.com/Myteamaarschot/
+  level: Goud
+- logo: vbm-verzekeringen.png
+  title: VBM Verzekeringen
+  website: https://www.vbmverzekeringen.be/
+  level: Goud

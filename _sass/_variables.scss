@@ -5,8 +5,8 @@ $light-gray:            #999999;
 $lighter-gray:          #DCDCDC;
 
 $blue:                  #006699;
+$highlight:             rgba($color: yellow, $alpha: 0.3);
 
-// $sans-serif-font-family: Roboto, Helvetica, Arial, sans-serif;
 $sans-serif-font-family: Lato, Helvetica, Arial, sans-serif;
 $slab-font-family:       'Roboto Slab', serif;
 
@@ -46,4 +46,13 @@ $grid-min-width:        760px;
 $grid-max-width:        84rem;
 $grid-text-width:       $grid-max-width * .60;
 
-$hero-height:           $base-line-height * 20;
+$hero-height:           $base-line-height * 15;
+
+$sponsor-platinum-color:    #E5E4E2;
+$sponsor-platinum-height:   $base-line-height * 7;
+$sponsor-goud-color:        rgba(#FFD700, 0.5);
+$sponsor-goud-height:       $base-line-height * 5;
+$sponsor-zilver-color:      #C0C0C0;
+$sponsor-zilver-height:     $base-line-height * 4;
+$sponsor-brons-color:       #CD7F32;
+$sponsor-brons-height:      $base-line-height * 3;

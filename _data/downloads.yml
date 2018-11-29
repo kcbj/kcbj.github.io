@@ -2,33 +2,34 @@
 - title: Informatie over de club
   files:
   - path: "/downloads/files/info/infobrochure_1819.pdf"
-    title: KCBJ Infobrochure
+    title: KCBJ Infobrochure 2018-2019
     size: 775327
-    hsize: 775.3 KiB
     mime: pdf
   - path: "/downloads/files/info/richtlijnen_en_regels_voor_gebruik_kunstgrasvelden.pdf"
     title: Richtlijnen en regels voor gebruik kunstgrasvelden
     size: 151814
-    hsize: 151.8 KiB
     mime: pdf
   path: "/downloads/files/info"
+- title: Sponsoring
+  files:
+  - path: "/downloads/files/sponsoring/KCBJ_Sponsorbrief_2018-11-29.pdf"
+    title: Sponsoraanbod 2018-2019
+    size: 394454
+    mime: pdf
+  path: "/downloads/files/sponsoring"
 - title: Documenten voor nieuwe leden
-  remarks: Gelieve deze ingevulde formulieren terug te bezorgen aan de trainer of begeleider van je ploeg, of digitaal aan secretaris@kcbj.be
   files:
   - path: "/downloads/files/nieuwe-leden/aansluiting_nieuwe_leden_1718.pdf"
     title: Aansluitingsformulier KCBJ
-    size: 116.229
-    hsize: 116.2 KiB
-    mime: pdf
-  - path: "/downloads/files/nieuwe-leden/4317_affiliatieformulier.pdf"
-    title: Affiliatieformulier KBKB (korfbalbond)
-    size: 377.770
-    hsize: 337.8 KiB
+    size: 116229
     mime: pdf
   - path: "/downloads/files/nieuwe-leden/4347_medisch_attest.pdf"
     title: Medisch attest
-    size: 267.097
-    hsize: 267.1 KiB
+    size: 267097
+    mime: pdf
+  - path: "/downloads/files/nieuwe-leden/4317_affiliatieformulier.pdf"
+    title: Affiliatieformulier KBKB (korfbalbond)
+    size: 377770
     mime: pdf
   path: "/downloads/files/nieuwe-leden"
 - title: Documenten voor leden
@@ -36,36 +37,28 @@
   - path: "/downloads/files/leden/verzekering.pdf"
     title: Ongevallenaangifteformulier
     size: 450166
-    hsize: 439.62 KiB
     mime: pdf
   path: "/downloads/files/leden"
 - title: Formulieren tussenkomst lidgeld ziekenfonds
-  remarks: Je kan ook altijd de website van je ziekenfonds raadplegen voor de laatste verise van deze documenten. 
   path: "/downloads/files/ziekenfonds"
   files:
   - path: "/downloads/files/ziekenfonds/christelijke-mutualiteit.pdf"
     size: 2494167
     title: Christelijke mutualiteit
-    hsize: 2.38 MiB
-    mime: pdf
-  - path: "/downloads/files/ziekenfonds/voorzorg.pdf"
-    size: 286848
-    title: De Voorzorg
-    hsize: 286.8 KiB
-    mime: pdf
-  - path: "/downloads/files/ziekenfonds/liberale-mutualiteit.pdf"
-    size: 86388
-    title: Liberale mutualiteit
-    hsize: 84.36 KiB
     mime: pdf
   - path: "/downloads/files/ziekenfonds/socialistische-mutualiteit.pdf"
     size: 116518
     title: Socialistische mutualiteit
-    hsize: 113.79 KiB
+    mime: pdf
+  - path: "/downloads/files/ziekenfonds/liberale-mutualiteit.pdf"
+    size: 86388
+    title: Liberale mutualiteit
     mime: pdf
   - path: "/downloads/files/ziekenfonds/vlaams-neutraal-ziekenfonds.pdf"
     size: 99461
     title: Vlaams neutraal ziekenfonds
-    hsize: 97.13 KiB
     mime: pdf
-
+  - path: "/downloads/files/ziekenfonds/voorzorg.pdf"
+    size: 286848
+    title: Voorzorg
+    mime: pdf
