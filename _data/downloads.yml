@@ -12,9 +12,9 @@
   path: "/downloads/files/info"
 - title: Sponsoring
   files:
-  - path: "/downloads/files/sponsoring/KCBJ_Sponsorbrief_2018-11-29.pdf"
+  - path: "/downloads/files/sponsoring/KCBJ_Sponsorbrief_2018-12-29.pdf"
     title: Sponsoraanbod 2018-2019
-    size: 394454
+    size: 394406
     mime: pdf
   path: "/downloads/files/sponsoring"
 - title: Documenten voor nieuwe leden
