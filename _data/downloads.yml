@@ -34,9 +34,9 @@
   path: "/downloads/files/nieuwe-leden"
 - title: Documenten voor leden
   files:
-  - path: "/downloads/files/leden/verzekering.pdf"
+  - path: "/downloads/files/leden/KCBJ_Ongevallenaangifteformulier_2018-12-30.pdf"
     title: Ongevallenaangifteformulier
-    size: 450166
+    size: 792033
     mime: pdf
   path: "/downloads/files/leden"
 - title: Formulieren tussenkomst lidgeld ziekenfonds
