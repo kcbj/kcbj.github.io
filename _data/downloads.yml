@@ -19,9 +19,9 @@
   path: "/downloads/files/sponsoring"
 - title: Documenten voor nieuwe leden
   files:
-  - path: "/downloads/files/nieuwe-leden/aansluiting_nieuwe_leden_1718.pdf"
+  - path: "/downloads/files/nieuwe-leden/aansluiting_nieuwe_leden_1819.pdf"
     title: Aansluitingsformulier KCBJ
-    size: 116229
+    size: 31846
     mime: pdf
   - path: "/downloads/files/nieuwe-leden/4347_medisch_attest.pdf"
     title: Medisch attest
