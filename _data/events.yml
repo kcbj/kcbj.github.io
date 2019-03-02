@@ -8,14 +8,12 @@
 #   start: 2019-2-2 17:30:00 +01:00
 #   location: parochiezaal
 #   image: party.jpg
-- title: Veldfinales Jeugd (U12, U14 en U16)
+- title: 30 jaar KCBJ<br>Veldfinales Jeugd (U12, U14 en U16)
   start: 2019-5-25 11:00:00 +02:00
-  location: grotebaan
-  image: korf.jpg
-- title: 30 jaar KCBJ
-  start: 2019-5-25 18:00:00 +02:00
+  end: 2019-5-25 22:00:00 +02:00
   location: grotebaan
   image: 30.jpg
+  page: /30jaar/
 - title: Korfbalweek
   start: 2019-8-12 09:00:00 +02:00
   end: 2019-8-16 16:00:00 +02:00
