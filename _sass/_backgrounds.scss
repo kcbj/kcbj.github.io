@@ -137,3 +137,20 @@ body.korfbalweek {
   }
 
 }
+
+/******************************************************************************
+ LOCATIONS
+******************************************************************************/
+
+body.dertig {
+
+  #first-divider {
+    @include background-image( 'tornooi' );
+  }
+
+  #second-divider {
+    @include background-image( 'grotebaan02' );
+  }
+
+}
+
