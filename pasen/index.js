@@ -24,7 +24,7 @@ function submitForm() {
 function calculateDistance() {
 	var address = $('#street').val() + " " +  $('#number').val() + ", " + $('#zip').val() + " " + $('#city').val()
 	var distanceService = new google.maps.DistanceMatrixService();
-	var kantine = new google.maps.LatLng( 50.987692, 4.7809190000000115 );
+	var kantine = new google.maps.LatLng( 50.9976388, 4.7967705 );
 	distanceService.getDistanceMatrix({
 		origins: [kantine],
 		destinations: [address],
