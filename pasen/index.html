@@ -24,27 +24,22 @@
 </head>
 <body>
 
-  <h1><img id="logo" src="logo-white.png"/> KCBJ Paasontbijten<br>Bestelformulier</h1>
+  <h1><img id="logo" src="logo-white.png"/> KCBJ Paasontbijten<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bestelformulier 2019</h1>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col col-md-8 col-lg-6 jumbotron">
-        <p class="lead">
-          De verkoop van de paasontbijten is afgesloten.
-        </p>
-        <p class="">
-          Bedankt aan iedereen die onze club gesteund heeft.
-        </p>
-      </div>
-    </div>
-    <!--
     <div class="row justify-content-center" id="form">
       <form class="col col-md-8 col-lg-6">
 
         <div class="row">
           <div class="col">
             <p>
-              Wil jij onze sportclub steunen? Bestel dan hier je paasontbijten. Elk paasontbijt bevat twee broodjes, beleg, confituur, cornflakes, een koffiekoek, yoghurt, koffie, thee, melk en suiker, chocomelk, fruitsap en… paaseitjes!
-              Eén paasontbijt kost 8 euro.
+              Wil jij onze sportclub steunen? Bestel dan hier je paasontbijten.
+            </p>
+            <p>
+              Elk paasontbijt bevat twee broodjes, beleg, confituur, cornflakes, een koffiekoek, yoghurt, koffie, thee, melk en suiker, chocomelk, fruitsap en… paaseitjes!
+              Een standaard paasontbijt kost 8 euro.
+            </p>
+            <p>
+              <b>Nieuw in 2019:</b> Een luxe-paasontbijt, met een extra flesje cava (25cl), voor 14 euro!
             </p>
             <p>
               Alvast bedankt!
@@ -81,8 +76,14 @@
 
         <div class="form-group row align-items-end">
           <div class="col">
-            <label for="name">Aantal paasontbijten</label>
-            <input type="number" class="form-control " id="aantal" placeholder="Aantal" min="1" max="20" required>
+            <label for="aantal">Aantal standaard</label>
+            <a class="help" href="" data-toggle="modal" data-target="#inhoud"><img src="help.png" title="Meer info" alt="Meer info"/></a>
+            <input type="number" class="form-control" id="aantal" placeholder="Aantal standaard" min="0" max="20" required>
+          </div>
+          <div class="col">
+            <label for="aantal_luxe">Aantal luxe</label>
+            <a class="help" href="" data-toggle="modal" data-target="#inhoud"><img src="help.png" title="Meer info" alt="Meer info"/></a>
+            <input type="number" class="form-control" id="aantal_luxe" placeholder="Aantal luxe" min="0" max="20" required>
           </div>
           <div class="col">
             <label for="total">Bedrag</label>
@@ -95,13 +96,13 @@
             <div class="form-check">
               <input class="form-check-input" type="radio" name="transport" id="transportAfhalen" value="afhalen" required>
               <label class="form-check-label" for="transportAfhalen">
-                Ik haal zelf af in de KCBJ kantine op zaterdag 31 maart tussen 07:00 en 10:30
+                Ik haal zelf af in de KCBJ kantine op zaterdag 20 april 2019 tussen 07:00 en 10:30
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="transport" id="transportLeveren" value="leveren" required>
               <label class="form-check-label" for="transportLeveren">
-                KCBJ levert op zaterdag 31 maart aan huis
+                KCBJ levert op zaterdag 20 april 2019 aan huis
               </label>
             </div>
           </div>
@@ -128,7 +129,7 @@
 
           <fieldset class="form-group row">
             <div class="col-sm">
-              <label for="time">Uur van levering</label>
+              <label>Uur van levering</label>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="time" id="time7" value="07:00" required>
                 <label class="form-check-label" for="time7">
@@ -195,6 +196,18 @@
 
       </form>
     </div>
+
+    <!--
+    <div class="row justify-content-center">
+      <div class="col col-md-8 col-lg-6 jumbotron">
+        <p class="lead">
+          De verkoop van de paasontbijten is afgesloten.
+        </p>
+        <p class="">
+          Bedankt aan iedereen die onze club gesteund heeft.
+        </p>
+      </div>
+    </div>
     -->
 
     <div class="row justify-content-center" id="result-success" style="display:none;">
@@ -225,6 +238,95 @@
           <div class="modal-body">
             <div id="error-text" class="alert alert-danger" role="alert">
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Container -->
+
+    <div id="inhoud" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Inhoud paasontbijt</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Standaard</th>
+                  <th>Luxe</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cornflakes</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Koffiekoek</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>2 broodjes</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Beleg (hesp en kaas)</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Confituur</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>boter</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Yoghurt</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Paasei</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Koffie, thee, melk en suiker</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Chocomelk</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Fruitsap</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Flesje cava (25cl)</td>
+                  <td></td>
+                  <td>✓</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>

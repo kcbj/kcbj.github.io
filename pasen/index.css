@@ -33,6 +33,10 @@ input[type=radio]:checked+label {
   font-weight: bold;
 }
 
+a.help {
+  float: right;
+}
+
 label {
   font-weight: bold;
 }
@@ -48,4 +52,17 @@ label.form-check-label {
 
 #result-mededeling {
   font-family: monospace;
+}
+
+#inhoud td, #inhoud th {
+  padding: 6px;
+  text-align: center;
+}
+
+#inhoud td:first-child {
+  text-align: left;
+}
+
+#inhoud tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

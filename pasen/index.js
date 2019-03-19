@@ -1,5 +1,6 @@
 var kcbj = {
 	price: 8,
+	priceLuxe: 14,
 	distanceLimit: 6000,
 	distancePerOrder: 250,
 	errorGeneral: 'Er ging iets fout. Probeer later nog eens.',
@@ -77,7 +78,9 @@ function sendOrder() {
 		name: $('#name').val(),
 		tel: $('#tel').val(),
 		email: $('#email').val(),
-		aantal: $('#aantal').val()
+		aantal: $('#aantal').val(),
+		aantal_luxe: $('#aantal_luxe').val(),
+		total: calculateTotal()
 	}
 	if(isAfhaal()){
 		order.time = "Afhaal";
@@ -101,12 +104,18 @@ function successCallback(response) {
 	$("#form").hide();
 	$("#result-success").show();
 	$("#result-email").text(response.order.email);
-	$("#result-bedrag").text((response.order.aantal * kcbj.price) + " euro");
+	$("#result-bedrag").text((response.order.aantal * kcbj.price) + (response.order.aantal_luxe * kcbj.priceLuxe) + " euro");
 	$("#result-mededeling").text(response.order.ogm);
 }
 
 function errorCallback(response) {
 	showError(kcbj.errorGeneral);
+}
+
+function calculateTotal() {
+	amount = (kcbj.price * $('#aantal').val());
+	amountLuxe = (kcbj.priceLuxe * $('#aantal_luxe').val());
+	return amount + amountLuxe;
 }
 
 $(document).ready(
@@ -118,8 +127,11 @@ $(document).ready(
 			event.preventDefault();
 			event.stopPropagation();
 		});
-		$('#aantal').change(function() {
-			$('#total').attr('value', (kcbj.price * $('#aantal').val()) + " euro")
+		$("input[type=number]").bind('keyup input change', function() {
+			$('#total').attr('value',  calculateTotal() + " euro")
+		});
+		$("input[type=number]").bind('keyup input change', function() {
+			$('#total').attr('value',  calculateTotal() + " euro")
 		});
 		$('input[type=radio][name=transport]').change(function() {
 			if($(this).val() == "leveren") {
