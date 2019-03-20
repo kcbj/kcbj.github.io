@@ -9,6 +9,18 @@
     title: Richtlijnen en regels voor gebruik kunstgrasvelden
     size: 151814
     mime: pdf
+  - path: "/downloads/files/info/Huishoudelijk_reglement_KCBJvzw.pdf"
+    title: Huishoudelijk reglement
+    size: 150556
+    mime: pdf
+  - path: "/downloads/files/info/Huishoudelijk_reglement_KCBJvzw_bijlage.pdf"
+    title: Huishoudelijk reglement bijlage
+    size: 130762
+    mime: pdf
+  - path: "/downloads/files/info/Statuten_KCBJvzw.pdf"
+    title: Statuten KCBJ vzw
+    size: 176876
+    mime: pdf
   path: "/downloads/files/info"
 - title: Sponsoring
   files:
