@@ -1,8 +1,8 @@
 @mixin button( $color: $base-font-color, $border: lighten( $color, 60% ),
 $background: transparent, $hcolor: darken( $color, 10% ), $hborder: lighten( $color, 40% ),
 $hbackground: $background ) {
-  line-height:                $base-line-height * 2;
-  padding:                    0 2rem;
+  line-height:                $base-line-height * 1.5;
+  padding:                    1rem 2rem;
   border:                     1px solid $border;
   text-decoration:            none;
   color:                      $color;
