@@ -1,14 +1,6 @@
 ---
 - title: Informatie over de club
   files:
-  - path: "/downloads/files/info/infobrochure_1819.pdf"
-    title: KCBJ Infobrochure 2018-2019
-    size: 775327
-    mime: pdf
-  - path: "/downloads/files/info/richtlijnen_en_regels_voor_gebruik_kunstgrasvelden.pdf"
-    title: Richtlijnen en regels voor gebruik kunstgrasvelden
-    size: 151814
-    mime: pdf
   - path: "/downloads/files/info/Huishoudelijk_reglement_KCBJvzw.pdf"
     title: Huishoudelijk reglement
     size: 150605
@@ -16,6 +8,10 @@
   - path: "/downloads/files/info/Huishoudelijk_reglement_KCBJvzw_bijlage.pdf"
     title: Huishoudelijk reglement bijlage
     size: 130762
+    mime: pdf
+  - path: "/downloads/files/info/richtlijnen_en_regels_voor_gebruik_kunstgrasvelden.pdf"
+    title: Richtlijnen en regels voor gebruik kunstgrasvelden
+    size: 151814
     mime: pdf
   - path: "/downloads/files/info/Statuten_KCBJvzw.pdf"
     title: Statuten KCBJ vzw

@@ -25,14 +25,13 @@ redirect_from:
 <div class="container">
   <div id="ploegen" class="wrapper">
     <div class="text">
-      <h1>Ploegen</h1>
+      <h1>Ploegen {{site.data.membershipfee.season }}</h1>
       <p class="centered">Onze club telt verschillende ploegen.</p>
       <table class="full">
         <thead>
           <tr>
             <th>Ploeg</th>
             <th>Leeftijd</th>
-            <th>Beschrijving</th>
             <th>Lidgeld {{site.data.membershipfee.season }}</th>
           </tr>
         </thead>
@@ -42,7 +41,6 @@ redirect_from:
           <tr class="team">
             <td class="name key">{{ team.name }}</td>
             <td data-title="Leeftijd" class="age">{{ team.ages }}</td>
-            <td data-title="Beschrijving" class="description">{{ team.description }}</td>
             {% assign memberships = site.data.membershipfee.teams | where: "team", team_hash[0] %}
             <td data-title="Lidgeld {{site.data.membershipfee.season }}" class="membership-fee">{{ memberships[0].fee }}</td>
           </tr>
@@ -83,7 +81,7 @@ redirect_from:
 
       <div class="buttons">
         <a href="/downloads#downloads-files-nieuwe-leden" class="button more">
-          <i class="fa fa-download"></i> Formulieren
+          <i class="fa fa-download"></i> Documenten
         </a>
       </div>
 

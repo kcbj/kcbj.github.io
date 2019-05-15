@@ -1,5 +1,5 @@
 ---
-season: 2018 - 2019
+season: 2019 - 2020
 teams:
   - team: u6
     fee: €60
@@ -20,6 +20,6 @@ teams:
   - team: gewestelijken
     fee: €100
   - team: recreanten
-    fee: €50
+    fee: €75
   - team: supporters
     fee: €20
