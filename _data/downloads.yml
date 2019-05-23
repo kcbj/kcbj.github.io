@@ -27,17 +27,9 @@
   path: "/downloads/files/sponsoring"
 - title: Documenten voor nieuwe leden
   files:
-  - path: "/downloads/files/nieuwe-leden/aansluiting_nieuwe_leden_1819.pdf"
-    title: Aansluitingsformulier KCBJ
-    size: 31846
-    mime: pdf
-  - path: "/downloads/files/nieuwe-leden/4347_medisch_attest.pdf"
-    title: Medisch attest
-    size: 267097
-    mime: pdf
-  - path: "/downloads/files/nieuwe-leden/4317_affiliatieformulier.pdf"
-    title: Affiliatieformulier KBKB (korfbalbond)
-    size: 377770
+  - path: "/downloads/files/nieuwe-leden/Aansluiting_KCBJ_2019-2020_2019-05-23.pdf"
+    title: Aansluitingsformulieren KCBJ en KBKB
+    size: 174125
     mime: pdf
   path: "/downloads/files/nieuwe-leden"
 - title: Documenten voor leden
