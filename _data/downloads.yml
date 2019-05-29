@@ -1,12 +1,12 @@
 ---
 - title: Informatie over de club
   files:
-  - path: "/downloads/files/info/Huishoudelijk_reglement_KCBJvzw.pdf"
-    title: Huishoudelijk reglement
+  - path: "/downloads/files/info/Intern_reglement_KCBJvzw.pdf"
+    title: Intern reglement
     size: 150605
     mime: pdf
-  - path: "/downloads/files/info/Huishoudelijk_reglement_KCBJvzw_bijlage.pdf"
-    title: Huishoudelijk reglement bijlage
+  - path: "/downloads/files/info/Intern_reglement_KCBJvzw_bijlage.pdf"
+    title: Intern reglement bijlage
     size: 130762
     mime: pdf
   - path: "/downloads/files/info/richtlijnen_en_regels_voor_gebruik_kunstgrasvelden.pdf"
