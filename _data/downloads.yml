@@ -1,4 +1,11 @@
 ---
+- title: Documenten voor nieuwe leden
+  files:
+  - path: "/downloads/files/nieuwe-leden/Aansluiting_KCBJ_2019-2020_2019-06-16.pdf"
+    title: Aansluitingsformulieren KCBJ en KBKB 2019-2020
+    size: 690051
+    mime: pdf
+  path: "/downloads/files/nieuwe-leden"
 - title: Informatie over de club
   files:
   - path: "/downloads/files/info/Intern_reglement_KCBJvzw.pdf"
@@ -25,13 +32,6 @@
     size: 607653
     mime: pdf
   path: "/downloads/files/sponsoring"
-- title: Documenten voor nieuwe leden
-  files:
-  - path: "/downloads/files/nieuwe-leden/Aansluiting_KCBJ_2019-2020_2019-05-23.pdf"
-    title: Aansluitingsformulieren KCBJ en KBKB
-    size: 174125
-    mime: pdf
-  path: "/downloads/files/nieuwe-leden"
 - title: Documenten voor leden
   files:
   - path: "/downloads/files/leden/KCBJ_Ongevallenaangifteformulier_2018-12-30.pdf"
