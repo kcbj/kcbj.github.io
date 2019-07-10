@@ -70,4 +70,10 @@
     postal_code: 3130
     locality: Betekom
   coordinates: [ 50.9848655 , 4.7812281 ]
+- id: kamsa
+  name: Sporthal KAMSA
+- id: sjib
+  name: Turnzaal SJIB
+- id: klimroos
+  name: Turnzaal De Klimroos
 

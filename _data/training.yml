@@ -1,4 +1,4 @@
-season: 2018 - 2019
+season: 2019 - 2020
 periods:
   - name: veld (van begin augustus tot eind oktober, van half maart tot eind mei)
     teams:
@@ -25,7 +25,7 @@ periods:
             location: grotebaan
           - weekday: vrijdag
             starts_at: "18:00"
-            ends_at: "19:00"
+            ends_at: "19:15"
             start: 2018-8-1
             location: grotebaan
       - name: U12
@@ -43,8 +43,8 @@ periods:
       - name: U14
         trainings:
           - weekday: dinsdag
-            starts_at: "18:30"
-            ends_at: "20:00"
+            starts_at: "18:00"
+            ends_at: "19:30"
             start: 2018-8-1 18:30
             location: grotebaan
           - weekday: vrijdag
@@ -55,8 +55,8 @@ periods:
       - name: U16
         trainings:
           - weekday: woensdag
-            starts_at: "19:00"
-            ends_at: "20:30"
+            starts_at: "18:30"
+            ends_at: "20:00"
             start: 2018-8-1 19:00
             location: grotebaan
           - weekday: vrijdag
@@ -67,20 +67,20 @@ periods:
       - name: U19
         trainings:
           - weekday: woensdag
-            starts_at: "19:00"
-            ends_at: "20:30"
+            starts_at: "20:00"
+            ends_at: "21:30"
             start: 2018-8-1 19:00
             location: grotebaan
           - weekday: vrijdag
-            starts_at: "20:00"
-            ends_at: "21:30"
+            starts_at: "19:30"
+            ends_at: "21:00"
             start: 2018-8-1 20:00
             location: grotebaan
       - name: Senioren
         trainings:
           - weekday: woensdag
-            starts_at: "20:30"
-            ends_at: "22:00"
+            starts_at: "20:00"
+            ends_at: "21:30"
             start: 2018-8-1 20:30
             location: grotebaan
           - weekday: vrijdag
@@ -107,32 +107,34 @@ periods:
       - name: U6
         trainings:
           - weekday: vrijdag
-            starts_at: "18:00"
-            ends_at: "19:00"
+            starts_at: "17:45"
+            ends_at: "18:45"
             start: 2017-10-6 18:00:00
+            location: klimroos
       - name: U8
         trainings:
           - weekday: vrijdag
             starts_at: "18:00"
-            ends_at: "19:15"
+            ends_at: "19:00"
             start: 2018-8-1 18:00:00
+            location: sjib
       - name: U10
         trainings:
           - weekday: woensdag
             starts_at: "17:00"
-            ends_at: "18:30"
+            ends_at: "18:00"
             start: 2018-8-1 18:00:00
             location: tumkens
           - weekday: vrijdag
-            starts_at: "19:15"
-            ends_at: "20:30"
-            start: 2018-8-1
-            location: tumkens
-      - name: U12
-        trainings:
-          - weekday: maandag
             starts_at: "19:00"
             ends_at: "20:00"
+            start: 2018-8-1
+            location: sjib
+      - name: U12
+        trainings:
+          - weekday: woensdag
+            starts_at: "18:00"
+            ends_at: "19:00"
             start: 2018-8-1 18:30
             location: tumkens
           - weekday: vrijdag
@@ -143,61 +145,62 @@ periods:
       - name: U14
         trainings:
           - weekday: woensdag
+            starts_at: "19:00"
+            ends_at: "20:00"
+            start: 2018-8-1 18:30
+            location: tumkens
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            start: 2018-8-1 18:30
+            location: tumkens
+      - name: U16
+        trainings:
+          - weekday: maandag
+            starts_at: "19:00"
+            ends_at: "21:00"
+            start: 2018-8-1 18:30
+            location: tumkens
+          - weekday: donderdag
             starts_at: "18:30"
             ends_at: "20:00"
             start: 2018-8-1 18:30
-            location: tumkens
-          - weekday: vrijdag
-            starts_at: "18:00"
-            ends_at: "19:00"
-            start: 2018-8-1 18:30
-      - name: U16
-        trainings:
-          - weekday: woensdag
-            starts_at: "18:00"
-            ends_at: "19:00"
-            start: 2018-8-1 18:30
-          - weekday: vrijdag
-            starts_at: "18:00"
-            ends_at: "20:00"
-            start: 2018-8-1 18:30
+            location: kamsa
       - name: U19
         trainings:
-          - weekday: maandag
-            starts_at: "20:00"
-            ends_at: "21:00"
-            start: 2018-8-1 19:00
-            location: tumkens
-          - weekday: donderdag
+          - weekday: dinsdag
             starts_at: "19:00"
-            ends_at: "21:00"
+            ends_at: "20:30"
             start: 2018-8-1 19:00
+            location: kamsa
+          - weekday: donderdag
+            starts_at: "20:00"
+            ends_at: "21:30"
+            start: 2018-8-1 19:00
+            location: kamsa
       - name: Senioren
         trainings:
           - weekday: dinsdag
-            starts_at: "21:00"
-            ends_at: "23:00"
+            starts_at: "20:30"
+            ends_at: "22:00"
             start: 2018-8-1 20:15
+            location: kamsa
           - weekday: vrijdag
             starts_at: "21:00"
             ends_at: "23:00"
             start: 2018-8-1 20:15
+            location: tumkens
       - name: Gewestelijken
         trainings:
-          - weekday: donderdag
-            starts_at: "21:00"
-            ends_at: "22:00"
-            start: 2018-8-1 20:00
-            location: tumkens
           - weekday: vrijdag
             starts_at: "20:00"
             ends_at: "21:00"
             start: 2018-8-1 20:00
-            location: tumkens
+            location: onbekend
       - name: Recreanten
         trainings:
-          - weekday: zaterdag
-            starts_at: "16:00"
-            ends_at: "18:00"
-            start: 2018-8-1 20:30
-            note: Om de 2 weken
+          - weekday: vrijdag
+            starts_at: "20:00"
+            ends_at: "21:00"
+            start: 2018-8-1 20:00
+            location: onbekend
