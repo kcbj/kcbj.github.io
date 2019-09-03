@@ -8,33 +8,36 @@
 #   start: 2019-2-2 17:30:00 +01:00
 #   location: parochiezaal
 #   image: party.jpg
-- title: Korfbalweek
-  start: 2019-8-12 09:00:00 +02:00
-  end: 2019-8-16 16:00:00 +02:00
-  location: grotebaan
-  image: korfbalweek.jpg
-  facebook: https://www.facebook.com/events/219082925599198/
-- title: Vriendjesdag
-  start: 2019-9-11 14:00:00 +02:00
-  end: 2019-9-11 16:30:00 +02:00
-  location: grotebaan
-  image: vriendjesdag.jpg
-  facebook: https://www.facebook.com/events/348867362333031/
+#- title: Korfbalweek
+#  start: 2019-8-12 09:00:00 +02:00
+#  end: 2019-8-16 16:00:00 +02:00
+#  location: grotebaan
+#  image: korfbalweek.jpg
+#  facebook: https://www.facebook.com/events/219082925599198/
+#- title: Vriendjesdag
+#  start: 2019-9-11 14:00:00 +02:00
+#  end: 2019-9-11 16:30:00 +02:00
+#  location: grotebaan
+#  image: vriendjesdag.jpg
+#  facebook: https://www.facebook.com/events/348867362333031/
 - title: Mosselweekend
   start: 2019-10-05 17:00:00 +02:00
   end: 2019-10-05 21:00:00 +02:00
   location: parochiezaal
   image: mosselen.jpg
+  facebook: https://www.facebook.com/events/661879497665253/
 - title: Mosselweekend
   start: 2019-10-06 12:00:00 +02:00
   end: 2019-10-06 19:00:00 +02:00
   location: parochiezaal
   image: mosselen.jpg
+  facebook: https://www.facebook.com/events/661879497665253/
 - title: Quiz
   start: 2019-11-16 20:00:00 +01:00
   location: parochiezaal
   image: quiz.jpg
-- title: Jaarfeest		
+  facebook: https://www.facebook.com/events/470990290421595/
+- title: Jaarfeest
   start: 2020-2-1 17:30:00 +01:00	
   location: parochiezaal		
   image: party.jpg
