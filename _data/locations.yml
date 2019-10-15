@@ -5,9 +5,7 @@
   games: true
   practice: true 
   surface: Kunstgras
-  notes: Vanaf 7 sep 2018
-  new: true
-  coordinates: [ 50.997642, 4.796937 ] 
+  coordinates: [ 50.997642, 4.796937 ]
   address:
     street_address: Grote Baan 118
     postal_code: 3130
@@ -30,17 +28,6 @@
     postal_code: 3130
     locality: Betekom
   coordinates: [ 50.987841, 4.785295999999988 ]
-- id: kantine
-  featured: true
-  name: Oude KCBJ kantine
-  games: true
-  practice: true 
-  notes: Tot en met 6 sep 2018
-  coordinates: [ 50.987692, 4.7809190000000115 ] 
-  address:
-    street_address: Professor Scharpélaan 54
-    postal_code: 3130
-    locality: Betekom
 - id: parochiezaal
   name: Parochiezaal Begijnendijk
   types:
