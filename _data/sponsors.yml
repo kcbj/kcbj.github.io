@@ -1,8 +1,4 @@
 ---
-- logo: act-unity.png
-  title: "Act-unity"
-  website: http://www.act-unity.com/
-  level: Zilver
 - logo: automotive.png
   title: "Groep Automotive"
   website: http://www.groepautomotive.be
@@ -27,10 +23,6 @@
   title: Proxy Delhaize Betekom
   level: Platinum
   website: https://www.facebook.com/Proxy-Delhaize-Betekom-207192383167872/
-- logo: verabo.png
-  title: VE-RA-BO
-  website: http://www.verabo.be
-  level: Goud
 - logo: wit-toreke.png
   title: "'t Wit Toreke"
   website: http://twittoreke.be
