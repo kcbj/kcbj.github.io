@@ -78,7 +78,11 @@ redirect_from:
               </div>
             </div>
             <div class="bottom">
+              {% if event.location %}
               <a class="location plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a>
+              {% else %}
+              <p></p>
+              {% endif %}
               {% if event.facebook %}
               <ul class="links">
                 <li class="facebook">
