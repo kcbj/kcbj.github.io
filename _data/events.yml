@@ -8,12 +8,6 @@
 #   start: 2019-2-2 17:30:00 +01:00
 #   location: parochiezaal
 #   image: party.jpg
-#- title: Korfbalweek
-#  start: 2019-8-12 09:00:00 +02:00
-#  end: 2019-8-16 16:00:00 +02:00
-#  location: grotebaan
-#  image: korfbalweek.jpg
-#  facebook: https://www.facebook.com/events/219082925599198/
 #- title: Vriendjesdag
 #  start: 2019-9-11 14:00:00 +02:00
 #  end: 2019-9-11 16:30:00 +02:00
@@ -45,6 +39,11 @@
   start: 2020-2-1 17:30:00 +01:00	
   location: parochiezaal		
   image: party.jpg
+- title: Korfbalweek
+  start: 2020-8-10 09:00:00 +02:00
+  end: 2020-8-14 16:00:00 +02:00
+  location: grotebaan
+  image: korfbalweek.jpg
 - title: Mosselweekend
   start: 2020-10-17 17:00:00 +02:00
   end: 2020-10-17 21:00:00 +02:00
