@@ -1,20 +1,22 @@
 <footer class="container" id="footer">
     {% if page.url != "/sponsors/" %}
       <div class="wrapper overlay blue" id="sponsor-footer">
-        <p id="sponsor-list">
-          <b>Sponsors: </b>
-            {% assign levels = "Platinum,Goud,Zilver,Brons,Sympathisant" | split: "," %}
-            {% for level in levels %}
-              {% assign sponsors = site.data.sponsors | where: "level", level | sort:"title" %}
+          Sponsors
+          {% assign levels = "Platinum,Goud,Zilver,Brons,Sympathisant" | split: "," %}
+          {% for level in levels %}
+            {% assign sponsors = site.data.sponsors | where: "level", level | sort_natural:"title" %}
+            {% if sponsors.size > 0 %}
+              <span class="sponsor-level sponsor-{{level | downcase}}" id="{{level | downcase}}">
+              <b><a href="/sponsors/#{{level | downcase}}">{{ level }}</a>:</b>
               {% for sponsor in sponsors %}
-              <a href="/sponsors/#{{sponsor.level | downcase}}">
-                {{sponsor.title}}
-              </a>
-              • 
+                <a href="/sponsors/#{{sponsor.level | downcase}}">
+                  {{sponsor.title}}
+                </a>
+                {% if forloop.last == false %}•{% endif %}
               {% endfor %}
-            {% endfor %}
-            ...
-        </p>
+              </span>
+            {% endif %}
+          {% endfor %}
       </div>
     {% endif %}
     <div class="wrapper">

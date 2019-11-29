@@ -41,7 +41,7 @@
 
 #sponsor-footer {
 
-  padding: 1em 2em;
+  padding: 1em 0em;
   margin-bottom: $base-line-height;
 
   color: white;
@@ -54,4 +54,16 @@
     color: white !important;
   }
 
+    .sponsor-platinum {
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    .sponsor-goud {
+        font-size: 1.15em;
+        line-height: 1.5em;
+    }
+    .sponsor-zilver {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
 }

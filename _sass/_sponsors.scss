@@ -20,18 +20,13 @@
 
   #sponsor-list {
     @include reset-list;
-    @include flex-container( column, no-wrap, flex-start, stretch, center );
     max-width:                              100%;
+    display:                            grid;
+    grid-template-columns: 33% 33% 33%;
 
     .sponsor {
 
-      min-height: 150px;
-      vertical-align: middle;
-
       margin-bottom: $base-line-height * 2;
-
-      @include flex( 1 1 auto );
-      text-align:             center;
 
       a {
         margin-top:           $base-line-height / 2;
@@ -39,12 +34,9 @@
         display:              block;
 
         img {
-          max-height:         $base-line-height * 5;
-          max-width:          300px;
-
-          @media screen and (min-width: $grid-min-width) {
-          //  max-width:        8;
-          }
+            width: 100%;
+            display: block;
+            object-fit: scale-down;
 
           @include filter( grayscale( 100% ) brightness( 1 ) );
 
@@ -57,9 +49,6 @@
 
     }
 
-    @media screen and (min-width: $grid-min-width) {
-      @include flex-container( row, wrap, space-between, center, center );
-    }
   }
 
   .sponsor-platinum {
@@ -71,8 +60,8 @@
       background-color:   $sponsor-platinum-color;
     }
 
-    #sponsor-list .sponsor a img {
-      max-height:         $sponsor-platinum-height;
+    img {
+      height: 200px;
     }
   }
 
@@ -85,8 +74,8 @@
       background-color:   $sponsor-goud-color;
     }
 
-    #sponsor-list .sponsor a img {
-      max-height:         $sponsor-goud-height;
+    img {
+      height: 180px;
     }
   }
 
@@ -99,8 +88,8 @@
       background-color:   $sponsor-zilver-color;
     }
 
-    #sponsor-list .sponsor a img {
-      max-height:         $sponsor-zilver-height;
+    img {
+      height: 160px;
     }
   }
 
@@ -113,8 +102,8 @@
       background-color:   $sponsor-brons-color;
     }
 
-    #sponsor-list .sponsor a img {
-      max-height:         $sponsor-brons-height;
+    img {
+      height: 140px;
     }
   }
 }

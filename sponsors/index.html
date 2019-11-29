@@ -8,9 +8,9 @@ class: sponsors
   <div class="wrapper">
     <h1>Sponsors</h1>
     <div class="text">
-    <p class="centered">
-        KCBJ dankt onderstaande sponsors
-    </p>
+    <h2 class="centered">
+        KCBJ dankt zijn trouwe sponsors
+    </h2>
     </div>
   </div>
 </section>
@@ -18,7 +18,7 @@ class: sponsors
   <div class="wrapper">
     {% assign levels = "Platinum,Goud,Zilver,Brons,Sympathisant" | split: "," %}
     {% for level in levels %}
-      {% assign sponsors = site.data.sponsors | where: "level", level | sort:"title" %}
+      {% assign sponsors = site.data.sponsors | where: "level", level | sort_natural:"title" %}
       {% if sponsors != empty %}
         <div class="sponsor-level sponsor-{{level | downcase}}" id="{{level | downcase}}">
           <h1 class="title">{{level}}</h1>
