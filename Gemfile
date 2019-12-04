@@ -1,17 +1,13 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# GitHub Pages gem
-require 'json'
-require 'open-uri'
-versions = JSON.parse( open( 'https://pages.github.com/versions.json' ).read )
+gem "github-pages", group: :jekyll_plugins
 
-gem 'jekyll', versions[ 'jekyll' ]
-gem 'github-pages', versions[ 'github-pages' ]
-gem 'jekyll-sitemap', versions[ 'jekyll-sitemap' ]
-gem 'jekyll-feed', versions[ 'jekyll-feed' ]
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-compose"
+end
 
-# Bourbon
 gem 'bourbon', '~> 4.2.3'
-
 gem 'filesize'
 gem 'mime-types'
