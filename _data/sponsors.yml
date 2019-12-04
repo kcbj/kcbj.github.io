@@ -1,52 +1,95 @@
 ---
-- logo: automotive.png
-  title: "Groep Automotive"
+- title: "Groep Automotive"
+  logo: automotive.png
   website: http://www.groepautomotive.be
   level: Zilver
-- logo: bress.png
-  title: Belgian Real Estate Services
+- title: Belgian Real Estate Services
+  logo: bress.png
   website: http://bress.be
   level: Platinum
-- logo: debruyn.png
-  title: De Bruyn N.V.
+- title: De Bruyn N.V.
+  logo: debruyn.png
   website: http://www.debruyn-nv.be
   level: Goud
-- logo: kbc.png
-  title: "KBC Betekom-Begijnendijk"
+- title: "KBC Betekom-Begijnendijk"
+  logo: kbc.png
   website: http://www.kbc.be
   level: Zilver
-- logo: norio.png
-  title: Norio
+- title: Norio
+  logo: norio.png
   website: https://www.norio.be
   level: Zilver
-- logo: proxy.png
-  title: Proxy Delhaize Betekom
+- title: Proxy Delhaize Betekom
+  logo: proxy.png
   level: Platinum
   website: https://www.facebook.com/Proxy-Delhaize-Betekom-207192383167872/
-- logo: wit-toreke.png
-  title: "'t Wit Toreke"
+- title: "'t Wit Toreke"
+  logo: wit-toreke.png
   website: http://twittoreke.be
   level: Platinum
-- logo: my-team.png
-  title: My-Team Aarschot
+- title: My-Team Aarschot
+  logo: my-team.png
   website: https://www.facebook.com/Myteamaarschot/
   level: Goud
-- logo: vbm-verzekeringen.png
-  title: VBM Verzekeringen
+- title: VBM Verzekeringen
+  logo: vbm-verzekeringen.png
   website: https://www.vbmverzekeringen.be/
   level: Goud
-- logo: pizza-roberto.png
-  title: Pizza Da Roberto
+- title: Pizza Da Roberto
+  logo: pizza-roberto.png
   website: https://www.facebook.com/Pizza-Da-Roberto-817950501626012/
   level: Zilver
-- logo: reves.png
-  title: Reves Vastgoed
+- title: Reves Vastgoed
+  logo: reves.png
   website: https://www.revesvastgoed.be/
   level: Goud
-- logo: vandijck.png
-  title: Biercentrale Van Dijck
+- title: Biercentrale Van Dijck
+  logo: vandijck.png
+  website: https://www.facebook.com/biercentrale-Van-Dijck-184368061612986
   level: Zilver
-- logo: vanpraet.jpg
-  title: Van Praet Brood & Banket
+- title: Van Praet Brood & Banket
+  logo: vanpraet.jpg
   website: http://www.bakkerijvanpraet.be//
   level: Goud
+- title: Cafetaria De Tumkens
+  logo: detumkens.jpg
+  website: https://www.facebook.com/De-Tumkens-112910870111682
+  level: Brons
+- title: Crèmelie
+  level: Sympathisant
+- title: "'t fijnste ijs Begijnendijk"
+  level: Sympathisant
+- title: "'t Pistoleeke Begijnendijk"
+  level: Sympathisant
+- title: Banden Crauwels
+  level: Sympathisant
+- title: Bike Run Lab
+  level: Sympathisant
+- title: Boomkwekerij De Bruyn
+  level: Sympathisant
+- title: Likeuren De Gent
+  level: Sympathisant
+- title: Delvora Chocolade
+  level: Sympathisant
+- title: Garage Wouters Toyota & Suzuki
+  level: Sympathisant
+- title: Gebr. Van Reeth Dak & Sanitair
+  level: Sympathisant
+- title: Gebroeders Nijs loon- en grondwerken
+  level: Sympathisant
+- title: Hair, Skin & Body
+  level: Sympathisant
+- title: Het Tolhuis Enjoy Drinks
+  level: Sympathisant
+- title: Notelteirs beenhouwerij
+  level: Sympathisant
+- title: Bakkerij Plankenbrug
+  level: Sympathisant
+- title: Ruitenwasser De Wachter
+  level: Sympathisant
+- title: Taverne De Pelgrim
+  level: Sympathisant
+- title: Van Rompaey Houthandel & Doe-het-zelf
+  level: Sympathisant
+- title: Bloemenspeciaalzaak Ver Elst
+  level: Sympathisant

@@ -1,8 +1,8 @@
 <footer class="container" id="footer">
     {% if page.url != "/sponsors/" %}
       <div class="wrapper overlay blue" id="sponsor-footer">
-          Sponsors
-          {% assign levels = "Platinum,Goud,Zilver,Brons,Sympathisant" | split: "," %}
+          <a href="/sponsors">Sponsors</a>
+          {% assign levels = "Platinum,Goud,Zilver,Brons" | split: "," %}
           {% for level in levels %}
             {% assign sponsors = site.data.sponsors | where: "level", level | sort_natural:"title" %}
             {% if sponsors.size > 0 %}
@@ -17,6 +17,16 @@
               </span>
             {% endif %}
           {% endfor %}
+          {% assign sympatisanten = site.data.sponsors | where: "level", "Sympathisant" | sort_natural:"title" %}
+          {% if sympatisanten.size > 0 %}
+              <span class="sponsor-level sponsor-sympathisant" id="sympathisant">
+              {% if sympatisanten.size == 1 %}
+                en <a href="/sponsors/#sympathisant">1 sympathisant</a>.
+              {% else if sympatisanten.size > 1 %}
+                en <a href="/sponsors/#sympathisant">{{sympatisanten.size}} sympathisanten</a>.
+              {% endif %}
+              </span>
+          {% endif %}
       </div>
     {% endif %}
     <div class="wrapper">

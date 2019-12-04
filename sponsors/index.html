@@ -25,9 +25,21 @@ class: sponsors
           <ul id="sponsor-list">
             {% for sponsor in sponsors %}
             <li class="sponsor">
+              {% if sponsor.website  %}
                 <a href="{{sponsor.website | default: '#' }}" title="{{sponsor.title}}">
-                  <img src="/images/sponsors/{{sponsor.logo}}" />
+                    {% if sponsor.logo  %}
+                      <img src="/images/sponsors/{{sponsor.logo}}" />
+                    {% else %}
+                      {{sponsor.title | replace: ' ', 'X'}}
+                    {% endif %}
                 </a>
+              {% else %}
+                {% if sponsor.logo  %}
+                  <img src="/images/sponsors/{{sponsor.logo}}" />
+                {% else %}
+                  {{sponsor.title | replace: ' ', '&nbsp;'}}
+                {% endif %}
+                {% endif %}
             </li>
             {% endfor %}
           </ul>
