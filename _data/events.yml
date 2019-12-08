@@ -26,11 +26,11 @@
 #  location: parochiezaal
 #  image: mosselen.jpg
 #  facebook: https://www.facebook.com/events/661879497665253/
-- title: Quiz
-  start: 2019-11-16 20:00:00 +01:00
-  location: parochiezaal
-  image: quiz.jpg
-  facebook: https://www.facebook.com/events/470990290421595/
+#- title: Quiz
+#  start: 2019-11-16 20:00:00 +01:00
+#  location: parochiezaal
+#  image: quiz.jpg
+#  facebook: https://www.facebook.com/events/470990290421595/
 - title: Warmathon
   start: 2019-12-22 14:00:00 +01:00
   image: warmathon.jpg
@@ -39,6 +39,9 @@
   start: 2020-2-1 17:30:00 +01:00	
   location: parochiezaal		
   image: party.jpg
+- title: Paasontbijten
+  date: 2020-4-11 00:00 +02:00
+  image: ontbijt.jpg
 - title: Korfbalweek
   start: 2020-8-10 09:00:00 +02:00
   end: 2020-8-14 16:00:00 +02:00
