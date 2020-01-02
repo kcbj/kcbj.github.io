@@ -31,10 +31,10 @@
 #  location: parochiezaal
 #  image: quiz.jpg
 #  facebook: https://www.facebook.com/events/470990290421595/
-- title: Warmathon
-  start: 2019-12-22 14:00:00 +01:00
-  image: warmathon.jpg
-  facebook: https://www.facebook.com/events/1163396383853956/
+#- title: Warmathon
+#  start: 2019-12-22 14:00:00 +01:00
+#  image: warmathon.jpg
+#  facebook: https://www.facebook.com/events/1163396383853956/
 - title: Jaarfeest
   start: 2020-2-1 17:30:00 +01:00	
   location: parochiezaal		
