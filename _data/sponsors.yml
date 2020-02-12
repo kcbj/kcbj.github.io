@@ -93,6 +93,8 @@
   level: Sympathisant
 - title: Bloemenspeciaalzaak Ver Elst
   level: Sympathisant
+- title: Belfius Begijnendijk
+  level: Sympathisant
 - title: Tuinwerken Miscanthus
   level: Goud
   logo: miscanthus.png
@@ -109,3 +111,7 @@
   level: Zilver
   logo: meubelen-verhaegen.png
   website: https://www.meubelen-verhaegen-betekom.be/
+- title: Immo Home
+  level: Brons
+  logo: immohome.png
+  website: http://www.immohome.be/
