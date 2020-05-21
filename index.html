@@ -82,10 +82,9 @@ redirect_from:
         <li class="button location {% if location.new %}new{% endif %}"
             data-location-coordinates="{{ location.coordinates[0] }},{{ location.coordinates[1] }}"
             data-location-name="{{ location.name }}"
-            data-location-notes="{{ location.notes }}"
-            data-location-class="{% if location.new %}new{% endif %}"
+            data-location-notes="{{ location.surface }}"
             data-location-address="{{ location.address.street_address | append: ', ' | append: location.address.postal_code | append: ' ' | append: location.address.locality}}"
-        >{{ location.name }}</li>
+        >{{ location.name }} ({{ location.surface }})</li>
       {% endfor %}
     </ol>
   </div>

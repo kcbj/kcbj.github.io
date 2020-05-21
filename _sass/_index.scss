@@ -1,9 +1,7 @@
 body.index #location {
   background-color:                       $dark-gray;
   @include light-on-dark;
-  color:                                  #ffffff;
   padding:                                0 $base-line-height;
-
   $map-height:                            60vh;
 
   @media screen and (min-height: 440px) { // 440 corresponds to $hero-height, the min height of the map
@@ -54,6 +52,10 @@ body.index #location {
     width:                                100%;
     height:                               $map-height;
     min-height:                           $hero-height;
+
+    .mapboxgl-marker {
+        cursor: pointer;
+    }
   }
 
 }
