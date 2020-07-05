@@ -13,7 +13,7 @@ description: Locates waar KCBJ haar wedstrijden speelt.
 </div>
 <div class="container">
     <div class="wrapper" id="locations">
-      {% assign locations = site.locations | where: "games", true | sort: "order" %}
+      {% assign locations = site.locations | where: "details", true | sort: "order" %}
       {% for location in locations %}
         {% assign id_parts = location.id | split: '/' %}
         <div id="{{ id_parts.last }}" class="location text">

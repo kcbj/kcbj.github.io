@@ -118,6 +118,7 @@ redirect_from:
 
       {% for period in site.data.training.periods %}
       <h2>{{period.name}}</h2>
+      <p>{{period.text}}</p>
 
       <table class="full" id="trainingen-table">
         <thead>
@@ -143,7 +144,7 @@ redirect_from:
             <td data-title="start">{{training.starts_at}}</td>
             <td data-title="einde">{{training.ends_at}}</td>
             <td>{{training.note}}</td>
-            <td data-title="locatie"><a class="plain underlined" href="../#location" title="{{location.name}}">{{location.name}}</a></td>
+            <td data-title="locatie"><a class="plain underlined" href="/locations/#{{location.id}}" title="{{location.name}}">{{location.name}}</a></td>
           </tr>
           {% endfor %}
           {% endfor %}

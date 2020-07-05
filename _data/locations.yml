@@ -1,5 +1,6 @@
 ---
 - id: grotebaan
+  details: true
   featured: true
   name: Gemeentelijk Sportcentrum
   games: true
@@ -18,6 +19,7 @@
   - label: Kantine
     path: /images/backgrounds/grotebaan03-mobile.jpg
 - id: tumkens
+  details: true
   featured: true
   name: Sporthal De Tumkens
   games: true
@@ -57,10 +59,40 @@
     postal_code: 3130
     locality: Betekom
   coordinates: [ 50.9848655 , 4.7812281 ]
-- id: kamsa
-  name: Sporthal KAMSA
 - id: sjib
   name: Turnzaal SJIB
+  details: true
+  practice: true
+  surface: Zaal
+  address:
+    street_address: Professor Scharpélaan 23
+    postal_code: 3130
+    locality: Betekom
 - id: klimroos
+  details: true
   name: Turnzaal De Klimroos
+  practice: true
+  surface: Zaal
+  address:
+    street_address: Professor Scharpélaan 47
+    postal_code: 3130
+    locality: Betekom
+- id: kamsa
+  details: true
+  name: Sporthal KAMSA
+  practice: true
+  surface: Zaal
+  address:
+    street_address: Pastoor Dergentlaan 47
+    postal_code: 3200
+    locality: Aarschot
+- id: mixx
+  details: true
+  name: Vrijetijdscentrum de Mixx
+  practice: true
+  surface: Zaal
+  address:
+    street_address: Asbroek 1H
+    postal_code: 2230
+    locality: Herselt
 
