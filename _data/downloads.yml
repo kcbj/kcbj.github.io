@@ -1,4 +1,15 @@
 ---
+- title: Corona richtlijnen
+  files:
+  - path: "/downloads/files/corona/KCBJ_afspraken_corona_trainingen_veld_2020-09-03.pdf"
+    title: Afspraken Trainingen Veld
+    size: 342712
+    mime: pdf
+  - path: "/downloads/files/corona/KCBJ_afspraken_corona_wedstrijden_veld_2020-09-03.pdf"
+    title: Afspraken Wedstrijden Veld
+    size: 334316
+    mime: pdf
+  path: "/downloads/files/corona"
 - title: Documenten voor nieuwe leden
   files:
   - path: "/downloads/files/nieuwe-leden/Aansluiting_KCBJ_2020-2021_2020-05-10.pdf"
