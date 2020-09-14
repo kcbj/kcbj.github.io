@@ -1,19 +1,19 @@
 .corona {
 
+    .container.hero {
+        min-height: 14rem;
+    }
     .corona-afspraak{
 
         width: 50%;
 
-        p {
-        }
-        ul {
-            margin-bottom: 2em;
-            margin-top: 0em;
+        margin-top: 2em;
+        margin-bottom: 2em;
 
-            li {
-                padding: 0.3em;
-            }
+        .button {
+            text-align: center;
         }
+
     }
 
 }
