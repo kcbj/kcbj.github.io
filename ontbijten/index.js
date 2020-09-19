@@ -4,7 +4,7 @@ var kcbj = {
 	distanceLimit: 6000,
 	distancePerOrder: 250,
 	errorGeneral: 'Er ging iets fout. Probeer later nog eens.',
-	errorDistance: 'Dit adres ligt te ver voor levering aan huis. Gelieve de paasontbijten zelf te komen afhalen aan de kantine.',
+	errorDistance: 'Dit adres ligt te ver voor levering aan huis. Gelieve de paasontbijten zelf te komen afhalen.',
 	errorAddress: 'Dit adres kennen we niet. Hier kunnen we dan ook niet leveren.',
 }
 
@@ -54,7 +54,7 @@ function distanceCallback(response, status) {
 
 function isDistanceGood(distance) {
 	console.log(distance);
-	var aantal = $('#aantal').val();
+	var aantal = $('#aantal').val() + $('#aantal_luxe').val();
 	return distance < kcbj.distanceLimit + aantal * kcbj.distancePerOrder;
 }
 

@@ -83,6 +83,15 @@ redirect_from:
               {% else %}
               <p></p>
               {% endif %}
+              {% if event.link %}
+              <ul class="links">
+                <li>
+                  <a href="{{event.link.url}}">
+                    {% if event.link.label %}{{ event.link.label}}{% else %}Details{% endif %}
+                  </a>
+                </li>
+              </ul>
+              {% endif %}
               {% if event.facebook %}
               <ul class="links">
                 <li class="facebook">

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+
+  <title>KCBJ Herfstontbijten</title>
+
+  <meta property="og:image" content="https://www.kcbj.be/ontbijten/banner_herfst.jpg">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42873608-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42873608-1');
+</script>
+
+</head>
+<body>
+
+<h1><img id="logo" src="logo-white.png"/> KCBJ Herfstontbijten<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bestelformulier 2020</h1>
+<div class="container">
+  <div class="row justify-content-center" id="form">
+    <form class="col col-md-8 col-lg-6">
+
+      <div class="row">
+        <div class="col">
+          <p>
+            Wil jij onze sportclub steunen? Bestel dan hier je herfstontbijten.
+          </p>
+          <p>
+            Elk herfstontbijt bevat twee broodjes, beleg, confituur, een koffiekoek, yoghurt, koffie, thee, melk en suiker, chocomelk en fruitsap!
+            Een standaard herfstontbijt kost 8 euro.
+          </p>
+          <p>
+            Er is ook een luxe-herfstontbijt, met een extra flesje cava (20cl), voor 14 euro!
+          </p>
+          <p>
+            Alvast bedankt!
+          </p>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col">
+          <label for="name">Naam</label>
+          <input class="form-control" id="name" placeholder="Naam" maxlength="30" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col">
+          <label for="name">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="naam@example.com" maxlength="50" required>
+          <small id="emailHelp" class="form-text text-muted">
+            Je ontvangt een bevestiging van je bestelling op dit emailadres.
+          </small>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col">
+          <label for="name">Telefoon</label>
+          <input type="tel" class="form-control" id="tel" placeholder="0475 123456" maxlength="16" required>
+          <small id="telHelp" class="form-text text-muted">
+            Dit telefoonnummer wordt enkel gebruikt indien er problemen zijn tijdens de levering of wanneer er niemand opdaagt om de herfstontbijten op te halen.
+          </small>
+        </div>
+      </div>
+
+      <div class="form-group row align-items-end">
+        <div class="col">
+          <label for="aantal">Aantal standaard</label>
+          <a class="help" href="" data-toggle="modal" data-target="#inhoud"><img src="help.png" title="Meer info" alt="Meer info"/></a>
+          <input type="number" class="form-control" id="aantal" placeholder="Aantal standaard" min="0" max="20" required>
+        </div>
+        <div class="col">
+          <label for="aantal_luxe">Aantal luxe</label>
+          <a class="help" href="" data-toggle="modal" data-target="#inhoud"><img src="help.png" title="Meer info" alt="Meer info"/></a>
+          <input type="number" class="form-control" id="aantal_luxe" placeholder="Aantal luxe" min="0" max="20" required>
+        </div>
+        <div class="col">
+          <label for="total">Bedrag</label>
+          <input type="text" class="form-control" id="total" readonly disabled="true">
+        </div>
+      </div>
+
+      <fieldset class="form-group row">
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="transport" id="transportAfhalen" value="afhalen" required>
+            <label class="form-check-label" for="transportAfhalen">
+              Ik haal zelf af in de Parochiezaal Begijnendijk op zondag 18 oktober 2020 tussen 07:00 en 10:30
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="transport" id="transportLeveren" value="leveren" required>
+            <label class="form-check-label" for="transportLeveren">
+              KCBJ levert op zondag 18 oktober 2020 aan huis
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div id="levering" style="display:none;">
+        <label for="zip">Adres</label>
+        <div class="form-group row">
+          <div class="col-sm col-md-5">
+            <input type="number" class="form-control " id="zip" placeholder="Postcode" min="1000" max="9999">
+          </div>
+          <div class="col-sm col-md-7">
+            <input class="form-control " id="city" placeholder="Gemeente" maxlength="20">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm col-md-8">
+            <input class="form-control " id="street" placeholder="Straat" maxlength="30">
+          </div>
+          <div class="col-sm col-md-4">
+            <input class="form-control " id="number" placeholder="Nr + bus" maxlength="6">
+          </div>
+        </div>
+
+        <fieldset class="form-group row">
+          <div class="col-sm">
+            <label>Uur van levering</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time7" value="07:00" required>
+              <label class="form-check-label" for="time7">
+                Tussen 07:00 en 07:30
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time730" value="07:30" required>
+              <label class="form-check-label" for="time730">
+                Tussen 07:30 en 08:00
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time8" value="08:00" required>
+              <label class="form-check-label" for="time8">
+                Tussen 08:00 en 08:30
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time830" value="08:30" required>
+              <label class="form-check-label" for="time830">
+                Tussen 08:30 en 09:00
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time9" value="09:00" required>
+              <label class="form-check-label" for="time9">
+                Tussen 09:00 en 09:30
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time930" value="09:30" required>
+              <label class="form-check-label" for="time930">
+                Tussen 09:30 en 10:00
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="time" id="time10" value="10:00" required>
+              <label class="form-check-label" for="time10">
+                Tussen 10:00 en 10:30
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm">
+          <button type="submit" id="submit" class="btn btn-primary">Bestellen</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <!--
+  <div class="row justify-content-center">
+    <div class="col col-md-8 col-lg-6 jumbotron">
+      <p class="lead">
+        De verkoop van de herfstontbijten is afgesloten.
+      </p>
+      <p class="">
+        Bedankt aan iedereen die onze club gesteund heeft.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <div class="row justify-content-center" id="result-success" style="display:none;">
+    <div class="col col-md-8 col-lg-6">
+      <div class="alert alert-success" role="alert">
+        Je bestelling is genoteerd.
+      </div>
+      <p>Er is een email onderweg naar <span id="result-email">email@example.com</span> met alle details van je bestelling.</p>
+      <div class="alert alert-warning" role="alert">
+        <p>Gelieve zo snel mogelijk <span id="result-bedrag"> euro</span> over te schrijven naar rekeningnummer <span>BE69&nbsp;7340&nbsp;1518&nbsp;7478</span>
+          van KCBJ VZW met als mededeling <span id="result-mededeling">+++000/0000/00000+++</span></p>
+        <p>Pas na ontvangst van je betaling is de bestelling definitief.</p>
+      </div>
+      <p>Bedankt om onze club te steunen!</p>
+    </div>
+  </div>
+</div>
+
+<div id="error" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Oeps!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="error-text" class="alert alert-danger" role="alert">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+      </div>
+    </div>
+  </div>
+</div> <!-- Container -->
+
+<div id="inhoud" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Inhoud herfstontbijt</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table>
+          <thead>
+          <tr>
+            <th></th>
+            <th>Standaard</th>
+            <th>Luxe</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Koffiekoek</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>2 broodjes</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Beleg (hesp en kaas)</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Confituur</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Boter</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Yoghurt</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Koffie, thee, melk en suiker</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Chocomelk</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Fruitsap</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Flesje cava (20cl)</td>
+            <td></td>
+            <td>✓</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+      </div>
+    </div>
+  </div>
+</div> <!-- Container -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsJgmWkYtaDOXkYEm1_i-IXEBF6M31LJ0&callback=initMap" async defer></script>
+</body>
+</html>
