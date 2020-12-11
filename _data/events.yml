@@ -22,27 +22,7 @@
 #  location: grotebaan
 #  image: korfbalweek.jpg
 #  facebook: https://www.facebook.com/events/411447572960428/
-- title: Herfstontbijten
-  date: 2020-10-18 00:00 +02:00
-  image: ontbijt.jpg
-  link:
-    url: /ontbijten/
-    label: Bestel online
-- title: Mosselweekend (GEANNULEERD)
-  start: 2020-10-17 17:00:00 +02:00
-  end: 2020-10-17 21:00:00 +02:00
-  location: parochiezaal
-  image: mosselen.jpg
-- title: Mosselweekend (GEANNULEERD)
-  start: 2020-10-18 12:00:00 +02:00
-  end: 2020-10-18 19:00:00 +02:00
-  location: parochiezaal
-  image: mosselen.jpg
-- title: Quiz (GEANNULEERD)
-  start: 2020-11-21 20:00:00 +01:00
-  location: parochiezaal
-  image: quiz.jpg
-- title: Jaarfeest
+- title: Jaarfeest (GEANNULEERD)
   start: 2021-2-6 17:30:00 +01:00
   location: parochiezaal
   image: party.jpg
