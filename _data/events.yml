@@ -16,16 +16,16 @@
 #- title: Paasontbijten
 #  date: 2020-4-11 00:00 +02:00
 #  image: ontbijt.jpg
-#- title: Korfbalweek (GEANNULEERD)
-#  start: 2020-8-10 09:00:00 +02:00
-#  end: 2020-8-14 16:00:00 +02:00
-#  location: grotebaan
-#  image: korfbalweek.jpg
+#- title: Jaarfeest
+#  start: 2021-2-6 17:30:00 +01:00
+#  location: parochiezaal
+#  image: party.jpg
+- title: Korfbalweek
+  start: 2021-8-9 09:00:00 +02:00
+  end: 2021-8-13 16:00:00 +02:00
+  location: grotebaan
+  image: korfbalweek.jpg
 #  facebook: https://www.facebook.com/events/411447572960428/
-- title: Jaarfeest (GEANNULEERD)
-  start: 2021-2-6 17:30:00 +01:00
-  location: parochiezaal
-  image: party.jpg
 - title: Mosselweekend
   start: 2021-10-16 17:00:00 +02:00
   end: 2021-10-16 21:00:00 +02:00
