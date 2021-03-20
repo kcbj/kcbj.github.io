@@ -154,3 +154,21 @@ body.dertig {
 
 }
 
+/******************************************************************************
+ BEACH
+******************************************************************************/
+
+body.beach {
+
+  #first-divider {
+    @include background-image( 'beach2' );
+    background-position:          center ;
+  }
+
+  #second-divider {
+    @include background-image( 'beach' );
+    background-position:          center;
+  }
+
+}
+
