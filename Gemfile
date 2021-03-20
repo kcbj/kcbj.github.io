@@ -11,3 +11,5 @@ end
 gem 'bourbon', '~> 4.2.3'
 gem 'filesize'
 gem 'mime-types'
+
+gem "webrick", "~> 1.7"
