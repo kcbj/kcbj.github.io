@@ -1,17 +1,19 @@
 ---
-season: 2020 - 2021
+season: 2021 - 2022
 teams:
-  - team: u6
+  - team: u5
     fee: €60
-  - team: u8
+  - team: u7
     fee: €90
-  - team: u10
+  - team: u9
     fee: €90
-  - team: u12
+  - team: u11
     fee: €110
-  - team: u14
+  - team: u13
     fee: €110
-  - team: u16
+  - team: u15
+    fee: €110
+  - team: u17
     fee: €110
   - team: u19
     fee: €110

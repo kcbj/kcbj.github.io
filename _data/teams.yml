@@ -1,36 +1,41 @@
-u6:
-  name: U6
-  ages: Geboren in 2015-2016-2017
+u5:
+  name: U5
+  ages: Geboren in 2017-2018
   list: true
   description: recreatieve ploeg voor de allerkleinsten
-u8:
-  name: U8
+u7:
+  name: U7
+  ages: Geboren in 2015-2016
+  list: true
+  description: recreatieve ploeg voor de allerkleinsten
+u9:
+  name: U9
   ages: Geboren in 2013-2014
   list: true
   description: recreatieve jeugdploeg
-u10:
-  name: U10
+u11:
+  name: U11
   ages: Geboren in 2011-2012
   list: true
   description: recreatieve jeugdploeg
-u12:
-  name: U12
+u13:
+  name: U13
   ages: Geboren in 2009-2010
   list: true
   description: recreatieve/competitieve jeugdploeg
-u14:
-  name: U14
+u15:
+  name: U15
   ages: Geboren in 2007-2008
   list: true
   description: recreatieve/competitieve jeugdploeg
-u16:
-  name: U16
+u17:
+  name: U17
   ages: Geboren in 2005-2006
   list: true
   description: recreatieve/competitieve jeugdploeg
 u19:
   name: U19
-  ages: Geboren in 2002-2003-2004
+  ages: Geboren in 2003-2004
   list: true
   description: recreatieve/competitieve jeugdploeg
 senioren:
