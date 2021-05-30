@@ -42,6 +42,20 @@
   location: parochiezaal
   image: mosselen.jpg
 - title: Quiz
-  start: 2020-11-20 20:00:00 +01:00
+  start: 2021-11-20 20:00:00 +01:00
+  location: parochiezaal
+  image: quiz.jpg
+- title: Mosselweekend
+  start: 2022-10-22 17:00:00 +02:00
+  end: 2022-10-22 21:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: Mosselweekend
+  start: 2022-10-23 12:00:00 +02:00
+  end: 2022-10-23 19:00:00 +02:00
+  location: parochiezaal
+  image: mosselen.jpg
+- title: Quiz
+  start: 2022-11-19 20:00:00 +01:00
   location: parochiezaal
   image: quiz.jpg
