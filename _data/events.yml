@@ -20,12 +20,12 @@
 #  start: 2021-2-6 17:30:00 +01:00
 #  location: parochiezaal
 #  image: party.jpg
-- title: Korfbalweek
-  start: 2021-8-9 09:00:00 +02:00
-  end: 2021-8-13 16:00:00 +02:00
-  location: grotebaan
-  image: korfbalweek.jpg
-  facebook: https://www.facebook.com/events/396717368219047/
+#- title: Korfbalweek
+#  start: 2021-8-9 09:00:00 +02:00
+#  end: 2021-8-13 16:00:00 +02:00
+#  location: grotebaan
+#  image: korfbalweek.jpg
+#  facebook: https://www.facebook.com/events/396717368219047/
 - title: Vriendjesdag
   start: 2021-9-8 14:00:00 +02:00
   end: 2021-9-8 16:30:00 +02:00
