@@ -12,8 +12,13 @@ redirect_from:
   <div class="wrapper">
     <h1 class="larger">Agenda</h1>
     <p class="centered">Hieronder staat een overzicht van de <a class="plain underline" href="#evenementen">evenementen</a> en <a class="plain underline" href="#trainingen">trainingen</a> die doorgaan bij KCBJ</p>
-    <p class="centered">De volledige, gedetailleerde, up-to-date agenda van alle trainingen, wedstrijden en activiteiten van KCBJ vind je <a href="http://login.twizzit.com/website/websitepreview/570/index.php">hier</a>.</p>
   </div>
+</div>
+<div class="container">
+  <div class="buttons">
+    <a class="button more" href="http://login.twizzit.com/website/websitepreview/570/index.php"><i class="fa fa-calendar"></i> Volledige Agenda</a>
+  </div>
+
 </div>
 <div class="hero container" id="first-divider">
   <div class="overlay">
@@ -123,10 +128,9 @@ redirect_from:
 <div class="container">
   <div class="wrapper">
     <div id="trainingen" class="text">
-      <h1>Trainingen {{site.data.training.season}}</h1>
 
       {% for period in site.data.training.periods %}
-      <h2>{{period.name}}</h2>
+      <h1>Trainingen {{period.name}} {{site.data.training.season}}</h1>
       <p>{{period.text}}</p>
 
       <table class="full" id="trainingen-table">
@@ -159,6 +163,7 @@ redirect_from:
           {% endfor %}
         </tbody>
       </table>
+      <img src="/images/trainingen-{{period.name}}.png" style="width: 100%"/>
 
       {% endfor %}
     </div>

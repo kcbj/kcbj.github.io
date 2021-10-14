@@ -109,9 +109,9 @@ periods:
       - name: U7
         trainings:
           - weekday: vrijdag
-            starts_at: "17:45"
-            ends_at: "18:45"
-            location: klimroos
+            starts_at: "18:00"
+            ends_at: "19:00"
+            location: sjib
       - name: U9
         trainings:
           - weekday: woensdag
@@ -119,8 +119,8 @@ periods:
             ends_at: "18:00"
             location: tumkens
           - weekday: vrijdag
-            starts_at: "18:00"
-            ends_at: "19:00"
+            starts_at: "19:00"
+            ends_at: "20:00"
             location: sjib
       - name: U11
         trainings:
@@ -128,12 +128,7 @@ periods:
             starts_at: "18:00"
             ends_at: "19:00"
             location: tumkens
-          - weekday: vrijdag&#160;(groep&#160;1)
-            starts_at: "19:00"
-            ends_at: "20:00"
-            start: 2018-8-1
-            location: sjib
-          - weekday: vrijdag&#160;(groep&#160;2)
+          - weekday: vrijdag
             starts_at: "18:00"
             ends_at: "19:00"
             location: tumkens
@@ -151,7 +146,7 @@ periods:
         trainings:
           - weekday: dinsdag
             starts_at: "18:00"
-            ends_at: "20:00"
+            ends_at: "19:30"
             location: kamsa
           - weekday: donderdag
             starts_at: "18:00"
@@ -184,7 +179,7 @@ periods:
             ends_at: "22:00"
             location: kamsa
           - weekday: vrijdag
-            starts_at: "21:00"
+            starts_at: "22:00"
             ends_at: "23:00"
             location: tumkens
       - name: Gewestelijken
