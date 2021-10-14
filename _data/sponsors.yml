@@ -53,10 +53,6 @@
   level: Brons
 - title: Crèmelie
   level: Sympathisant
-- title: "'t fijnste ijs Begijnendijk"
-  level: Sympathisant
-- title: "'t Pistoleeke Begijnendijk"
-  level: Sympathisant
 - title: Banden Crauwels
   level: Sympathisant
 - title: Bike Run Lab
@@ -77,8 +73,6 @@
   level: Sympathisant
 - title: Het Tolhuis Enjoy Drinks
   level: Sympathisant
-- title: Notelteirs beenhouwerij
-  level: Sympathisant
 - title: Bakkerij Plankenbrug
   level: Sympathisant
 - title: Ruitenwasser De Wachter
@@ -88,8 +82,6 @@
 - title: Van Rompaey Houthandel & Doe-het-zelf
   level: Sympathisant
 - title: Bloemenspeciaalzaak Ver Elst
-  level: Sympathisant
-- title: Belfius Begijnendijk
   level: Sympathisant
 - title: Tuinwerken Miscanthus
   level: Goud
@@ -115,3 +107,9 @@
   level: Zilver
   logo: omeyocan.png
   website: http://www.omeyocan.be/
+- title: GTC Computers
+  level: Sympathisant
+- title: Euro-Decor
+  level: Sympathisant
+- title: Smet Auto-onderdelen
+  level: Sympathisant
