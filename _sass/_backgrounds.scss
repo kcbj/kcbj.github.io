@@ -127,13 +127,13 @@ body.downloads {
 body.korfbalweek {
 
   #first-divider {
-    @include background-image( 'korfbalweek' );
+    @include background-image( 'korfbalweek-2021' );
     background-position:          center ;
   }
 
   #second-divider {
-    @include background-image( 'trainers01' );
-    background-position:          center top;
+    @include background-image( 'korfbalweek' );
+    background-position:          center;
   }
 
 }
