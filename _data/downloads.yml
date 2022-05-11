@@ -35,26 +35,3 @@
     size: 792033
     mime: pdf
   path: "/downloads/files/leden"
-- title: Formulieren tussenkomst lidgeld ziekenfonds
-  path: "/downloads/files/ziekenfonds"
-  files:
-  - path: "/downloads/files/ziekenfonds/christelijke-mutualiteit.pdf"
-    size: 2494167
-    title: Christelijke mutualiteit
-    mime: pdf
-  - path: "/downloads/files/ziekenfonds/socialistische-mutualiteit.pdf"
-    size: 116518
-    title: Socialistische mutualiteit
-    mime: pdf
-  - path: "/downloads/files/ziekenfonds/liberale-mutualiteit.pdf"
-    size: 86388
-    title: Liberale mutualiteit
-    mime: pdf
-  - path: "/downloads/files/ziekenfonds/vlaams-neutraal-ziekenfonds.pdf"
-    size: 99461
-    title: Vlaams neutraal ziekenfonds
-    mime: pdf
-  - path: "/downloads/files/ziekenfonds/voorzorg.pdf"
-    size: 286848
-    title: Voorzorg
-    mime: pdf
