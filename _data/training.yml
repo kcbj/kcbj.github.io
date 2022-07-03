@@ -97,100 +97,100 @@ periods:
             starts_at: "19:30"
             ends_at: "20:30"
             location: grotebaan
-#  - name: zaal
-#    text: Van 24 oktober 2022 tot en met 3 maart 2023.
-#    teams:
-#      - name: U5
-#        trainings:
-#          - weekday: vrijdag
-#            starts_at: "17:45"
-#            ends_at: "18:45"
-#            location: klimroos
-#      - name: U7
-#        trainings:
-#          - weekday: vrijdag
-#            starts_at: "18:00"
-#            ends_at: "19:00"
-#            location: sjib
-#      - name: U9
-#        trainings:
-#          - weekday: woensdag
-#            starts_at: "17:00"
-#            ends_at: "18:00"
-#            location: tumkens
-#          - weekday: vrijdag
-#            starts_at: "19:00"
-#            ends_at: "20:00"
-#            location: sjib
-#      - name: U11
-#        trainings:
-#          - weekday: woensdag
-#            starts_at: "18:00"
-#            ends_at: "19:00"
-#            location: tumkens
-#          - weekday: vrijdag
-#            starts_at: "18:00"
-#            ends_at: "19:00"
-#            location: tumkens
-#      - name: U13
-#        trainings:
-#          - weekday: woensdag
-#            starts_at: "19:00"
-#            ends_at: "20:00"
-#            location: tumkens
-#          - weekday: vrijdag
-#            starts_at: "18:00"
-#            ends_at: "19:00"
-#            location: tumkens
-#      - name: U15
-#        trainings:
-#          - weekday: dinsdag
-#            starts_at: "17:45"
-#            ends_at: "19:15"
-#            location: kamsa
-#          - weekday: donderdag
-#            starts_at: "17:45"
-#            ends_at: "19:15"
-#            location: kamsa
-#      - name: U17
-#        trainings:
-#          - weekday: dinsdag
-#            starts_at: "19:15"
-#            ends_at: "20:45"
-#            location: kamsa
-#          - weekday: donderdag
-#            starts_at: "19:15"
-#            ends_at: "20:45"
-#            location: kamsa
-#      - name: U19
-#        trainings:
-#          - weekday: dinsdag
-#            starts_at: "19:15"
-#            ends_at: "20:45"
-#            location: kamsa
-#          - weekday: donderdag
-#            starts_at: "19:15"
-#            ends_at: "20:45"
-#            location: kamsa
-#      - name: Senioren
-#        trainings:
-#          - weekday: dinsdag
-#            starts_at: "20:45"
-#            ends_at: "22:15"
-#            location: kamsa
-#          - weekday: vrijdag
-#            starts_at: "20:00"
-#            ends_at: "22:00"
-#            location: mixx
-#      - name: Gewestelijken
-#        trainings:
-#          - weekday: vrijdag
-#            starts_at: "20:00"
-#            ends_at: "22:00"
-#            location: mixx
-#      - name: Recreanten
-#        trainings:
-#          - weekday: vrijdag
-#            starts_at: "20:00"
-#            ends_at: "22:00"
-#            location: mixx
+  - name: zaal
+    text: Van 24 oktober 2022 tot en met 3 maart 2023.
+    teams:
+      - name: U5
+        trainings:
+          - weekday: vrijdag
+            starts_at: "17:45"
+            ends_at: "18:45"
+            location: klimroos
+      - name: U7
+        trainings:
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            location: sjib
+      - name: U9
+        trainings:
+          - weekday: woensdag
+            starts_at: "17:00"
+            ends_at: "18:00"
+            location: tumkens
+          - weekday: vrijdag
+            starts_at: "19:00"
+            ends_at: "20:00"
+            location: sjib
+      - name: U11
+        trainings:
+          - weekday: woensdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            location: tumkens
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            location: tumkens
+      - name: U13
+        trainings:
+          - weekday: woensdag
+            starts_at: "19:00"
+            ends_at: "20:00"
+            location: tumkens
+          - weekday: vrijdag
+            starts_at: "18:00"
+            ends_at: "19:00"
+            location: tumkens
+      - name: U15
+        trainings:
+          - weekday: dinsdag
+            starts_at: "17:45"
+            ends_at: "19:15"
+            location: kamsa
+          - weekday: donderdag
+            starts_at: "17:45"
+            ends_at: "19:15"
+            location: kamsa
+      - name: U17
+        trainings:
+          - weekday: dinsdag
+            starts_at: "19:15"
+            ends_at: "20:45"
+            location: kamsa
+          - weekday: donderdag
+            starts_at: "19:15"
+            ends_at: "20:45"
+            location: kamsa
+      - name: U19
+        trainings:
+          - weekday: dinsdag
+            starts_at: "19:15"
+            ends_at: "20:45"
+            location: kamsa
+          - weekday: donderdag
+            starts_at: "19:15"
+            ends_at: "20:45"
+            location: kamsa
+      - name: Senioren
+        trainings:
+          - weekday: dinsdag
+            starts_at: "20:45"
+            ends_at: "22:15"
+            location: kamsa
+          - weekday: vrijdag
+            starts_at: "21:00"
+            ends_at: "23:00"
+            location: mixx
+      - name: Gewestelijken
+        trainings:
+          - weekday: vrijdag
+            starts_at: "20:00"
+            ends_at: "22:00"
+            location: mixx
+      - name: Recreanten
+        trainings:
+          - weekday: vrijdag
+            starts_at: "20:00"
+            ends_at: "22:00"
+            location: mixx
