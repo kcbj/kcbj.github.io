@@ -8,9 +8,9 @@
   path: "/downloads/files/nieuwe-leden"
 - title: Informatie over de club
   files:
-  - path: "/downloads/files/info/intern_reglement_KCBJvzw_2020-12-07.pdf"
+  - path: "/downloads/files/info/intern_reglement_KCBJvzw_2022-06-12.pdf"
     title: Intern reglement
-    size: 259332
+    size: 229970
     mime: pdf
   - path: "/downloads/files/info/richtlijnen_en_regels_voor_gebruik_kunstgrasvelden_2018-09-13.pdf"
     title: Richtlijnen en regels voor gebruik kunstgrasvelden
