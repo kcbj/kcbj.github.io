@@ -55,11 +55,7 @@
   level: Sympathisant
 - title: Banden Crauwels
   level: Sympathisant
-- title: Bike Run Lab
-  level: Sympathisant
 - title: Boomkwekerij De Bruyn
-  level: Sympathisant
-- title: Likeuren De Gent
   level: Sympathisant
 - title: Delvora Chocolade
   level: Sympathisant
@@ -107,12 +103,10 @@
   level: Zilver
   logo: omeyocan.png
   website: http://www.omeyocan.be/
-- title: GTC Computers
-  level: Sympathisant
-- title: Euro-Decor
-  level: Sympathisant
-- title: Smet Auto-onderdelen
-  level: Sympathisant
+- title: EURO-DECOR
+  level: Brons
+  logo: euro-decor.png
+  website: https://www.eurodecor-betekom.be/
 - title: Moving Targets
   level: Zilver
   logo: movingtargets.png
