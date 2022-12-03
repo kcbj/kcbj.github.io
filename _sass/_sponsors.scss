@@ -40,7 +40,11 @@
     @include reset-list;
     max-width:                              100%;
     display:                            grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 100%;
+
+      @media screen and (min-width: $grid-min-width ) {
+        grid-template-columns: 33% 33% 33%;
+      }
 
     .sponsor {
 
