@@ -27,95 +27,98 @@ redirect_from:
 <div class="container">
   <div class="wrapper">
     <div class="text" id="evenementen">
-      <h1>Evenementen</h1>
       <div class="events">
-        {% for event in site.data.events %}
-          {% assign location = site.data.locations | where: "id", event.location | first %}
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Event",
-              "name": "{{event.title | escape}}",
-              "location": {
-                "name: {{location.name}}",
-                "address":{
-                  "@type": "PostalAddress",
-                  "streetAddress": "{{location.address.street_address}}",
-                  "addressLocality": "{{location.address.locality}}",
-                  "postalCode": "{{location.address.postal_code}}",
-                  "addressCountry": "BE"
-                }
-              },
-              {% if event.start %}
-              "startDate": "{{ event.start | date_to_xmlschema }}",
-                {% if event.end %}
-              "endDate": "{{ event.end | date_to_xmlschema }}",
-                {% endif %}
-              {% else %}
-              "startDate": "{{ event.date | date: "%Y-%m-%d" }}",
-              {% endif %}
-              {% if event.facebook %}
-              "sameAs": "{{ event.facebook }}",
-              {% endif %}
-              "organizer": { "@id": "{{site.url}}" }
-            }
-          </script>
-        <div class="event">
-          {% if event.image %}
-            <div class="image" style="background-image: url( '/images/events/{{event.image}}' );"></div>
-          {% endif %}
-          <div class="content">
-            <div class="top">
-              <h3 class="title">{{ event.title }}</h3>
-              <div class="date">
+        {% assign eventsByYear = site.data.events | group_by_exp:"event", "event.start | date: '%Y'" %}
+        {% for year in eventsByYear %}
+          <h1>Evenementen {{ year.name }}</h1>
+          {% for event in year.items %}
+            {% assign location = site.data.locations | where: "id", event.location | first %}
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "{{event.title | escape}}",
+                "location": {
+                  "name: {{location.name}}",
+                  "address":{
+                    "@type": "PostalAddress",
+                    "streetAddress": "{{location.address.street_address}}",
+                    "addressLocality": "{{location.address.locality}}",
+                    "postalCode": "{{location.address.postal_code}}",
+                    "addressCountry": "BE"
+                  }
+                },
                 {% if event.start %}
-                  {% assign month = event.start | date: "%B" %}
-                  {% assign lmonth = site.data.months | where: "en", month | first %}
-                  <time datetime="{{ event.start | date_to_xmlschema }}">{{ event.start | date: "%-d" }} {{ lmonth.nl }} {{ event.start | date: "%Y %H:%M" }}</time>
+                "startDate": "{{ event.start | date_to_xmlschema }}",
                   {% if event.end %}
-                  - <time datetime="{{ event.end | date_to_xmlschema }}">{{ event.end | date: "%H:%M" }}</time>
+                "endDate": "{{ event.end | date_to_xmlschema }}",
                   {% endif %}
                 {% else %}
-                  {% assign month = event.date | date: "%B" %}
-                  {% assign lmonth = site.data.months | where: "en", month | first %}
-                  <time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%-d" }} {{ lmonth.nl }} {{ event.date | date: "%Y" }}</time>
+                "startDate": "{{ event.date | date: "%Y-%m-%d" }}",
+                {% endif %}
+                {% if event.facebook %}
+                "sameAs": "{{ event.facebook }}",
+                {% endif %}
+                "organizer": { "@id": "{{site.url}}" }
+              }
+            </script>
+          <div class="event">
+            {% if event.image %}
+              <div class="image" style="background-image: url( '/images/events/{{event.image}}' );"></div>
+            {% endif %}
+            <div class="content">
+              <div class="top">
+                <h3 class="title">{{ event.title }}</h3>
+                <div class="date">
+                  {% if event.start %}
+                    {% assign month = event.start | date: "%B" %}
+                    {% assign lmonth = site.data.months | where: "en", month | first %}
+                    <time datetime="{{ event.start | date_to_xmlschema }}">{{ event.start | date: "%-d" }} {{ lmonth.nl }} {{ event.start | date: "%Y %H:%M" }}</time>
+                    {% if event.end %}
+                    - <time datetime="{{ event.end | date_to_xmlschema }}">{{ event.end | date: "%H:%M" }}</time>
+                    {% endif %}
+                  {% else %}
+                    {% assign month = event.date | date: "%B" %}
+                    {% assign lmonth = site.data.months | where: "en", month | first %}
+                    <time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%-d" }} {{ lmonth.nl }} {{ event.date | date: "%Y" }}</time>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="bottom">
+                {% if event.location %}
+                <a class="location plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a>
+                {% else %}
+                <p></p>
+                {% endif %}
+                {% if event.link %}
+                <ul class="links">
+                  <li>
+                    <a href="{{event.link.url}}">
+                      {% if event.link.label %}{{ event.link.label}}{% else %}Details{% endif %}
+                    </a>
+                  </li>
+                </ul>
+                {% endif %}
+                {% if event.facebook %}
+                <ul class="links">
+                  <li class="facebook">
+                    <a href="{{event.facebook}}" title="{{event.title}} on Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                </ul>
+                {% endif %}
+                {% if event.page %}
+                <ul class="links">
+                  <li class="page">
+                    <a href="{{event.page}}">Meer info</a>
+                  </li>
+                </ul>
                 {% endif %}
               </div>
             </div>
-            <div class="bottom">
-              {% if event.location %}
-              <a class="location plain underlined" href="{{location.url}}" title="{{location.name}}">{{location.name}}</a>
-              {% else %}
-              <p></p>
-              {% endif %}
-              {% if event.link %}
-              <ul class="links">
-                <li>
-                  <a href="{{event.link.url}}">
-                    {% if event.link.label %}{{ event.link.label}}{% else %}Details{% endif %}
-                  </a>
-                </li>
-              </ul>
-              {% endif %}
-              {% if event.facebook %}
-              <ul class="links">
-                <li class="facebook">
-                  <a href="{{event.facebook}}" title="{{event.title}} on Facebook">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-              </ul>
-              {% endif %}
-              {% if event.page %}
-              <ul class="links">
-                <li class="page">
-                  <a href="{{event.page}}">Meer info</a>
-                </li>
-              </ul>
-              {% endif %}
-            </div>
           </div>
-        </div>
+          {% endfor %}
         {% endfor %}
       </div>
     </div>
