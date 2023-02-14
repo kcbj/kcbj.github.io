@@ -1,15 +1,11 @@
 ---
-- title: Belgian Real Estate Services
-  logo: bress.png
-  website: http://bress.be
-  level: Platinum
 - title: De Bruyn N.V.
   logo: debruyn.png
-  website: http://www.debruyn-nv.be
+  website: https://debruyn-nv.be/
   level: Goud
 - title: KBC Begijnendijk
   logo: kbc.png
-  website: http://www.kbc.be
+  website: https://www.kbc.be
   level: Brons
 - title: Norio
   logo: norio.png
@@ -23,7 +19,7 @@
   level: Sympathisant
 - title: "'t Wit Toreke"
   logo: wit-toreke.png
-  website: http://twittoreke.be
+  website: https://www.twittoreke.be/
   level: Platinum
 - title: Vermarc Sport
   logo: vermarc.png
@@ -43,7 +39,7 @@
   level: Zilver
 - title: Van Praet Brood & Banket
   logo: vanpraet.jpg
-  website: http://www.bakkerijvanpraet.be//
+  website: http://www.bakkerijvanpraet.be/
   level: Goud
 - title: Cafetaria De Tumkens
   logo: detumkens.png
@@ -80,11 +76,11 @@
 - title: Tuinwerken Miscanthus
   level: Goud
   logo: miscanthus.png
-  website: http://www.tuinwerken-miscanthus.be/
+  website: https://www.tuinwerken-miscanthus.be/
 - title: "'t CLUBhuis"
   level: Goud
   logo: clubhuis.png
-  website: http://www.tclubhuis.be/
+  website: https://www.tclubhuis.be/
 - title: Garage Thierry De Roover
   level: Brons
   logo: garage-thierry-de-roover.jpg
@@ -104,4 +100,8 @@
 - title: Moving Targets
   level: Zilver
   logo: movingtargets.png
-  website: http://www.movingtargets.be/
+  website: https://www.movingtargets.be/
+- title: Apotheek Philips
+  logo: apotheek-philips.png
+  website: https://www.apotheekphilips.be/
+  level: Platinum
