@@ -42,10 +42,10 @@
   website: https://www.facebook.com/De-Tumkens-112910870111682
   level: Brons
 - title: Crèmelie
-  level: Sympathisant
+  logo: cremelie.png
+  website: https://www.facebook.com/Cremelie/
+  level: Brons
 - title: Banden Crauwels
-  level: Sympathisant
-- title: Boomkwekerij De Bruyn
   level: Sympathisant
 - title: Delvora Chocolade
   level: Sympathisant
@@ -58,8 +58,6 @@
 - title: Hair, Skin & Body
   level: Sympathisant
 - title: Het Tolhuis Enjoy Drinks
-  level: Sympathisant
-- title: Bakkerij Plankenbrug
   level: Sympathisant
 - title: Ruitenwasser De Wachter
   level: Sympathisant
@@ -101,3 +99,21 @@
   logo: apotheek-philips.png
   website: https://www.apotheekphilips.be/
   level: Platinum
+- title: Reves Vastgoed
+  logo: reves.png
+  website: https://www.revesvastgoed.be/
+  level: Brons
+- title: Belmaco
+  level: Sympathisant
+- title: Fiets & Tuincentrum Meirhaeghe - Van Woensel
+  level: Sympathisant
+- title: Pizza Party At Home
+  level: Sympathisant
+- title: Partis Rentalis
+  logo: partis-rentalis.png
+  website: https://www.partis-rentalis.be/
+  level: Brons
+- title: Gedimat De Roover
+  logo: gedimat-de-roover.png
+  website: https://www.gedimatderoover.be/tegels/
+  level: Brons
