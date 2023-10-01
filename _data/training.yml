@@ -191,6 +191,6 @@ periods:
       - name: Recreanten
         trainings:
           - weekday: vrijdag
-            starts_at: "20:00"
-            ends_at: "22:00"
+            starts_at: "19:00"
+            ends_at: "20:00"
             location: mixx
