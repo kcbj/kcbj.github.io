@@ -147,37 +147,37 @@ periods:
           - weekday: dinsdag
             starts_at: "17:45"
             ends_at: "19:15"
-            location: kamsa
+            location: sitea
           - weekday: donderdag
             starts_at: "17:45"
             ends_at: "19:15"
-            location: kamsa
+            location: sitea
       - name: U17
         trainings:
           - weekday: dinsdag
             starts_at: "19:15"
             ends_at: "20:45"
-            location: kamsa
+            location: sitea
           - weekday: donderdag
             starts_at: "19:15"
             ends_at: "20:45"
-            location: kamsa
+            location: sitea
       - name: U19
         trainings:
           - weekday: dinsdag
             starts_at: "19:15"
             ends_at: "20:45"
-            location: kamsa
+            location: sitea
           - weekday: donderdag
             starts_at: "19:15"
             ends_at: "20:45"
-            location: kamsa
+            location: sitea
       - name: Senioren
         trainings:
           - weekday: dinsdag
             starts_at: "20:45"
             ends_at: "22:15"
-            location: kamsa
+            location: sitea
           - weekday: vrijdag
             starts_at: "21:00"
             ends_at: "23:00"

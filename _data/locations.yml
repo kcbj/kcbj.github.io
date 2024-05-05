@@ -77,9 +77,9 @@
     street_address: Professor Scharpélaan 47
     postal_code: 3130
     locality: Betekom
-- id: kamsa
+- id: sitea
   details: true
-  name: Sporthal KAMSA
+  name: Sporthal Site-A (KAMSA)
   practice: true
   surface: Zaal
   address:
