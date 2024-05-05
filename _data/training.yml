@@ -1,7 +1,7 @@
-season: 2023 - 2024
+season: 2024 - 2025
 periods:
   - name: veld
-    text: Van 2 augustus 2023 tot en met 20 oktober 2023, van 6 maart 2024 tot en met 31 mei 2024.
+    text: Van maandag 29 juli 2024 tot en met zondag 27 oktober 2024, van maandag 3 maart 2025 tot en met vrijdag 30 mei 2025.
     teams:
       - name: U5
         trainings:
@@ -98,7 +98,7 @@ periods:
             ends_at: "20:30"
             location: grotebaan
   - name: zaal
-    text: Van 23 oktober 2023 tot en met 3 maart 2024.
+    text: Van maandag 28 oktober 2024 tot en met zondag 2 maart 2025.
     teams:
       - name: U5
         trainings:
