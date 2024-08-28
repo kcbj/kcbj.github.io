@@ -30,8 +30,8 @@
   path: "/downloads/files/sponsoring"
 - title: Documenten voor leden
   files:
-  - path: "/downloads/files/leden/KCBJ_Ongevallenaangifteformulier_2022-11-04.pdf"
+  - path: "/downloads/files/leden/KCBJ_Ongevallenaangifteformulier_2024-08-28.pdf"
     title: Ongevallenaangifteformulier
-    size: 940000
+    size: 450000
     mime: pdf
   path: "/downloads/files/leden"
