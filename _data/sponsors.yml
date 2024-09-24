@@ -35,10 +35,6 @@
   logo: vandijck.png
   website: https://www.facebook.com/biercentrale-Van-Dijck-184368061612986
   level: Zilver
-- title: Cafetaria De Tumkens
-  logo: detumkens.png
-  website: https://www.facebook.com/De-Tumkens-112910870111682
-  level: Brons
 - title: Crèmelie
   logo: cremelie.png
   website: https://www.facebook.com/Cremelie/
@@ -81,10 +77,6 @@
   level: Zilver
   logo: meubelen-verhaegen.png
   website: https://www.meubelen-verhaegen-betekom.be/
-- title: Omeyocan
-  level: Zilver
-  logo: omeyocan.png
-  website: http://www.omeyocan.be/
 - title: EURO-DECOR
   level: Brons
   logo: euro-decor.png
@@ -97,10 +89,6 @@
   logo: apotheek-philips.png
   website: https://www.apotheekphilips.be/
   level: Platinum
-- title: Reves Vastgoed
-  logo: reves.png
-  website: https://www.revesvastgoed.be/
-  level: Brons
 - title: Belmaco
   level: Sympathisant
 - title: Fiets & Tuincentrum Meirhaeghe - Van Woensel
