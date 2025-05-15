@@ -1,7 +1,7 @@
-season: 2024 - 2025
+season: 2025 - 2026
 periods:
   - name: veld
-    text: Van maandag 29 juli 2024 tot en met zondag 27 oktober 2024, van maandag 3 maart 2025 tot en met vrijdag 30 mei 2025.
+    text: Van vrijdag 1 augustus 2025 tot en met zondag 26 oktober 2025, van maandag 16 maart 2026 tot en met vrijdag 29 mei 2026.
     teams:
       - name: U5
         trainings:
@@ -98,7 +98,7 @@ periods:
             ends_at: "20:30"
             location: grotebaan
   - name: zaal
-    text: Van maandag 28 oktober 2024 tot en met zondag 2 maart 2025.
+    text: Van maandag 27 oktober 2025 tot en met zondag 15 maart 2026.
     teams:
       - name: U5
         trainings:
@@ -145,43 +145,47 @@ periods:
       - name: U15
         trainings:
           - weekday: dinsdag
-            starts_at: "17:45"
+            starts_at: "17:30"
             ends_at: "19:15"
-            location: sitea
+            location: zand
           - weekday: donderdag
-            starts_at: "17:45"
-            ends_at: "19:15"
-            location: sitea
+            starts_at: "17:30"
+            ends_at: "19:00"
+            location: zand
       - name: U17
         trainings:
           - weekday: dinsdag
             starts_at: "19:15"
-            ends_at: "20:45"
-            location: sitea
+            ends_at: "21:00"
+            location: zand
           - weekday: donderdag
-            starts_at: "19:15"
-            ends_at: "20:45"
-            location: sitea
+            starts_at: "17:30"
+            ends_at: "19:00"
+            location: zand
       - name: U19
         trainings:
           - weekday: dinsdag
             starts_at: "19:15"
-            ends_at: "20:45"
-            location: sitea
+            ends_at: "21:00"
+            location: zand
           - weekday: donderdag
-            starts_at: "19:15"
-            ends_at: "20:45"
+            starts_at: "17:30"
+            ends_at: "19:00"
             location: sitea
       - name: Senioren
         trainings:
           - weekday: dinsdag
             starts_at: "20:45"
             ends_at: "22:15"
-            location: sitea
-          - weekday: vrijdag
+            location: tbd
+          - weekday: donderdag (oneven weken)
             starts_at: "21:00"
             ends_at: "23:00"
-            location: mixx
+            location: zand
+          - weekday: vrijdag (even weken)
+            starts_at: "20:30"
+            ends_at: "22:30"
+            location: zand
       - name: Gewestelijken
         trainings:
           - weekday: vrijdag
