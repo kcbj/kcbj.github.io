@@ -4,7 +4,7 @@
   featured: true
   name: Sportpark Grote Baan
   games: true
-  practice: true 
+  practice: true
   surface: Kunstgras
   coordinates: [ 50.997642, 4.796937 ]
   address:
@@ -23,13 +23,25 @@
   featured: true
   name: Sporthal De Tumkens
   games: true
-  practice: true 
+  practice: true
   surface: Zaal
   address:
     street_address: Pastoor Pitetlaan 30
     postal_code: 3130
     locality: Betekom
   coordinates: [ 50.987841, 4.785295999999988 ]
+- id: zand
+  details: true
+  featured: true
+  name: "Vrijetijdscentrum 't Zand"
+  games: true
+  practice: true
+  surface: Zaal
+  address:
+    street_address: Baalsebaan 291
+    postal_code: 3128
+    locality: Baal
+  coordinates: [ 50.99488195692557, 4.749708513601855 ]
 - id: parochiezaal
   name: Parochiezaal Begijnendijk
   types:
@@ -45,7 +57,7 @@
   types:
   - Activiteiten
   featured: false
-  address: 
+  address:
     street_address: Grote Baan 109
     postal_code: 3130
     locality: Betekom
@@ -54,7 +66,7 @@
   name: Kerkplein Betekom
   types:
   - Activiteiten
-  address: 
+  address:
     street_address: Sint-Laurentiusstraat
     postal_code: 3130
     locality: Betekom
@@ -95,4 +107,6 @@
     street_address: Asbroek 1H
     postal_code: 2230
     locality: Herselt
-
+- id: tbd
+  details: false
+  name: Nog nader te bepalen

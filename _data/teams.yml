@@ -1,41 +1,41 @@
 u5:
   name: U5
-  ages: Geboren in 2020-2021
+  ages: Geboren in 2021-2022
   list: true
   description: recreatieve ploeg voor de allerkleinsten
 u7:
   name: U7
-  ages: Geboren in 2018-2019
+  ages: Geboren in 2019-2020
   list: true
   description: recreatieve ploeg voor de allerkleinsten
 u9:
   name: U9
-  ages: Geboren in 2016-2017
+  ages: Geboren in 2017-2018
   list: true
   description: recreatieve jeugdploeg
 u11:
   name: U11
-  ages: Geboren in 2014-2015
+  ages: Geboren in 2015-2016
   list: true
   description: recreatieve jeugdploeg
 u13:
   name: U13
-  ages: Geboren in 2012-2013
+  ages: Geboren in 2013-2014
   list: true
   description: recreatieve/competitieve jeugdploeg
 u15:
   name: U15
-  ages: Geboren in 2010-2011
+  ages: Geboren in 2011-2012
   list: true
   description: recreatieve/competitieve jeugdploeg
 u17:
   name: U17
-  ages: Geboren in 2008-2009
+  ages: Geboren in 2009-2010
   list: true
   description: recreatieve/competitieve jeugdploeg
 u19:
   name: U19
-  ages: Geboren in 2006-2007
+  ages: Geboren in 2007-2008
   list: true
   description: recreatieve/competitieve jeugdploeg
 senioren:

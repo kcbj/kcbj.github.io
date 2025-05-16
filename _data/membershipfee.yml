@@ -1,27 +1,27 @@
 ---
-season: 2024 - 2025
+season: 2025 - 2026
 teams:
   - team: u5
-    fee: €90
+    fee: €95
   - team: u7
-    fee: €110
+    fee: €115
   - team: u9
-    fee: €120
+    fee: €125
   - team: u11
-    fee: €150
+    fee: €155
   - team: u13
-    fee: €150
+    fee: €155
   - team: u15
-    fee: €160
+    fee: €165
   - team: u17
-    fee: €170
+    fee: €175
   - team: u19
-    fee: €170
+    fee: €175
   - team: senioren
-    fee: €220
+    fee: €225
   - team: gewestelijken
-    fee: €130
+    fee: €135
   - team: recreanten
-    fee: €90
+    fee: €95
   - team: supporters
     fee: €25
