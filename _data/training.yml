@@ -42,8 +42,8 @@ periods:
             ends_at: "20:00"
             location: grotebaan
           - weekday: vrijdag
-            starts_at: "18:30"
-            ends_at: "20:00"
+            starts_at: "18:00"
+            ends_at: "19:30"
             location: grotebaan
       - name: U15
         trainings:
