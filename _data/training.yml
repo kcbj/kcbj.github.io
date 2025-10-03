@@ -159,9 +159,9 @@ periods:
             ends_at: "21:00"
             location: zand
           - weekday: donderdag
-            starts_at: "17:30"
-            ends_at: "19:00"
-            location: zand
+            starts_at: "18:30"
+            ends_at: "20:00"
+            location: sitea
       - name: U19
         trainings:
           - weekday: dinsdag
@@ -177,7 +177,7 @@ periods:
           - weekday: dinsdag
             starts_at: "20:45"
             ends_at: "22:15"
-            location: tbd
+            location: sitea
           - weekday: donderdag (oneven weken)
             starts_at: "21:00"
             ends_at: "23:00"
