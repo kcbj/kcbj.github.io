@@ -27,9 +27,9 @@
   path: "/downloads/files/info"
 - title: Sponsoring
   files:
-  - path: "/downloads/files/sponsoring/KCBJ_Sponsorbrief_2024_2025.pdf"
-    title: Sponsoraanbod 2024-2025
-    size: 2799000
+  - path: "/downloads/files/sponsoring/KCBJ_Sponsorbrief_2025_2026.pdf"
+    title: Sponsoraanbod 2025-2026
+    size: 2795232
     mime: pdf
   path: "/downloads/files/sponsoring"
 - title: Documenten voor leden
